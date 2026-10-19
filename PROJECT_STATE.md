@@ -8,9 +8,12 @@
 
 ## 已完成的基础
 - 公开仓库 `modular-workstation` 已创建，默认分支 `main`，初始许可 Apache-2.0。
-- 用户个人 [GitHub Projects「模块化工作站 · 开发总控」](https://github.com/users/2539426035852ningmao-cmyk/projects/2) 已建立并与仓库关联（用户截图核实）。
+- 用户个人 [GitHub Projects「模块化工作站 · 开发总控」](https://github.com/users/2539426035852ningmao-cmyk/projects/2) 已建立并与仓库关联；本次通过已登录的 GitHub 网页实际核验。
 - **[PR #2](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/2) 已合并**至 `main`（2026-10-19，merge commit `7b398dbc562974018a8e0f76f5c73f092e0bc223`）：产品基线、路线图、设计决策、验收规则、AI 开发规范和 Issue/PR 模板均已入库。
-- [S0-01（Issue #1）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/1)：初始项目治理基线；后续可重复的状态自动化与冷启动恢复**转由 #3 跟踪**，不能据此宣称 S0 总体完工。
+- [PR #6](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/6) 已合并至 main（merge commit `42686fde650a9eff7fe37f492fe8d703d1b8070e`），修复快照并加入日常运营说明。
+- [S0-01（Issue #1）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/1) 已关闭且看板为 Done；本次复核了关闭后机器人自动移列的历史记录。
+- [Auto-add 工作流](https://github.com/users/2539426035852ningmao-cmyk/projects/2/workflows/124516903) 已启用：仓库 modular-workstation、过滤器 `is:issue`。编辑 #3 后机器人自动入板实测通过；#4/#5 已手动关联。
+- 2026-10-19 看板核验：#1 Done、#3 In Progress、#4/#5 Todo，各一条；后续仍需查实时看板。详情见 [OPERATIONS](docs/OPERATIONS.md)。
 
 ## 后续待办（非并行主任务）
 - [S0-03（Issue #4）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)：Codex/Gemini CLI 共同规范与独立审查实测（**尚未执行 Gemini 登录或审查**）。
@@ -18,13 +21,15 @@
 - S1：产品信息架构、品牌探索、设计系统与技术原型；尚未开始。
 
 ## 目前阻塞与限制
-- GitHub 连接已能创建/修改 Issue、文件、PR，但**尚未验证可直接修改 GitHub Projects 条目状态**；#3–#5 可能需要通过 GitHub UI 关联看板。
+- GitHub 连接可维护仓库和 Issue/PR；Projects 配置及条目状态本次通过已登录 Chrome 网页成功操作，未使用 Cookie/令牌提取。
+- 完全无旧聊天/已知进度提示的新会话恢复验收仍未执行；本会话核验不替代该项。新建 Issue 的单独触发路径亦未另建测试任务验证。
+- S0-02 尚待独立恢复验收和用户确认，保持打开；关联维护 PR 的最新状态须从 #3 记录核验，未进入 S0-03。
 - 自动更新 PROJECT_STATE.md 的机制尚未配置，不能宣称实时同步。
 - 尚无可运行桌面应用；Electron/React/TypeScript 只是技术候选，待验证沙盒、性能与发布链路。
 - 用户具备 Google AI Pro 订阅，但 Gemini CLI 的本机登录、认证/额度和与 Codex 的联合流程尚未验证。
 
 ## 唯一下一步
-在 **Issue #3** 中执行项目状态一致性检查与真实任务流演练，优先验证看板关联、自动化能力与“无旧聊天上下文”的恢复测试。若操作权限不足，记录实际限制和最少的用户操作步骤。
+核验 **Issue #3** 关联维护 PR 的实际状态，并完成独立新会话恢复验收；记录结果后由用户确认是否关闭 #3。关闭后再核验看板 Done，并通过 PR 更新唯一主任务指向 #4。
 
 ## 角色与权责
 - 用户：最终审美、重大方向、安全权限及发布决策。
