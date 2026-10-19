@@ -13,9 +13,9 @@
 
 ### S0 项目治理与开发总控（当前）
 交付：仓库、关联看板、产品基线、路线图、状态快照、AI 协作规则、完成定义、决策日志、Issue/PR 模板和质量流程。
-已完成：初始治理基线 [Issue #1](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/1)，由 [PR #2](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/2) 实际合并至 main。
-**当前唯一主任务：** [S0-02 · 项目状态同步及冷启动恢复验证](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3)。
-后续排队：[S0-03 Codex/Gemini 协作实测](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)、[S0-04 CI/PR 安全基线](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/5)。
+已完成：初始治理基线 [Issue #1](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/1) 及项目状态恢复 [Issue #3](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3)。#3 的 Projects 自动移列事件已触发，Done 列值仍需网页复核。
+**当前唯一主任务：** [S0-03 Codex/Gemini 协作实测（Issue #4）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)。
+后续排队：[S0-04 CI/PR 安全基线（Issue #5）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/5)。
 门槛：看板与 Issue/PR 可真实追踪；在不依赖历史聊天的前提下恢复主任务、阻塞与下一步；至少完成一次任务→PR→合并→状态变更的实操验证。Gemini 审查和 CI 必须真实测试，不能凭文档宣称完成。
 
 ### S1 产品信息架构与高保真视觉标准
