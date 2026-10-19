@@ -8,10 +8,10 @@
 - 唯一主任务：**S0-01 建立项目治理与开发总控体系**（Issue #1）。
 - 代码仓库：[modular-workstation](https://github.com/2539426035852ningmao-cmyk/modular-workstation)，公开、Apache-2.0、主分支 main。
 - 项目看板：[模块化工作站 · 开发总控](https://github.com/users/2539426035852ningmao-cmyk/projects/2)；已关联仓库，Issue #1 已出现在项目右侧关联区域（用户截图确认）。
-- 正在制作：治理文档的审核分支 `chore/s0-01-governance-baseline`；最终进入 main 需要通过 PR 审查。
+- 正在制作：治理文档的审核分支 `chore/s0-01-governance-baseline`；已创建 [PR #2](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/2)；正式进入 main 前仍需完成内容审查与验收。
 - 已有产品基础：需求访谈确认了 28 项决策，已归并进 docs/PRODUCT.md；全局项目总方案已经讨论，但 UI/技术验证尚未开工。
-- 当前阻塞：需要完成文档 PR、项目管理规则的实际验证及相关用户验收，才能关闭 S0-01。
-- 下一步：审查治理文档 PR → 必要修订 → 经审批合并 → 验证 Issue/看板状态更新和恢复流程。
+- 当前阻塞：需要完成 PR #2 审查、项目管理规则的实际验证及相关用户验收，才能关闭 S0-01。
+- 下一步：审查 [治理文档 PR #2](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/2) → 必要修订 → 经审批合并 → 验证 Issue/看板状态更新和恢复流程。
 - 目前没有产品代码、已运行桌面程序或可用插件；不得将治理文件创建描述为完成了应用开发。
 
 ## 不能遗忘的原则
