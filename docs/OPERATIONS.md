@@ -62,8 +62,14 @@ PROJECT_STATE.md 是人工维护的恢复快照，**没有自动实时同步**�
 - #1 的[关闭事件](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/1#event-33624153131)为 16:22:25；16:22:28 的机器人状态变更及网页活动明确显示 Todo → Done。这是历史真实工作流复核，本次未重新打开/关闭 #1。
 - #4、#5 分别从 Issue 的 Projects 栏手动关联；机器人将它们设为 Todo。看板复核 #1 Done / #3 In Progress / #4 Todo / #5 Todo，各一条，无重复。
 - 新建 Issue 触发路径本次未单独测试；使用既有 #3 的真实进度更新验证了“更新 Issue”触发路径。
-- 本会话从仓库恢复并复核了状态，但初始任务提示包含已知进度，**不能作为完全无旧聊天/状态提示的新会话恢复验收**。该项仍待单独执行。
+- 首次会话从仓库恢复并复核了状态，但初始任务提示包含已知进度，不能作为独立新会话验收；后续已执行[独立只读冷启动演练](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3#issuecomment-6264350178)。
 - 文档更改通过独立分支和 PR 审查；本次未运行应用构建、单元测试、Gemini 或 CI，也未宣称 S0 全部通过。
+
+## 2026-10-19 后续恢复演练
+- [PR #7](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/7) 已合并（`29bc57e`）；`main` 中的状态快照与运营说明已更新。
+- 用户完成 Codex CLI 正常登录后，以 `codex exec --ephemeral` 启动独立无历史会话，只读查询 `main` 文件及实时 Issue/PR。报告正确识别 S0、主任务 #3 Open、PR #2/#6/#7 已合并、#4/#5 排队和唯一下一步；完整结论及限制见 [#3 验收记录](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3#issuecomment-6264350178)。
+- 该独立会话无法直接读取 Projects 列，因此主动标为未核实；协调者通过浏览器另行核对 #1 Done / #3 In Progress / #4/#5 Todo。没有把快照当作实时看板。
+- 新建 Issue 触发路径仍未另造无意义任务测试；Gemini CLI 因 OAuth 令牌端点超时尚未完成独立审查，归 #4 后续处理。#3 待项目所有者确认，不代表 S0 阶段完成。
 
 ## 安全与回滚
 - 不共享 Cookie、API Key、GitHub token；不提交账户截图或凭据。
