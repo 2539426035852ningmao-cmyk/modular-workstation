@@ -1,0 +1,54 @@
+:root {
+  font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif;
+  color-scheme: dark light;
+
+  /* Owner-selected direction B: calm modular surfaces with a muted teal accent. */
+  --color-bg: #171e20;
+  --color-sidebar: #121a1c;
+  --color-surface: #202a2c;
+  --color-border: #344244;
+  --color-text: #e9efee;
+  --color-muted: #a9bdbc;
+  --color-subtle: #91a9a8;
+  --color-accent: #9bd5d3;
+  --color-selected: #254044;
+  --color-selected-border: #43676a;
+  --color-success: #89c9b0;
+  --color-welcome: #20383a;
+  --color-welcome-border: #3c6263;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --type-caption: 11px;
+  --type-small: 12px;
+  --type-body: 14px;
+  --type-title: 29px;
+  --control-height: 42px;
+  --sidebar-width: 224px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #f4f6f4;
+    --color-sidebar: #eaf0f0;
+    --color-surface: #ffffff;
+    --color-border: #d7e1e1;
+    --color-text: #1e2b34;
+    --color-muted: #55727a;
+    --color-subtle: #5b6e74;
+    --color-accent: #1d6674;
+    --color-selected: #d7e8e9;
+    --color-selected-border: #b9d8db;
+    --color-success: #287265;
+    --color-welcome: #e3f0ef;
+    --color-welcome-border: #bcd5d5;
+  }
+}

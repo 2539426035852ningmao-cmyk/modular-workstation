@@ -1,10 +1,10 @@
 # 项目状态快照（PROJECT_STATE）
-更新：2026-10-19｜当前阶段：S0 项目治理｜**非实时数据**
+更新：2026-10-19｜当前阶段：S0 未完成；S1 桌面技术原型实施中｜**非实时数据**
 
 > 本文件是跨会话的**恢复入口**，不是项目任务数据库。先阅读它，再检查链接中的实时 Issue / PR / Projects；若内容冲突，以 GitHub 实时记录为准。
 
 ## 唯一当前主任务
-**[S0-03 · Codex 与 Gemini CLI 共享规范及独立审查演练（Issue #4）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)**
+**[桌面 Shell 技术原型（Issue #10）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)**。项目所有者明确要求先实现可启动窗口与导航；这是当前唯一实施任务，不表示 S0/S1 已验收。
 
 ## 已完成的基础
 - 公开仓库 `modular-workstation` 已创建，默认分支 `main`，初始许可 Apache-2.0。
@@ -20,19 +20,21 @@
 - [#3 的独立冷启动恢复演练](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3#issuecomment-6264350178)已产出只读报告，正确识别阶段、主任务、PR、阻塞和下一步；GitHub 连接无法直接读 Projects 列，另由浏览器核验。
 
 ## 后续待办（非并行主任务）
+- [S0-03（Issue #4）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)：Gemini CLI 授权与独立审查，因用户要求先交付桌面原型而暂缓，仍为 Open。
 - [S0-04（Issue #5）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/5)：CI、分支与 PR 质量关卡（**尚未搭建/执行 CI**）。
-- S1：产品信息架构、品牌探索、设计系统与技术原型；尚未开始。
+- S1：信息架构、品牌与设计系统仍待完成；Electron/Tauri 比较和正式框架选择尚未完成。
 
 ## 目前阻塞与限制
 - GitHub 连接可维护仓库和 Issue/PR；Projects 配置及条目状态本次通过已登录 Chrome 网页成功操作，未使用 Cookie/令牌提取。
 - 无旧聊天的新会话恢复技术演练已执行并记录；新建 Issue 的单独触发路径未为了测试另建任务。
 - #3 已获项目所有者验收并关闭；项目状态变更事件已触发，但当前 Chrome 调试连接不可用，无法独立读出 Done 列或将 #4 设为 In Progress。#4 在 GitHub Issue 中仍为 Open。
 - 自动更新 PROJECT_STATE.md 的机制尚未配置，不能宣称实时同步。
-- 尚无可运行桌面应用；Electron/React/TypeScript 只是技术候选，待验证沙盒、性能与发布链路。
+- 已有 Issue #10 的 Electron/React/TypeScript 桌面候选原型，能启动窗口并切换基础导航；插件沙盒、性能、正式发布与 Tauri 对照尚未验证，框架仍未定案。
+- 用户已从三版首页方向图中选择 B「轻量模块」作为首版 Shell 的视觉基线；可运行代码的主题 token、模块卡片与空状态已按此方向调整，完整设计系统仍未验收。
 - 用户具备 Google AI Pro 订阅，但 Gemini CLI 本机 OAuth 授权未完成；订阅与 API 用量不能等同，联合审查尚未验证。详见 [#3 记录](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3#issuecomment-6264106826)。
 
 ## 唯一下一步
-执行 **Issue #4**：先恢复 GitHub Projects 网页操作并核实 #3 Done / #4 In Progress，再解决 Gemini CLI OAuth 连接，完成真实独立评审与对照记录。#5 仍排队，S0 尚未完成。
+完成 **Issue #10** 的真实窗口、导航、便携构建验证与 PR 评审；随后恢复 #4 的 Gemini 独立审查和 #5 的 CI。S0 尚未完成。
 
 ## 角色与权责
 - 用户：最终审美、重大方向、安全权限及发布决策。
