@@ -1,0 +1,32 @@
+name: 功能与开发任务
+description: 新功能、阶段任务或开发改进
+title: "[TASK] "
+labels: []
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: 目标和背景
+      description: 本任务解决什么实际问题？
+      placeholder: 关联当前阶段及已有任务
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 范围与非目标
+      description: 清楚说明要做什么和不做什么
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 可验证的验收标准
+      description: 按步骤描述别人如何检查任务完成
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: 依赖、风险与测试
+      description: 关联 Issue/ADR，指出权限、安全、文件或 UI 风险
