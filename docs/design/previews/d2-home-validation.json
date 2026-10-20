@@ -218,42 +218,42 @@
       "fg": "--color-warning",
       "bg": "--color-bg",
       "minimum": 4.5,
-      "ratio": 9.767180774800146
+      "ratio": 8.899390888336285
     },
     {
       "theme": "dark",
       "fg": "--color-warning",
       "bg": "--color-sidebar",
       "minimum": 4.5,
-      "ratio": 10.151674008219043
+      "ratio": 9.249722847681545
     },
     {
       "theme": "dark",
       "fg": "--color-warning",
       "bg": "--color-surface",
       "minimum": 4.5,
-      "ratio": 8.848225034307992
+      "ratio": 8.062082095524724
     },
     {
       "theme": "dark",
       "fg": "--color-warning",
       "bg": "--color-surface-subtle",
       "minimum": 4.5,
-      "ratio": 9.275016982201004
+      "ratio": 8.450954633042807
     },
     {
       "theme": "dark",
       "fg": "--color-warning",
       "bg": "--color-surface-elevated",
       "minimum": 4.5,
-      "ratio": 7.666344956298914
+      "ratio": 6.9852091431496435
     },
     {
       "theme": "dark",
       "fg": "--color-warning",
       "bg": "--color-selected",
       "minimum": 4.5,
-      "ratio": 8.219743018938173
+      "ratio": 7.489439154841584
     },
     {
       "theme": "dark",
@@ -624,42 +624,42 @@
       "fg": "--color-warning",
       "bg": "--color-bg",
       "minimum": 4.5,
-      "ratio": 6.056644923156975
+      "ratio": 5.615969973808329
     },
     {
       "theme": "light",
       "fg": "--color-warning",
       "bg": "--color-sidebar",
       "minimum": 4.5,
-      "ratio": 5.670681832021468
+      "ratio": 5.2580891407207195
     },
     {
       "theme": "light",
       "fg": "--color-warning",
       "bg": "--color-surface",
       "minimum": 4.5,
-      "ratio": 6.55766064494494
+      "ratio": 6.080532332286578
     },
     {
       "theme": "light",
       "fg": "--color-warning",
       "bg": "--color-surface-subtle",
       "minimum": 4.5,
-      "ratio": 6.217122907074063
+      "ratio": 5.764771752775073
     },
     {
       "theme": "light",
       "fg": "--color-warning",
       "bg": "--color-surface-elevated",
       "minimum": 4.5,
-      "ratio": 6.55766064494494
+      "ratio": 6.080532332286578
     },
     {
       "theme": "light",
       "fg": "--color-warning",
       "bg": "--color-selected",
       "minimum": 4.5,
-      "ratio": 5.632847225786411
+      "ratio": 5.223007339610909
     },
     {
       "theme": "light",

@@ -44,4 +44,4 @@
 
 ## 下一步
 
-[插件中心深色首稿](DESIGN_REVIEW_D2_PLUGINS.md)已制作；下一步补三类页面浅色对照与必要状态稿。完整 D2 视觉验收仍未完成；#10 保持待产品验收，#4/#5 与 Electron/Tauri 实测对照继续保留，不能宣布 S0/S1 完成。
+[插件中心深色首稿](DESIGN_REVIEW_D2_PLUGINS.md)及 [浅色对照](DESIGN_REVIEW_D2_LIGHT.md)已制作；下一步补三类页面的空白、加载与失败状态及恢复动作。完整 D2 视觉验收仍未完成；#10 保持待产品验收，#4/#5 与 Electron/Tauri 实测对照继续保留，不能宣布 S0/S1 完成。

@@ -1,0 +1,2326 @@
+{
+  "date": "2026-10-20",
+  "kind": "static-design-only",
+  "tokenMatchesPerSource": 23,
+  "sourceHashFormat": "sha256-of-utf8-with-lf-newlines",
+  "sources": [
+    {
+      "file": "d2-home-light.html",
+      "sha256": "50385ad2ed0abeb1a897e303d084c155de20e27f3f3d83b347e9d1b80d828706"
+    },
+    {
+      "file": "d2-assets-light.html",
+      "sha256": "6445b30f85dc1d099bc65beec0ab3f668617251d380c3079c58031fd535b907b"
+    },
+    {
+      "file": "d2-plugins-empty-light.html",
+      "sha256": "ea7246230eaff704e083ddcb33e3b1d521e30252ed991818010836c02fc2e0b3"
+    },
+    {
+      "file": "d2-plugins-permissions-light.html",
+      "sha256": "b8b4cb5f9e6f74fa5f8313eb14a8bd556639528340e2905b50e1193f27dbbad4"
+    }
+  ],
+  "contrastResults": [
+    {
+      "fg": "--color-text",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 13.373104950168983
+    },
+    {
+      "fg": "--color-text",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 12.520896344557615
+    },
+    {
+      "fg": "--color-text",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 14.479350390369353
+    },
+    {
+      "fg": "--color-text",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 13.727441211967884
+    },
+    {
+      "fg": "--color-text",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 14.479350390369353
+    },
+    {
+      "fg": "--color-text",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 12.437357328097328
+    },
+    {
+      "fg": "--color-muted",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 5.367724942394193
+    },
+    {
+      "fg": "--color-muted",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.025663663019778
+    },
+    {
+      "fg": "--color-muted",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 5.811752059798841
+    },
+    {
+      "fg": "--color-muted",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 5.5099491751015455
+    },
+    {
+      "fg": "--color-muted",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 5.811752059798841
+    },
+    {
+      "fg": "--color-muted",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 4.99213259719865
+    },
+    {
+      "fg": "--color-subtle",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 5.496480860157697
+    },
+    {
+      "fg": "--color-subtle",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.146214537784643
+    },
+    {
+      "fg": "--color-subtle",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 5.9511588808084825
+    },
+    {
+      "fg": "--color-subtle",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 5.642116633472471
+    },
+    {
+      "fg": "--color-subtle",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 5.9511588808084825
+    },
+    {
+      "fg": "--color-subtle",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 5.1118791604163105
+    },
+    {
+      "fg": "--color-accent",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 6.189604077645626
+    },
+    {
+      "fg": "--color-accent",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.795168089896187
+    },
+    {
+      "fg": "--color-accent",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 6.701618401398807
+    },
+    {
+      "fg": "--color-accent",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 6.353604971907694
+    },
+    {
+      "fg": "--color-accent",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 6.701618401398807
+    },
+    {
+      "fg": "--color-accent",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 5.756502915364781
+    },
+    {
+      "fg": "--color-success",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 5.263289061204505
+    },
+    {
+      "fg": "--color-success",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 4.927883016872071
+    },
+    {
+      "fg": "--color-success",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 5.698677069158514
+    },
+    {
+      "fg": "--color-success",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 5.402746141490911
+    },
+    {
+      "fg": "--color-success",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 5.698677069158514
+    },
+    {
+      "fg": "--color-success",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 4.895004340367431
+    },
+    {
+      "fg": "--color-warning",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 5.615969973808329
+    },
+    {
+      "fg": "--color-warning",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.2580891407207195
+    },
+    {
+      "fg": "--color-warning",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 6.080532332286578
+    },
+    {
+      "fg": "--color-warning",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 5.764771752775073
+    },
+    {
+      "fg": "--color-warning",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 6.080532332286578
+    },
+    {
+      "fg": "--color-warning",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 5.223007339610909
+    },
+    {
+      "fg": "--color-error",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 5.615969973808329
+    },
+    {
+      "fg": "--color-error",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.2580891407207195
+    },
+    {
+      "fg": "--color-error",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 6.080532332286578
+    },
+    {
+      "fg": "--color-error",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 5.764771752775073
+    },
+    {
+      "fg": "--color-error",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 6.080532332286578
+    },
+    {
+      "fg": "--color-error",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 5.223007339610909
+    },
+    {
+      "fg": "--color-info",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 6.16538190882245
+    },
+    {
+      "fg": "--color-info",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.772489492352425
+    },
+    {
+      "fg": "--color-info",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 6.6753925345629215
+    },
+    {
+      "fg": "--color-info",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 6.328741008020061
+    },
+    {
+      "fg": "--color-info",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 6.6753925345629215
+    },
+    {
+      "fg": "--color-info",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 5.733975628692171
+    },
+    {
+      "fg": "--color-focus",
+      "bg": "--color-bg",
+      "minimum": 3,
+      "ratio": 4.77366968002478
+    },
+    {
+      "fg": "--color-focus",
+      "bg": "--color-surface",
+      "minimum": 3,
+      "ratio": 5.168555560022562
+    },
+    {
+      "fg": "--color-focus",
+      "bg": "--color-selected",
+      "minimum": 3,
+      "ratio": 4.439644779428879
+    },
+    {
+      "fg": "--color-selected-border",
+      "bg": "--color-bg",
+      "minimum": 3,
+      "ratio": 4.77366968002478
+    },
+    {
+      "fg": "--color-selected-border",
+      "bg": "--color-surface",
+      "minimum": 3,
+      "ratio": 5.168555560022562
+    },
+    {
+      "fg": "--color-selected-border",
+      "bg": "--color-selected",
+      "minimum": 3,
+      "ratio": 4.439644779428879
+    },
+    {
+      "fg": "--color-border",
+      "bg": "--color-bg",
+      "minimum": 3,
+      "ratio": 4.38498761613906
+    },
+    {
+      "fg": "--color-border",
+      "bg": "--color-surface",
+      "minimum": 3,
+      "ratio": 4.747721070618353
+    },
+    {
+      "fg": "--color-border",
+      "bg": "--color-selected",
+      "minimum": 3,
+      "ratio": 4.078159714174234
+    },
+    {
+      "fg": "--color-on-accent",
+      "bg": "--color-accent-solid",
+      "minimum": 4.5,
+      "ratio": 5.168555560022562
+    }
+  ],
+  "results": [
+    {
+      "variant": "home",
+      "layout": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "pageWidth": 1440,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 1384,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1440,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": null,
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": 3,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "home",
+      "layout": {
+        "viewport": {
+          "width": 1120,
+          "height": 900
+        },
+        "pageWidth": 1120,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 1064,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1120,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": null,
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": 3,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "home",
+      "layout": {
+        "viewport": {
+          "width": 800,
+          "height": 900
+        },
+        "pageWidth": 800,
+        "pageHeight": 1089,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 744,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 1060.828125,
+          "width": 800,
+          "height": 28,
+          "bottom": 1088.828125
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": null,
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": 2,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "home",
+      "layout": {
+        "viewport": {
+          "width": 640,
+          "height": 900
+        },
+        "pageWidth": 640,
+        "pageHeight": 1302,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 584,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 1256.828125,
+          "width": 640,
+          "height": 45,
+          "bottom": 1301.828125
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": null,
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": 1,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "home",
+      "layout": {
+        "viewport": {
+          "width": 400,
+          "height": 900
+        },
+        "pageWidth": 400,
+        "pageHeight": 1316,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 344,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 1270.828125,
+          "width": 400,
+          "height": 45,
+          "bottom": 1315.828125
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": null,
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": 1,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "home",
+      "layout": {
+        "viewport": {
+          "width": 800,
+          "height": 540
+        },
+        "pageWidth": 800,
+        "pageHeight": 1089,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 480,
+          "bottom": 512
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 744,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 1060.828125,
+          "width": 800,
+          "height": 28,
+          "bottom": 1088.828125
+        },
+        "settings": {
+          "x": 4,
+          "y": 452,
+          "width": 47,
+          "height": 48,
+          "bottom": 500
+        },
+        "center": null,
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": 2,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "assets",
+      "layout": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "pageWidth": 1440,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 1384,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1440,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": {
+          "width": 856,
+          "scrollWidth": 856
+        },
+        "contextVisible": true,
+        "inspectorVisible": true,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "assets",
+      "layout": {
+        "viewport": {
+          "width": 1120,
+          "height": 900
+        },
+        "pageWidth": 1120,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 1064,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1120,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": {
+          "width": 536,
+          "scrollWidth": 536
+        },
+        "contextVisible": true,
+        "inspectorVisible": true,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "assets",
+      "layout": {
+        "viewport": {
+          "width": 800,
+          "height": 900
+        },
+        "pageWidth": 800,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 744,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 800,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": {
+          "width": 504,
+          "scrollWidth": 504
+        },
+        "contextVisible": true,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "assets",
+      "layout": {
+        "viewport": {
+          "width": 640,
+          "height": 900
+        },
+        "pageWidth": 640,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 584,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 640,
+          "height": 45,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "center": {
+          "width": 584,
+          "scrollWidth": 584
+        },
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": true,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "assets",
+      "layout": {
+        "viewport": {
+          "width": 400,
+          "height": 900
+        },
+        "pageWidth": 400,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 344,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 400,
+          "height": 45,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "center": {
+          "width": 344,
+          "scrollWidth": 344
+        },
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": true,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "assets",
+      "layout": {
+        "viewport": {
+          "width": 800,
+          "height": 540
+        },
+        "pageWidth": 800,
+        "pageHeight": 540,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 480,
+          "bottom": 512
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 744,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 512,
+          "width": 800,
+          "height": 28,
+          "bottom": 540
+        },
+        "settings": {
+          "x": 4,
+          "y": 452,
+          "width": 47,
+          "height": 48,
+          "bottom": 500
+        },
+        "center": {
+          "width": 504,
+          "scrollWidth": 504
+        },
+        "contextVisible": true,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-empty",
+      "layout": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "pageWidth": 1440,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 1384,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1440,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": {
+          "width": 1144,
+          "scrollWidth": 1144
+        },
+        "contextVisible": true,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-empty",
+      "layout": {
+        "viewport": {
+          "width": 1120,
+          "height": 900
+        },
+        "pageWidth": 1120,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 1064,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1120,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": {
+          "width": 824,
+          "scrollWidth": 824
+        },
+        "contextVisible": true,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-empty",
+      "layout": {
+        "viewport": {
+          "width": 800,
+          "height": 900
+        },
+        "pageWidth": 800,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 744,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 800,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": {
+          "width": 504,
+          "scrollWidth": 504
+        },
+        "contextVisible": true,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-empty",
+      "layout": {
+        "viewport": {
+          "width": 640,
+          "height": 900
+        },
+        "pageWidth": 640,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 584,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 640,
+          "height": 45,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "center": {
+          "width": 584,
+          "scrollWidth": 584
+        },
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": true,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-empty",
+      "layout": {
+        "viewport": {
+          "width": 400,
+          "height": 900
+        },
+        "pageWidth": 400,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 344,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 400,
+          "height": 45,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "center": {
+          "width": 344,
+          "scrollWidth": 344
+        },
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": true,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-empty",
+      "layout": {
+        "viewport": {
+          "width": 800,
+          "height": 540
+        },
+        "pageWidth": 800,
+        "pageHeight": 540,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 480,
+          "bottom": 512
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 744,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 512,
+          "width": 800,
+          "height": 28,
+          "bottom": 540
+        },
+        "settings": {
+          "x": 4,
+          "y": 452,
+          "width": 47,
+          "height": 48,
+          "bottom": 500
+        },
+        "center": {
+          "width": 504,
+          "scrollWidth": 504
+        },
+        "contextVisible": true,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-permissions",
+      "layout": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "pageWidth": 1440,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 1384,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1440,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": {
+          "width": 1144,
+          "scrollWidth": 1144
+        },
+        "contextVisible": true,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-permissions",
+      "layout": {
+        "viewport": {
+          "width": 1120,
+          "height": 900
+        },
+        "pageWidth": 1120,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 1064,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1120,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": {
+          "width": 824,
+          "scrollWidth": 824
+        },
+        "contextVisible": true,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-permissions",
+      "layout": {
+        "viewport": {
+          "width": 800,
+          "height": 900
+        },
+        "pageWidth": 800,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 744,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 800,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "center": {
+          "width": 504,
+          "scrollWidth": 504
+        },
+        "contextVisible": true,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-permissions",
+      "layout": {
+        "viewport": {
+          "width": 640,
+          "height": 900
+        },
+        "pageWidth": 640,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 584,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 640,
+          "height": 45,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "center": {
+          "width": 584,
+          "scrollWidth": 584
+        },
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": true,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-permissions",
+      "layout": {
+        "viewport": {
+          "width": 400,
+          "height": 900
+        },
+        "pageWidth": 400,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 344,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 400,
+          "height": 45,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "center": {
+          "width": 344,
+          "scrollWidth": 344
+        },
+        "contextVisible": false,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": true,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "variant": "plugins-permissions",
+      "layout": {
+        "viewport": {
+          "width": 800,
+          "height": 540
+        },
+        "pageWidth": 800,
+        "pageHeight": 540,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 480,
+          "bottom": 512
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 744,
+          "height": 48,
+          "bottom": 80
+        },
+        "review": {
+          "x": 0,
+          "y": 512,
+          "width": 800,
+          "height": 28,
+          "bottom": 540
+        },
+        "settings": {
+          "x": 4,
+          "y": 452,
+          "width": 47,
+          "height": 48,
+          "bottom": 500
+        },
+        "center": {
+          "width": 504,
+          "scrollWidth": 504
+        },
+        "contextVisible": true,
+        "inspectorVisible": false,
+        "resourceTrigger": false,
+        "categoryTrigger": false,
+        "moduleColumns": null,
+        "clipped": [],
+        "colorScheme": "light",
+        "tokens": {
+          "--color-bg": "#F5F6F6",
+          "--color-sidebar": "#ECEFEF",
+          "--color-surface": "#FFFFFF",
+          "--color-surface-subtle": "#F8F9F9",
+          "--color-surface-elevated": "#FFFFFF",
+          "--color-border": "#63767E",
+          "--color-divider": "#E1E6E7",
+          "--color-text": "#1E2B34",
+          "--color-muted": "#526970",
+          "--color-subtle": "#53676D",
+          "--color-disabled": "#7E8C91",
+          "--color-accent": "#1D4ED8",
+          "--color-accent-solid": "#2563EB",
+          "--color-on-accent": "#FFFFFF",
+          "--color-selected": "#E6EEFF",
+          "--color-selected-border": "#2563EB",
+          "--color-hover": "#E7EDEE",
+          "--color-pressed": "#DCE6E8",
+          "--color-focus": "#2563EB",
+          "--color-success": "#287265",
+          "--color-warning": "#B23535",
+          "--color-error": "#B23535",
+          "--color-info": "#245F95"
+        }
+      },
+      "end": {
+        "endReachable": true,
+        "settingsVisible": true,
+        "installBlocked": true
+      },
+      "errors": [],
+      "remote": []
+    }
+  ]
+}

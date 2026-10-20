@@ -1,7 +1,11 @@
 # 项目状态快照（PROJECT_STATE）
-更新：2026-10-20｜当前阶段：S0 未完成；S1 原型待产品验收，D1/D2 三类深色首稿待视觉确认｜**非实时数据**
+更新：2026-10-20｜当前阶段：S0 未完成；S1 原型待产品验收，D1/D2 主稿与三类基础状态稿待视觉确认｜**非实时数据**
 
 > 本文件是跨会话的**恢复入口**，不是项目任务数据库。先阅读它，再检查链接中的实时 Issue / PR / Projects；若内容冲突，以 GitHub 实时记录为准。
+
+视觉恢复必读：[已确认视觉偏好与复查清单](docs/DESIGN_PREFERENCES.md)。最新反馈将普通控件边框设为 1px、原边界色 50% 不透明度；保留实色选中、面型为主的图标、钴蓝与 `#C93B3B` 警告。AGENTS.md 已要求未来界面修改先读并复查，变更仍在 PR #19，应用未映射。
+
+侧边设计交接补充：用户已认可 [明亮米白与深蓝、轻微凹凸层次的浅色首页方向](docs/DESIGN_REVIEW_IVORY_TACTILE.md)。原样稿已归档，偏好记录及 D1 已标注优先级；既有 D2 稿与应用尚未迁移，深色版尚未确认。此项不改变唯一主任务或阶段验收状态。
 
 ## 唯一当前主任务
 **[桌面 Shell 技术原型（Issue #10）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)**。项目所有者明确要求先实现可启动窗口与导航；这是当前唯一实施任务，不表示 S0/S1 已验收。
@@ -16,9 +20,20 @@
 
 本次远端复核发现新增 [PR #17](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/17)（`16164b4`），已直接读取其分支中的 13 项确认产品决策和 #12 原始记录；该 PR 尚未合并，main 仍为 `1236f61`。统一 Shell、布局/恢复、任务与最小资源授权作为后续约束，跨插件自动协作未定案；不因此扩大 #10 或立即实现全部功能。
 
-[插件中心深色首稿](docs/DESIGN_REVIEW_D2_PLUGINS.md)已制作：首次空态、示例安装包来源与权限详情；两稿共 12 个静态窗口案例通过。安装、资源授权与列表管理均未实现；三类深色稿齐备，浅色、完整状态与视觉验收仍待完成。前置 [PR #14](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/14) → [#15](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/15) → [#16](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/16) 均保持待审。
+[插件中心深色首稿](docs/DESIGN_REVIEW_D2_PLUGINS.md)已制作：首次空态、示例安装包来源与权限详情；两稿共 12 个静态窗口案例通过。安装、资源授权与列表管理均未实现；该次交付覆盖三类深色稿，当前浅色进展见下文。前置 [PR #14](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/14) → [#15](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/15) → [#16](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/16) 均保持待审。
+
+[插件稿 PR #18](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/18)已交付；本轮继续完成 [浅色稿与深浅审阅页](docs/DESIGN_REVIEW_D2_LIGHT.md)：三类主页面及权限详情共四份浅色稿、12 张导出，24 个静态布局案例与 58 组颜色对比检查通过。深浅主稿现已齐备，完整状态和视觉验收仍未完成，应用源码未改。最新远端复核 main 与 #13–#18 头提交均未改变；没有新的需求推送或合并。
 
 ## 已完成的基础
+
+视觉补充：产品负责人明确要求警告提示为红色，已更新 D1 的独立 warning 语义色与设计稿；警告/错误由具体图标和文案区分，普通选中态保持钴蓝。
+
+最新视觉修订：[实色选中与面型图标](docs/DESIGN_REVIEW_D2_SOLID.md)依据产品负责人反馈，主稿与状态稿统一为钴蓝填充选中、白色前景，图标以面为主并保留镂空/线条细节。共享视觉处理与专项检查已加入现有 PR #19，实际应用和 Morphicons 尚未接入；之前线型图标提案以本次用户反馈为准。界面布局和唯一主实施任务不变。
+
+最新设计进展：[三类页面状态与恢复审阅](docs/DESIGN_REVIEW_D2_STATES.md)已补入现有 [PR #19](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/19)：14 个独立情境的深浅主题、六份源稿与审阅入口，168 个静态案例及 36 个键盘切换案例通过，使用统一自绘图标。仅审阅状态切换可操作，业务、Morphicons 与完整 Shell 恢复流未实现；应用源码和依赖未改。本轮 main 仍为 `1236f61`，无其他新合并或 PR 更新。下一步以本文末尾为准。
+
+2026-10-20 同步补充：[13 项决策兼容性与图标规范候选](docs/DESIGN_SYNC_2026-10-20.md)已归档至现有 PR #19。PR #13/#17 尚未合并；应用源码与依赖未变。当前浏览器未登录，Projects 返回带登录入口的 404，实时列值未核实；下文已登录网页核验属于历史证据，不代表本次重新核验。唯一实施任务仍为 #10 待验收，设计下一步保持状态稿补齐。
+
 - 公开仓库 `modular-workstation` 已创建，默认分支 `main`，初始许可 Apache-2.0。
 - 用户个人 [GitHub Projects「模块化工作站 · 开发总控」](https://github.com/users/2539426035852ningmao-cmyk/projects/2) 已建立并与仓库关联；本次通过已登录的 GitHub 网页实际核验。
 - **[PR #2](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/2) 已合并**至 `main`（2026-10-19，merge commit `7b398dbc562974018a8e0f76f5c73f092e0bc223`）：产品基线、路线图、设计决策、验收规则、AI 开发规范和 Issue/PR 模板均已入库。
@@ -46,7 +61,7 @@
 - 用户具备 Google AI Pro 订阅，但 Gemini CLI 本机 OAuth 授权未完成；订阅与 API 用量不能等同，联合审查尚未验证。详见 [#3 记录](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3#issuecomment-6264106826)。
 
 ## 唯一下一步
-当前设计下一步为补齐 **三类页面的浅色对照稿**，再补必要状态稿。#10 的窗口、导航、便携构建技术验证与 PR #11 已完成，产品验收仍待用户；正式任务切换须记录。#4 的 Gemini 独立审查、#5 的 CI 和 Electron/Tauri 对照继续保留，S0 尚未完成。
+当前设计下一步为 **汇总深浅主稿及基础状态稿，依据产品负责人的视觉反馈收敛设计，再确定第一项获批的应用映射范围**。完整 Shell 恢复/关闭等状态流尚待后续分批设计。#10 的窗口、导航、便携构建技术验证与 PR #11 已完成，产品验收仍待用户；正式任务切换须记录。#4 的 Gemini 独立审查、#5 的 CI 和 Electron/Tauri 对照继续保留，S0 尚未完成。
 
 ## 角色与权责
 - 用户：最终审美、重大方向、安全权限及发布决策。
