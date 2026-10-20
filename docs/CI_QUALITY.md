@@ -36,6 +36,8 @@
 
 云端运行以 PR 检查记录为准 本机通过不等于 GitHub 已执行。
 
+修正后的 [39455238916](https://github.com/2539426035852ningmao-cmyk/modular-workstation/actions/runs/39455238916) 两项检查真实通过 Windows 四组测试和打包程序验证均成功。[独立审查与裁决](reviews/S0_04_REVIEW_2026-10-21.md) 记录模型过时判断与实际证据的区别。
+
 首次云端运行 [39454859987](https://github.com/2539426035852ningmao-cmyk/modular-workstation/actions/runs/39454859987) 文档检查通过 Windows 测试 3/4 失败。卡片常规底色断言实际读到悬停底色 rgb(238 235 229)；修正为先移开鼠标并断言卡片不在 hover 状态 再核对常规底色 不改变产品颜色或放宽断言。首次产物可能混有历史文件 后续工作流增加执行前清理。
 
 ## 分支与安全设置
