@@ -23,14 +23,14 @@
 - **[质量关卡与任务验收](docs/QUALITY_GATES.md)** — 什么情况下算真正完成。
 
 ## AI 开发者入口
-- [双 AI 审查流程](docs/AI_REVIEW_WORKFLOW.md)与[真实对照审查](docs/reviews/S0_03_REVIEW_2026-10-20.md)：Google 官方后继客户端已识别 Pro 并完成 Gemini 静态审查 #4 待所有者验收。
+- [双 AI 审查流程](docs/AI_REVIEW_WORKFLOW.md)与[真实对照审查](docs/reviews/S0_03_REVIEW_2026-10-20.md)：Google 官方后继客户端已识别 Pro 并完成 Gemini 静态审查 #4 已验收。
 - [外部资料调查方法](docs/RESEARCH_METHOD.md)：社交媒体 → 社区 → GitHub → 官方文档。
 - [AGENTS.md](AGENTS.md)：所有 AI 编程工具与开发贡献者首先读取的共同约束。
 - [GEMINI.md](GEMINI.md)：Gemini CLI 的独立审查入口。
 - 日常开发由 Codex 为主、Gemini 独立审查、ChatGPT 组织产品与任务协作；**产品所有者负责最终决策与验收**。
 
 ## 当前优先级
-桌面窗口与基础导航已获用户体验验收并整合，见 [Issue #10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)。首页初始视觉基线已选择“B：轻量模块”。这是 Electron 候选技术原型；当前唯一主任务是 #4 Gemini 独立审查，CI 排队，S1 的完整设计验收及 Electron/Tauri 对照仍待执行。阶段完成不以文档数量为依据，而以实测、审查和验收为依据。
+桌面窗口与基础导航已获用户体验验收并整合，见 [Issue #10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)。首页初始视觉基线已选择“B：轻量模块”。这是 Electron 候选技术原型；#4 独立审查已验收 当前唯一主任务是 #5 [CI 质量基线](docs/CI_QUALITY.md)。S1 的完整设计验收及 Electron/Tauri 对照仍待执行。阶段完成不以文档数量为依据，而以实测、审查和验收为依据。
 
 ## 开源许可
 [Apache License 2.0](LICENSE)。正式发布前仍需审查第三方依赖与插件生态的许可兼容性。
