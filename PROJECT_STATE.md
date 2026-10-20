@@ -21,6 +21,9 @@
 [插件稿 PR #18](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/18)已交付；本轮继续完成 [浅色稿与深浅审阅页](docs/DESIGN_REVIEW_D2_LIGHT.md)：三类主页面及权限详情共四份浅色稿、12 张导出，24 个静态布局案例与 58 组颜色对比检查通过。深浅主稿现已齐备，完整状态和视觉验收仍未完成，应用源码未改。最新远端复核 main 与 #13–#18 头提交均未改变；没有新的需求推送或合并。
 
 ## 已完成的基础
+
+2026-10-20 同步补充：[13 项决策兼容性与图标规范候选](docs/DESIGN_SYNC_2026-10-20.md)已归档至现有 PR #19。PR #13/#17 尚未合并；应用源码与依赖未变。当前浏览器未登录，Projects 返回带登录入口的 404，实时列值未核实；下文已登录网页核验属于历史证据，不代表本次重新核验。唯一实施任务仍为 #10 待验收，设计下一步保持状态稿补齐。
+
 - 公开仓库 `modular-workstation` 已创建，默认分支 `main`，初始许可 Apache-2.0。
 - 用户个人 [GitHub Projects「模块化工作站 · 开发总控」](https://github.com/users/2539426035852ningmao-cmyk/projects/2) 已建立并与仓库关联；本次通过已登录的 GitHub 网页实际核验。
 - **[PR #2](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/2) 已合并**至 `main`（2026-10-19，merge commit `7b398dbc562974018a8e0f76f5c73f092e0bc223`）：产品基线、路线图、设计决策、验收规则、AI 开发规范和 Issue/PR 模板均已入库。

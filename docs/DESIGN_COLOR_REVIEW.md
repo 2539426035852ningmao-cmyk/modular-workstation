@@ -20,6 +20,8 @@
 
 ## Morphicons 参考与后续边界
 
+后续具体语义映射、可访问性与采用条件见 [项目同步与图标规范候选](DESIGN_SYNC_2026-10-20.md#4-图标优化候选proposed尚未接入)，仍为 Proposed，不表示运行时图标已替换。
+
 已读取产品所有者提供的 [Morphicons 官方站](https://www.morphicons.com/)、[文档](https://www.morphicons.com/docs) 和 [Showcase](https://www.morphicons.com/showcase)。其图标数据驱动的状态变形可作为本项目候选；图标来源和动效层分别评估。本轮静态小样使用项目原有自绘 SVG，**没有安装 Morphicons，也未展示或验证其真实动效**。
 
 候选使用场景：菜单展开/关闭、复制/完成、文件夹展开/收起、主题切换。只在状态改变时播放；全局导航不持续跳动，避免将普通操作当作装饰展示。具体是否引入、选哪组图标、动效时长和手感，后续通过小型真实交互样例与用户确认。
