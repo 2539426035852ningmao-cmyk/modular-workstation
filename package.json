@@ -22,7 +22,7 @@
     "@electron/packager": "20.3.0",
     "@playwright/test": "1.56.1",
     "@types/react": "19.2.2",
-    "@types/react-dom": "19.2.2",
+    "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react": "6.1.2",
     "electron": "44.9.0",
     "typescript": "7.0.2",
