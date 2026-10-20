@@ -7,8 +7,13 @@
 让普通用户轻松使用，让专业用户组合工作空间，让开发者与 AI 能按照统一插件规范快速扩展功能。工作站重点覆盖项目/素材管理、工具插件、统一 AI 模型接口与未来的自动化协作；所有默认核心能力须可离线使用。
 
 ## 从哪里开始？
+- **[P0 整合与验收报告](docs/P0_ACCEPTANCE.md)** — 当前推荐 Windows 候选、PR 依赖/冲突、真实测试和最少人工验收项；尚未合并或关闭任务。
+- **[已确认主题的实际 Shell 实施](docs/SHELL_THEME_IMPLEMENTATION.md)** — 四页深浅主题、面型图标和实体层次的运行截图、验证与便携候选；业务仍按计划实施。
 - **[运行桌面原型](docs/PROTOTYPE.md)** — Windows 上安装、启动、验证与已知限制。
 - **[桌面界面基础规范](docs/DESIGN_FOUNDATIONS.md)** — 首版 Shell 实际使用的主题、字体、间距、状态与缩放规则。
+- **[钴蓝深浅设计审阅](docs/DESIGN_REVIEW_D2_LIGHT.md)** — 三类页面候选稿与深浅对照入口；历史候选稿；最新实际 Shell 见上方实施记录，业务操作尚未实现。
+- **[页面状态与恢复审阅](docs/DESIGN_REVIEW_D2_STATES.md)** — 14 个情境的深浅状态稿及统一图标候选；审阅切换可操作，业务功能未实现。
+- **[实色选中与面型图标修订](docs/DESIGN_REVIEW_D2_SOLID.md)** — 根据用户反馈增强选择状态，主稿与状态稿保持一致。
 - **[当前项目进度快照](PROJECT_STATE.md)** — 当前阶段、主任务、阻塞与下一步；以 GitHub 看板实际状态为准。
 - **[可视化开发看板](https://github.com/users/2539426035852ningmao-cmyk/projects/2)** — 实时任务和优先级。
 - **[首条开发任务 S0-01](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/1)** — 建立长期治理与总控。

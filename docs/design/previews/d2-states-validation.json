@@ -1,0 +1,2891 @@
+{
+  "date": "2026-10-20T13:35:47.928Z",
+  "kind": "static-design-only",
+  "interaction": "review selectors only; business controls are inert artwork",
+  "sourceHashFormat": "sha256-of-utf8-with-lf-newlines",
+  "sources": [
+    {
+      "file": "d2-states-home-dark.html",
+      "sha256": "d418508012546c3d580e65dff70546f83aed9ba637830e20779c7b3fb1113d62"
+    },
+    {
+      "file": "d2-states-home-light.html",
+      "sha256": "ef3d7fbd12f7084f47d0d9eba80c23edfe2fdf35997d4de057e71f2bf828d122"
+    },
+    {
+      "file": "d2-states-assets-dark.html",
+      "sha256": "08c0478ce9b5f0716fd687f29a23c8de0ad0dd62f13f17a0e7331f173e924f99"
+    },
+    {
+      "file": "d2-states-assets-light.html",
+      "sha256": "938d89b14d2b510fdadd4c5f16fd60398186eefd160473e5fbf553cec2426680"
+    },
+    {
+      "file": "d2-states-plugins-dark.html",
+      "sha256": "ffb5a19a01b170567f2eef7537cf295cb21f5cb59d21011a011794bd7d3c48bc"
+    },
+    {
+      "file": "d2-states-plugins-light.html",
+      "sha256": "143bd012e3230c7a3c882b21fed9e7e4a9fc1a92834cca5da396ef3ebadeff67"
+    }
+  ],
+  "indexImages": 6,
+  "results": [
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "empty",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "loading",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "failed",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "empty",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "loading",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "failed",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "empty",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "loading",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "failed",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "empty",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "loading",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "failed",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "empty",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "loading",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "failed",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "empty",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "loading",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "dark",
+      "state": "failed",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "empty",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "loading",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "failed",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "empty",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "loading",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "failed",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "empty",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "loading",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "failed",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "empty",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "loading",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "failed",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "empty",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "loading",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "failed",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "empty",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "empty"
+      ],
+      "title": "建立第一个工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "loading",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "home",
+      "theme": "light",
+      "state": "failed",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "failed"
+      ],
+      "title": "无法打开这个工作区",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "empty",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "loading",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "denied",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "missing",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "empty",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "loading",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "denied",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "missing",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "empty",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "loading",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "denied",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "missing",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "empty",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "loading",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "denied",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "missing",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "empty",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "loading",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "denied",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "missing",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "empty",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "loading",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "denied",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "dark",
+      "state": "missing",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "empty",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "loading",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "no-match",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "denied",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "missing",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "empty",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "loading",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "no-match",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "denied",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "missing",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "empty",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "loading",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "no-match",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "denied",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "missing",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "empty",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "loading",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "no-match",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "denied",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "missing",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "empty",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "loading",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "no-match",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "denied",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "missing",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "empty",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "empty"
+      ],
+      "title": "把本地素材放在顺手的位置",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "loading",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在读取文件信息",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "no-match",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有找到匹配的素材",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "denied",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "denied"
+      ],
+      "title": "当前无法访问这个文件夹",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "assets",
+      "theme": "light",
+      "state": "missing",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "missing"
+      ],
+      "title": "原文件暂时找不到了",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "empty",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "loading",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "cancelling",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "failed",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "incompatible",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "empty",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "loading",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "cancelling",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "failed",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "incompatible",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "empty",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "loading",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "cancelling",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "failed",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "incompatible",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "empty",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "loading",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "cancelling",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "failed",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "incompatible",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "empty",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "loading",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "cancelling",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "failed",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "incompatible",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "empty",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "no-match",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "loading",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "cancelling",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "failed",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "dark",
+      "state": "incompatible",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "dark",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "empty",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "no-match",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "loading",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "cancelling",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "failed",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "incompatible",
+      "width": 1440,
+      "height": 900,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 1440,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "empty",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "no-match",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "loading",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "cancelling",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "failed",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "incompatible",
+      "width": 1120,
+      "height": 900,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 1120,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "empty",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "no-match",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "loading",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "cancelling",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "failed",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "incompatible",
+      "width": 800,
+      "height": 900,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "empty",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "no-match",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "loading",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "cancelling",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "failed",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "incompatible",
+      "width": 640,
+      "height": 900,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 640,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "empty",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "no-match",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "loading",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "cancelling",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "failed",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "incompatible",
+      "width": 400,
+      "height": 900,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 400,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "empty",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "empty"
+      ],
+      "title": "从一个需要的工具开始",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "no-match",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "no-match"
+      ],
+      "title": "没有匹配的已安装插件",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "loading",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "loading"
+      ],
+      "title": "正在检查安装包",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "cancelling",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "cancelling"
+      ],
+      "title": "已请求取消，等待确认",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "failed",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "failed"
+      ],
+      "title": "安装没有完成",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    },
+    {
+      "group": "plugins",
+      "theme": "light",
+      "state": "incompatible",
+      "width": 800,
+      "height": 540,
+      "visible": [
+        "incompatible"
+      ],
+      "title": "这个安装包与当前版本不兼容",
+      "pageWidth": 800,
+      "clipped": [],
+      "tokens": true,
+      "scheme": "light",
+      "settings": true,
+      "brokenIcons": 0
+    }
+  ]
+}

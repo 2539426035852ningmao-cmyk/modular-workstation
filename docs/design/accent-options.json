@@ -1,0 +1,7 @@
+[
+  {"id":"A","name":"明亮蓝","solid":"#3B82F6","text":"#82B4FF","selected":"#1D2C43","description":"清晰、轻快，科技感适中"},
+  {"id":"B","name":"钴蓝","solid":"#2563EB","text":"#8BAEFF","selected":"#1B2842","description":"更深、更稳，专业工具感"},
+  {"id":"C","name":"靛蓝","solid":"#5264F5","text":"#A4AFFF","selected":"#262940","description":"略偏紫，现代而有辨识度"},
+  {"id":"D","name":"活力橙","solid":"#F97316","text":"#FFB178","selected":"#3B2A20","description":"偏橙，明快、温暖、有活力"},
+  {"id":"E","name":"朱橙红","solid":"#F2553D","text":"#FF9D8D","selected":"#3D2725","description":"偏红，更鲜明，创作感更强"}
+]

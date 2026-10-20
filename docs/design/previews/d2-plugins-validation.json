@@ -1,0 +1,607 @@
+{
+  "date": "2026-10-20",
+  "kind": "static-design-only",
+  "tokenMatchesPerSource": 23,
+  "results": [
+    {
+      "state": "empty",
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "pageWidth": 1440,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 1144,
+          "height": 768,
+          "bottom": 848
+        },
+        "centerWidth": 1144,
+        "centerScrollWidth": 1144,
+        "contextVisible": true,
+        "categoryTrigger": false,
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1440,
+          "height": 28,
+          "bottom": 900
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 6
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "empty",
+      "layout": {
+        "width": 1120,
+        "height": 900,
+        "pageWidth": 1120,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 824,
+          "height": 768,
+          "bottom": 848
+        },
+        "centerWidth": 824,
+        "centerScrollWidth": 824,
+        "contextVisible": true,
+        "categoryTrigger": false,
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1120,
+          "height": 28,
+          "bottom": 900
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 28
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "empty",
+      "layout": {
+        "width": 800,
+        "height": 900,
+        "pageWidth": 800,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 504,
+          "height": 768,
+          "bottom": 848
+        },
+        "centerWidth": 504,
+        "centerScrollWidth": 504,
+        "contextVisible": true,
+        "categoryTrigger": false,
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 800,
+          "height": 28,
+          "bottom": 900
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 42
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "empty",
+      "layout": {
+        "width": 640,
+        "height": 900,
+        "pageWidth": 640,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "center": {
+          "x": 56,
+          "y": 80,
+          "width": 584,
+          "height": 751,
+          "bottom": 831
+        },
+        "centerWidth": 584,
+        "centerScrollWidth": 584,
+        "contextVisible": false,
+        "categoryTrigger": true,
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 640,
+          "height": 45,
+          "bottom": 900
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 163
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "empty",
+      "layout": {
+        "width": 400,
+        "height": 900,
+        "pageWidth": 400,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "center": {
+          "x": 56,
+          "y": 80,
+          "width": 344,
+          "height": 751,
+          "bottom": 831
+        },
+        "centerWidth": 344,
+        "centerScrollWidth": 344,
+        "contextVisible": false,
+        "categoryTrigger": true,
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 400,
+          "height": 45,
+          "bottom": 900
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 207
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "empty",
+      "layout": {
+        "width": 800,
+        "height": 540,
+        "pageWidth": 800,
+        "pageHeight": 540,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 480,
+          "bottom": 512
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 504,
+          "height": 408,
+          "bottom": 488
+        },
+        "centerWidth": 504,
+        "centerScrollWidth": 504,
+        "contextVisible": true,
+        "categoryTrigger": false,
+        "settings": {
+          "x": 4,
+          "y": 452,
+          "width": 47,
+          "height": 48,
+          "bottom": 500
+        },
+        "review": {
+          "x": 0,
+          "y": 512,
+          "width": 800,
+          "height": 28,
+          "bottom": 540
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 402
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "permissions",
+      "layout": {
+        "width": 1440,
+        "height": 900,
+        "pageWidth": 1440,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 1144,
+          "height": 768,
+          "bottom": 848
+        },
+        "centerWidth": 1144,
+        "centerScrollWidth": 1144,
+        "contextVisible": true,
+        "categoryTrigger": false,
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1440,
+          "height": 28,
+          "bottom": 900
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 0
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "permissions",
+      "layout": {
+        "width": 1120,
+        "height": 900,
+        "pageWidth": 1120,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 824,
+          "height": 768,
+          "bottom": 848
+        },
+        "centerWidth": 824,
+        "centerScrollWidth": 824,
+        "contextVisible": true,
+        "categoryTrigger": false,
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1120,
+          "height": 28,
+          "bottom": 900
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 12
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "permissions",
+      "layout": {
+        "width": 800,
+        "height": 900,
+        "pageWidth": 800,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 504,
+          "height": 768,
+          "bottom": 848
+        },
+        "centerWidth": 504,
+        "centerScrollWidth": 504,
+        "contextVisible": true,
+        "categoryTrigger": false,
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 800,
+          "height": 28,
+          "bottom": 900
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 366
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "permissions",
+      "layout": {
+        "width": 640,
+        "height": 900,
+        "pageWidth": 640,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "center": {
+          "x": 56,
+          "y": 80,
+          "width": 584,
+          "height": 751,
+          "bottom": 831
+        },
+        "centerWidth": 584,
+        "centerScrollWidth": 584,
+        "contextVisible": false,
+        "categoryTrigger": true,
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 640,
+          "height": 45,
+          "bottom": 900
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 336
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "permissions",
+      "layout": {
+        "width": 400,
+        "height": 900,
+        "pageWidth": 400,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "center": {
+          "x": 56,
+          "y": 80,
+          "width": 344,
+          "height": 751,
+          "bottom": 831
+        },
+        "centerWidth": 344,
+        "centerScrollWidth": 344,
+        "contextVisible": false,
+        "categoryTrigger": true,
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 400,
+          "height": 45,
+          "bottom": 900
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 476
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "state": "permissions",
+      "layout": {
+        "width": 800,
+        "height": 540,
+        "pageWidth": 800,
+        "pageHeight": 540,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 480,
+          "bottom": 512
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 504,
+          "height": 408,
+          "bottom": 488
+        },
+        "centerWidth": 504,
+        "centerScrollWidth": 504,
+        "contextVisible": true,
+        "categoryTrigger": false,
+        "settings": {
+          "x": 4,
+          "y": 452,
+          "width": 47,
+          "height": 48,
+          "bottom": 500
+        },
+        "review": {
+          "x": 0,
+          "y": 512,
+          "width": 800,
+          "height": 28,
+          "bottom": 540
+        },
+        "inspectorCount": 0,
+        "clipped": []
+      },
+      "bottom": {
+        "endReachable": true,
+        "installBlocked": true,
+        "scrollTop": 726
+      },
+      "errors": [],
+      "remote": []
+    }
+  ]
+}
