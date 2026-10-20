@@ -1,20 +1,20 @@
 # 项目状态快照（PROJECT_STATE）
 
-更新：2026-10-20｜P0 已体验验收并整合 当前恢复 S0-03｜非实时数据
+更新：2026-10-21｜P0 已验收 S0-03 已关闭 当前 S0-04｜非实时数据
 
 本文件是会话恢复入口，任务状态以实时 GitHub Issue / PR / Projects 为准。历史逐轮快照已保存在 Git 提交记录；当前统一入口为 [P0 整合与验收报告](docs/P0_ACCEPTANCE.md)。
 
 ## 当前阶段与唯一主任务
 
 - S0 未完成；S1 原型及设计未整体验收；S2 未通过。P0 是本轮收束工作名，不是新增路线图阶段。
-- 唯一主任务为 [#4 Codex 与 Gemini CLI 协作验证](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)；[#10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10) 已经用户体验验收并按 completed 关闭。
+- 唯一主任务为 [#5 CI 与质量基线](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/5)；#4 已获所有者授权并按 completed 关闭 PR #22 合并 c534a9a；[#10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10) 已经用户体验验收并按 completed 关闭。
 - [#12 设计定调](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12) 为设计记录与后续余项，仍 Open，不替代 #4。
 
 ## 本轮实际核对
 
 - PR #13–#20 已按依赖顺序合并 验证基线 main 为 a6f609920a29d63c12ac5cfa8c5eb2991e19f357 详见 [实际整合记录](docs/P0_INTEGRATION_COMPLETED.md)
 - #10 已关闭 并出现项目机器人状态变更事件 尚未读取最终看板列值
-- #4 独立审查与 #5 CI 未完成 不声明 CI 通过
+- #4 真实独立审查与裁决已验收 #5 当前本机检查已通过 云端 CI 等待本实施 PR 实际运行 不提前声明通过
 - 旧 Gemini CLI 的 UNSUPPORTED_CLIENT 已确认是个人用户迁移限制 不是登录错误。官方后继 Antigravity CLI 1.4.3 已识别 Google AI Pro 并完成真实独立 Gemini 审查 见 [报告与裁决](docs/reviews/S0_03_REVIEW_2026-10-20.md)
 
 ## 当前能力与证据
@@ -36,7 +36,7 @@
 
 ## 唯一下一步
 
-完成 #4 审查证据 PR 与所有者验收 当前 #4 保持 Open。真实报告和逐条裁决已经具备 待确认 Google 官方后继工具承接及任务验收后 再关闭 #4 并切换 #5。其后 #12/S1 余项排队 不同时开启多个主任务。
+完成 #5 的真实 PR 云端运行与合并后复验 见 [CI 质量基线](docs/CI_QUALITY.md)。其后 #12/S1 余项与框架对照排队 再进入真实工作空间闭环 不同时开启多个主任务。用户已于 2026-10-21 授权按此顺序持续推进 普通实施与验证无需反复确认 关键产品和架构决定仍按质量关卡处理。
 
 ## 长期协作入口
 
