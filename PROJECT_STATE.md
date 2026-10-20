@@ -1,5 +1,5 @@
 # 项目状态快照（PROJECT_STATE）
-更新：2026-10-20｜当前阶段：S0 未完成；S1 原型待产品验收，D1/D2 三类深色首稿待视觉确认｜**非实时数据**
+更新：2026-10-20｜当前阶段：S0 未完成；S1 原型待产品验收，D1/D2 深浅主稿待视觉确认与状态补齐｜**非实时数据**
 
 > 本文件是跨会话的**恢复入口**，不是项目任务数据库。先阅读它，再检查链接中的实时 Issue / PR / Projects；若内容冲突，以 GitHub 实时记录为准。
 
@@ -16,7 +16,9 @@
 
 本次远端复核发现新增 [PR #17](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/17)（`16164b4`），已直接读取其分支中的 13 项确认产品决策和 #12 原始记录；该 PR 尚未合并，main 仍为 `1236f61`。统一 Shell、布局/恢复、任务与最小资源授权作为后续约束，跨插件自动协作未定案；不因此扩大 #10 或立即实现全部功能。
 
-[插件中心深色首稿](docs/DESIGN_REVIEW_D2_PLUGINS.md)已制作：首次空态、示例安装包来源与权限详情；两稿共 12 个静态窗口案例通过。安装、资源授权与列表管理均未实现；三类深色稿齐备，浅色、完整状态与视觉验收仍待完成。前置 [PR #14](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/14) → [#15](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/15) → [#16](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/16) 均保持待审。
+[插件中心深色首稿](docs/DESIGN_REVIEW_D2_PLUGINS.md)已制作：首次空态、示例安装包来源与权限详情；两稿共 12 个静态窗口案例通过。安装、资源授权与列表管理均未实现；该次交付覆盖三类深色稿，当前浅色进展见下文。前置 [PR #14](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/14) → [#15](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/15) → [#16](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/16) 均保持待审。
+
+[插件稿 PR #18](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/18)已交付；本轮继续完成 [浅色稿与深浅审阅页](docs/DESIGN_REVIEW_D2_LIGHT.md)：三类主页面及权限详情共四份浅色稿、12 张导出，24 个静态布局案例与 58 组颜色对比检查通过。深浅主稿现已齐备，完整状态和视觉验收仍未完成，应用源码未改。最新远端复核 main 与 #13–#18 头提交均未改变；没有新的需求推送或合并。
 
 ## 已完成的基础
 - 公开仓库 `modular-workstation` 已创建，默认分支 `main`，初始许可 Apache-2.0。
@@ -46,7 +48,7 @@
 - 用户具备 Google AI Pro 订阅，但 Gemini CLI 本机 OAuth 授权未完成；订阅与 API 用量不能等同，联合审查尚未验证。详见 [#3 记录](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3#issuecomment-6264106826)。
 
 ## 唯一下一步
-当前设计下一步为补齐 **三类页面的浅色对照稿**，再补必要状态稿。#10 的窗口、导航、便携构建技术验证与 PR #11 已完成，产品验收仍待用户；正式任务切换须记录。#4 的 Gemini 独立审查、#5 的 CI 和 Electron/Tauri 对照继续保留，S0 尚未完成。
+当前设计下一步为补齐 **三类页面的空白、加载与失败状态及恢复动作**，然后汇总视觉审阅。#10 的窗口、导航、便携构建技术验证与 PR #11 已完成，产品验收仍待用户；正式任务切换须记录。#4 的 Gemini 独立审查、#5 的 CI 和 Electron/Tauri 对照继续保留，S0 尚未完成。
 
 ## 角色与权责
 - 用户：最终审美、重大方向、安全权限及发布决策。

@@ -9,6 +9,7 @@
 ## 从哪里开始？
 - **[运行桌面原型](docs/PROTOTYPE.md)** — Windows 上安装、启动、验证与已知限制。
 - **[桌面界面基础规范](docs/DESIGN_FOUNDATIONS.md)** — 首版 Shell 实际使用的主题、字体、间距、状态与缩放规则。
+- **[钴蓝深浅设计审阅](docs/DESIGN_REVIEW_D2_LIGHT.md)** — 三类页面候选稿与深浅对照入口；业务操作尚未实现，应用尚未换装。
 - **[当前项目进度快照](PROJECT_STATE.md)** — 当前阶段、主任务、阻塞与下一步；以 GitHub 看板实际状态为准。
 - **[可视化开发看板](https://github.com/users/2539426035852ningmao-cmyk/projects/2)** — 实时任务和优先级。
 - **[首条开发任务 S0-01](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/1)** — 建立长期治理与总控。

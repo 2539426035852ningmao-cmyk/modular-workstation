@@ -1,0 +1,35 @@
+{
+  "kind": "static-review-navigation-only",
+  "pages": [
+    {
+      "variant": "home",
+      "visible": 1,
+      "correct": true,
+      "loaded": true,
+      "overflow": false
+    },
+    {
+      "variant": "assets",
+      "visible": 1,
+      "correct": true,
+      "loaded": true,
+      "overflow": false
+    },
+    {
+      "variant": "plugins-empty",
+      "visible": 1,
+      "correct": true,
+      "loaded": true,
+      "overflow": false
+    },
+    {
+      "variant": "plugins-permissions",
+      "visible": 1,
+      "correct": true,
+      "loaded": true,
+      "overflow": false
+    }
+  ],
+  "narrowWidth": 400,
+  "errors": []
+}

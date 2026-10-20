@@ -1,0 +1,151 @@
+<!doctype html>
+<!-- Generated from matching dark design + D1 light palette. Edit those sources, then regenerate. -->
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+  <title>D2 首页浅色首稿 · 模块化工作站 · 静态设计</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", "Microsoft YaHei UI", sans-serif;
+      --color-bg: #f5f6f6; --color-sidebar: #ecefef; --color-surface: #ffffff;
+      --color-surface-subtle: #f8f9f9; --color-surface-elevated: #ffffff;
+      --color-border: #63767e; --color-divider: #e1e6e7;
+      --color-text: #1e2b34; --color-muted: #526970; --color-subtle: #53676d;
+      --color-disabled: #7e8c91; --color-accent: #1d4ed8;
+      --color-accent-solid: #2563eb; --color-on-accent: #ffffff;
+      --color-selected: #e6eeff; --color-selected-border: #2563eb;
+      --color-hover: #e7edee; --color-pressed: #dce6e8; --color-focus: #2563eb;
+      --color-success: #287265; --color-warning: #835300; --color-error: #b23535; --color-info: #245f95;
+      --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+      --space-5: 20px; --space-6: 24px; --space-8: 32px;
+      --radius-sm: 4px; --radius-md: 6px; --radius-lg: 8px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-width: 320px; background: var(--color-bg); color: var(--color-text); }
+    body { font-size: 14px; line-height: 1.57; }
+    svg { display: block; width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+    .symbols { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .artboard { min-height: 100vh; display: flex; flex-direction: column; }
+    .window-titlebar { height: 32px; display: flex; align-items: center; justify-content: space-between; padding-left: 16px; background: var(--color-sidebar); border-bottom: 1px solid var(--color-divider); flex: none; }
+    .window-name { display: flex; align-items: center; gap: 8px; color: var(--color-muted); font-size: 12px; }
+    .window-name svg { width: 14px; height: 14px; color: var(--color-accent); }
+    .window-actions { display: flex; align-self: stretch; }
+    .window-actions span { width: 46px; display: grid; place-items: center; color: var(--color-muted); }
+    .window-actions svg { width: 12px; height: 12px; stroke-width: 1; }
+    .shell { display: flex; flex: 1; min-height: calc(100vh - 60px); }
+    .rail { position: sticky; top: 0; align-self: flex-start; height: calc(100vh - 60px); width: 56px; flex: none; display: flex; flex-direction: column; align-items: center; padding: 16px 4px 12px; gap: 24px; border-right: 1px solid var(--color-divider); background: var(--color-sidebar); }
+    .brand { width: 32px; height: 32px; display: grid; place-items: center; color: var(--color-accent); }
+    .brand svg { width: 25px; height: 25px; }
+    .nav { width: 100%; display: grid; gap: 8px; }
+    .nav-item { min-height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--color-subtle); border-radius: var(--radius-md); font-size: 11px; line-height: 16px; border: 1px solid transparent; }
+    .nav-item.active { background: var(--color-selected); color: var(--color-accent); border-color: var(--color-selected-border); }
+    .rail-bottom { margin-top: auto; width: 100%; }
+    .main { min-width: 0; flex: 1; display: flex; flex-direction: column; }
+    .topbar { height: 48px; flex: none; display: flex; justify-content: space-between; align-items: center; padding: 0 24px; border-bottom: 1px solid var(--color-divider); }
+    .breadcrumbs, .local-state { display: flex; align-items: center; gap: 12px; font-size: 12px; color: var(--color-muted); }
+    .breadcrumbs strong { font-weight: 600; color: var(--color-text); }
+    .breadcrumbs svg { width: 12px; height: 12px; color: var(--color-subtle); }
+    .local-state { gap: 8px; }
+    .local-state svg { width: 14px; height: 14px; color: var(--color-success); }
+    .content { width: min(1120px, calc(100% - 64px)); margin: 0 auto; padding: 32px 0 24px; }
+    .intro { display: flex; justify-content: space-between; gap: 24px; align-items: center; margin-bottom: 24px; }
+    h1 { font-size: 24px; font-weight: 600; line-height: 32px; letter-spacing: -.02em; margin: 0 0 8px; }
+    .intro p { color: var(--color-muted); font-size: 14px; line-height: 22px; margin: 0; }
+    .scope { color: var(--color-subtle); font-size: 12px; border: 1px solid var(--color-divider); padding: 4px 8px; border-radius: var(--radius-sm); white-space: nowrap; }
+    .start-panel { min-height: 116px; border: 1px solid var(--color-divider); border-radius: var(--radius-lg); background: var(--color-surface); display: flex; align-items: center; gap: 16px; padding: 24px; }
+    .start-icon { width: 44px; height: 44px; display: grid; place-items: center; background: var(--color-selected); color: var(--color-accent); border-radius: var(--radius-lg); flex: none; }
+    .start-copy { min-width: 0; }
+    .start-copy h2 { font-size: 16px; font-weight: 600; line-height: 24px; margin: 0 0 4px; }
+    .start-copy p { color: var(--color-muted); font-size: 12px; line-height: 20px; margin: 0; }
+    .start-actions { margin-left: auto; display: flex; gap: 12px; align-items: center; flex: none; }
+    .control { min-height: 36px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 12px; border-radius: var(--radius-md); font-size: 12px; font-weight: 600; white-space: nowrap; }
+    .control svg { width: 16px; height: 16px; }
+    .primary { color: var(--color-on-accent); background: var(--color-accent-solid); border: 1px solid var(--color-accent-solid); }
+    .secondary { color: var(--color-text); border: 1px solid var(--color-border); background: transparent; }
+    .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 32px 0 16px; }
+    .section-heading h2 { font-size: 14px; font-weight: 600; line-height: 22px; margin: 0; }
+    .section-heading span { color: var(--color-subtle); font-size: 12px; }
+    .modules { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .module { background: var(--color-surface-subtle); border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: 20px; min-height: 188px; }
+    .module-top { display: flex; align-items: center; justify-content: space-between; }
+    .module-icon { width: 32px; height: 32px; display: grid; place-items: center; background: var(--color-surface-elevated); border-radius: var(--radius-md); color: var(--color-muted); }
+    .future { color: var(--color-subtle); font-size: 12px; }
+    .module h3 { font-size: 14px; line-height: 22px; font-weight: 600; margin: 16px 0 4px; }
+    .module p { font-size: 12px; line-height: 20px; color: var(--color-muted); margin: 0; }
+    .module-bottom { margin-top: 16px; display: flex; align-items: center; gap: 8px; color: var(--color-subtle); font-size: 12px; }
+    .module-bottom svg { width: 12px; height: 12px; }
+    .recent { min-height: 148px; border: 1px solid var(--color-divider); border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; background: var(--color-bg); }
+    .recent svg { width: 24px; height: 24px; color: var(--color-subtle); margin-bottom: 12px; }
+    .recent h3 { font-size: 14px; font-weight: 400; line-height: 22px; margin: 0 0 4px; }
+    .recent p { font-size: 12px; line-height: 20px; color: var(--color-subtle); margin: 0; }
+    .home-note { display: flex; gap: 8px; align-items: center; margin: 24px 0 0; color: var(--color-subtle); font-size: 12px; }
+    .home-note svg { width: 14px; height: 14px; }
+    .review-strip { min-height: 28px; padding: 4px 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: var(--color-sidebar); border-top: 1px solid var(--color-divider); color: var(--color-subtle); font-size: 11px; line-height: 18px; }
+    .review-strip strong { color: var(--color-accent); font-weight: 400; }
+    @media (max-width: 1100px) { .start-panel { flex-wrap: wrap; } .start-actions { margin-left: 60px; } }
+    @media (max-width: 900px) { .modules { grid-template-columns: repeat(2,minmax(0,1fr)); } .content { width: calc(100% - 48px); padding-top: 32px; } .scope { display: none; } }
+    @media (max-width: 640px) { .content { width: calc(100% - 32px); padding-top: 24px; } .topbar { padding: 0 16px; } .breadcrumbs .product, .breadcrumbs svg, .local-state .extra { display: none; } .modules { grid-template-columns: 1fr; } .start-panel { padding: 16px; gap: 12px; } .start-icon { display: none; } .start-actions { margin-left: 0; flex-wrap: wrap; gap: 8px; } .section-heading span { display: none; } .review-strip { align-items: flex-start; flex-direction: column; gap: 0; } .window-name { font-size: 11px; } }
+  </style>
+</head>
+<body>
+  <svg class="symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3Z"/><path d="M9 20v-7h6v7"/></symbol>
+    <symbol id="workspace" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
+    <symbol id="plugin" viewBox="0 0 24 24"><path d="M9 3h6v5h5v6h-5v7H9v-7H3V8h6Z"/></symbol>
+    <symbol id="settings" viewBox="0 0 24 24"><path d="m9 3-.6 2.5-2.2 1.3-2.5-.7-2 3.5 1.9 1.8v2.5l-1.9 1.8 2 3.5 2.5-.7 2.2 1.3L9 22h4l.6-2.7 2.2-1.3 2.5.7 2-3.5-1.9-1.8v-2.5l1.9-1.8-2-3.5-2.5.7-2.2-1.3L13 3Z" transform="translate(1 -1) scale(.95)"/><circle cx="12" cy="11" r="3"/></symbol>
+    <symbol id="folder" viewBox="0 0 24 24"><path d="M3 7V5a1 1 0 0 1 1-1h5l2 3h9a1 1 0 0 1 1 1v11H3Z"/><path d="M3 10h18"/></symbol>
+    <symbol id="files" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 8h16M9 8v13m4-9h3m-3 5h3"/></symbol>
+    <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 4-4 7-8 9-4-2-8-5-8-9V6Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.5"/></symbol>
+  </defs></svg>
+  <div class="artboard" role="img" aria-label="模块化工作站首页浅色高保真静态设计，首次使用状态。所有操作仅为设计示意，尚未实现。">
+    <div class="window-titlebar" aria-hidden="true">
+      <div class="window-name"><svg><use href="#grid"/></svg>模块化工作站</div>
+      <div class="window-actions"><span><svg viewBox="0 0 12 12"><path d="M1 6h10"/></svg></span><span><svg viewBox="0 0 12 12"><rect x="2" y="2" width="8" height="8"/></svg></span><span><svg viewBox="0 0 12 12"><path d="m2 2 8 8m0-8-8 8"/></svg></span></div>
+    </div>
+    <div class="shell">
+      <aside class="rail" aria-hidden="true">
+        <div class="brand"><svg><use href="#grid"/></svg></div>
+        <div class="nav">
+          <div class="nav-item active"><svg><use href="#home"/></svg><span>首页</span></div>
+          <div class="nav-item"><svg><use href="#workspace"/></svg><span>工作区</span></div>
+          <div class="nav-item"><svg><use href="#plugin"/></svg><span>插件</span></div>
+        </div>
+        <div class="rail-bottom"><div class="nav-item"><svg><use href="#settings"/></svg><span>设置</span></div></div>
+      </aside>
+      <div class="main">
+        <div class="topbar">
+          <div class="breadcrumbs"><span class="product">模块化工作站</span><svg><use href="#chevron"/></svg><strong>首页</strong></div>
+          <div class="local-state"><svg><use href="#shield"/></svg><span>本地空间<span class="extra"> · 无需登录</span></span></div>
+        </div>
+        <div class="content">
+          <div class="intro"><div><h1>你的工作，从这里开始。</h1><p>把项目、素材与工具，放在顺手的位置。</p></div><span class="scope">个人工作站</span></div>
+          <section class="start-panel">
+            <div class="start-icon"><svg><use href="#folder"/></svg></div>
+            <div class="start-copy"><h2>建立第一个工作区</h2><p>为一个项目保留文件、视图和常用工具。</p></div>
+            <div class="start-actions"><span class="control secondary">打开已有工作区</span><span class="control primary"><svg><use href="#plus"/></svg>创建工作区</span></div>
+          </section>
+          <div class="section-heading"><h2>探索工作站</h2><span>按需组合，保持轻量</span></div>
+          <div class="modules">
+            <article class="module"><div class="module-top"><span class="module-icon"><svg><use href="#workspace"/></svg></span><span class="future">规划中</span></div><h3>工作区</h3><p>按项目组织内容，安排自己的工作布局。</p><div class="module-bottom">专注一个项目<svg><use href="#arrow"/></svg></div></article>
+            <article class="module"><div class="module-top"><span class="module-icon"><svg><use href="#files"/></svg></span><span class="future">规划中</span></div><h3>文件与素材</h3><p>连接本地文件夹，集中浏览与查找素材。</p><div class="module-bottom">从本地内容开始<svg><use href="#arrow"/></svg></div></article>
+            <article class="module"><div class="module-top"><span class="module-icon"><svg><use href="#plugin"/></svg></span><span class="future">规划中</span></div><h3>工具与插件</h3><p>选择需要的能力，让工具融入工作过程。</p><div class="module-bottom">逐步扩展能力<svg><use href="#arrow"/></svg></div></article>
+          </div>
+          <div class="section-heading"><h2>最近的工作区</h2><span>仅显示这台电脑上的记录</span></div>
+          <section class="recent"><svg><use href="#clock"/></svg><h3>还没有打开过工作区</h3><p>创建或打开工作区后，你可以在这里继续。</p></section>
+          <p class="home-note"><svg><use href="#info"/></svg>内容默认保存在本地，云服务由你选择。</p>
+        </div>
+      </div>
+    </div>
+    <div class="review-strip"><span><strong>设计预览 D2 · 首次使用</strong>　所有操作仅为示意，功能尚未实现</span><span>钴蓝 #2563EB · 首页浅色 v0.1 · 2026.10.20</span></div>
+  </div>
+</body>
+</html>
