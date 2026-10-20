@@ -39,7 +39,7 @@ npm run package:win
 
 当前深浅主题与四页实际映射、截图和测试见 [实施记录](SHELL_THEME_IMPLEMENTATION.md)。主题继续跟随系统；设置只读显示当前模式，手动主题和偏好保存尚未实现。首页模块卡片和“查看工作区”仅切换已有页面，创建/安装等操作禁用并说明原因。
 
-本机新候选位于项目工作目录上两级的 `outputs/p0-shell-candidate-20261020/ModularWorkstation-win32-x64/`。保留整个文件夹，双击 `ModularWorkstation.exe`；切换 Windows 深浅主题，检查四页、Tab/Enter、最小窗口和关闭退出。不要把单个 EXE 移出目录。旧便携包未覆盖，本候选未经最终产品验收。
+本机新候选位于项目工作目录上两级的 `outputs/p0-main-verified-20261020/ModularWorkstation-win32-x64/`。保留整个文件夹，双击 `ModularWorkstation.exe`；切换 Windows 深浅主题，检查四页、Tab/Enter、最小窗口和关闭退出。不要把单个 EXE 移出目录。旧便携包未覆盖，原候选已获用户体验验收 此目录为最终 main 复验包。
 
 重新打包可指定新的输出目录，避免覆盖旧包：
 
