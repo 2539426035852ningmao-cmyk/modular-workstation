@@ -1,0 +1,748 @@
+{
+  "kind": "static-design-only",
+  "date": "2026-10-20T13:10:54.116Z",
+  "results": [
+    {
+      "file": "d2-home-dark.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-home-light.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-assets-dark.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".tree-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".view-toggle span:first-child",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".tab",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".asset.selected .asset-meta",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-assets-light.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".tree-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".view-toggle span:first-child",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".tab",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".asset.selected .asset-meta",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-plugins-empty-dark.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".category.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".filter-tabs .selected",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-plugins-empty-light.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".category.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".filter-tabs .selected",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-plugins-permissions-dark.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".category.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-plugins-permissions-light.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".category.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-states-home-dark.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".state-controls input:checked+label",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "warning",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-states-home-light.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".state-controls input:checked+label",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "warning",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-states-assets-dark.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".tree-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".view-toggle span:first-child",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".tab",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".state-controls input:checked+label",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "warning",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-states-assets-light.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".tree-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".view-toggle span:first-child",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".tab",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".state-controls input:checked+label",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "warning",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-states-plugins-dark.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".category.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".state-controls input:checked+label",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "warning",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-states-plugins-light.html",
+      "surfaces": [
+        {
+          "selector": ".nav-item.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".category.active",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        },
+        {
+          "selector": ".state-controls input:checked+label",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": [
+        {
+          "id": "home",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "workspace",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "plugin",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "settings",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "folder",
+          "fill": "currentColor",
+          "stroke": "none"
+        },
+        {
+          "id": "warning",
+          "fill": "currentColor",
+          "stroke": "none"
+        }
+      ]
+    },
+    {
+      "file": "d2-theme-review.html",
+      "surfaces": [
+        {
+          "selector": ".page-choice:checked+label",
+          "background": "rgb(37, 99, 235)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 5.168555560022562
+        }
+      ],
+      "icons": []
+    }
+  ]
+}

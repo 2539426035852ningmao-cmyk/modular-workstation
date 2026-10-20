@@ -72,21 +72,37 @@ body:has(#state-loading:checked) .s-loading{display:block}
 body:has(#state-no-match:checked) .s-no-match{display:block}
 body:has(#state-denied:checked) .s-denied{display:block}
 body:has(#state-missing:checked) .s-missing{display:block}</style>
+<style data-solid-visuals>
+/* Owner feedback: filled selections, face-led icons with cut-out detail. */
+.nav-item.active,.tree-item.active,.category.active,.view-toggle span:first-child,.tab,.filter-tabs .selected,
+.state-controls input:checked+label,.page-choice:checked+label{
+ background:var(--color-accent-solid,#2563eb);color:var(--color-on-accent,#fff);border-color:var(--color-accent-solid,#2563eb)
+}
+.nav-item.active svg,.tree-item.active svg,.tree-item.active .count,.category.active svg,.tab svg.icon{color:inherit}
+.tab:after{display:none}.view-toggle{background:var(--color-surface-elevated)}
+.filter-tabs .selected{padding:6px 10px;border-radius:6px;border-bottom-color:transparent}
+.control:not(.primary):not(.disabled),.state-controls label{background:var(--color-surface-elevated);}
+.asset.selected{border-color:var(--color-accent-solid)}.asset.selected .asset-meta{background:var(--color-accent-solid);color:var(--color-on-accent)}.asset.selected .asset-name,.asset.selected .asset-kind{color:inherit}
+.start-icon,.module-icon,.plugin-logo,.state-emblem{background:var(--color-selected);color:var(--color-accent)}
+.state-emblem{background:var(--color-accent-solid);color:var(--color-on-accent)}
+.state-card.warning .state-emblem{background:var(--color-warning);color:var(--color-bg)}
+.state-card.error .state-emblem{background:var(--color-error);color:var(--color-bg)}
+</style>
 </head>
 <body><header class="review-head"><div><h1>文件与素材 · 浅色状态审阅</h1><p>选择设计情境；不创建文件、不安装插件、不发起任务。</p></div><a href="d2-states-assets-dark.html">查看深色</a></header><div class="state-controls" role="group" aria-label="设计情境"><input type="radio" name="state" id="state-empty" checked><label for="state-empty">首次空白</label><input type="radio" name="state" id="state-loading" ><label for="state-loading">索引中</label><input type="radio" name="state" id="state-no-match" ><label for="state-no-match">无匹配</label><input type="radio" name="state" id="state-denied" ><label for="state-denied">无访问权限</label><input type="radio" name="state" id="state-missing" ><label for="state-missing">文件失联</label></div>
   <svg class="symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
-    <symbol id="grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
-    <symbol id="home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3Z"/><path d="M9 20v-7h6v7"/></symbol>
-    <symbol id="workspace" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11"/></symbol>
-    <symbol id="plugin" viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4h2a2 2 0 0 1 0 4H3v6a2 2 0 0 0 2 2h4v-2a2 2 0 0 1 4 0v2h6a2 2 0 0 0 2-2v-6h-2a2 2 0 0 1 0-4h2V5a2 2 0 0 0-2-2h-6v2a2 2 0 0 1-4 0Z"/></symbol>
-    <symbol id="settings" viewBox="0 0 24 24"><path d="m10 3-.6 2.3-2 1.2-2.3-.6-2 3.4L4.8 11v2l-1.7 1.7 2 3.4 2.3-.6 2 1.2L10 21h4l.6-2.3 2-1.2 2.3.6 2-3.4-1.7-1.7v-2l1.7-1.7-2-3.4-2.3.6-2-1.2L14 3Z"/><circle cx="12" cy="12" r="3"/></symbol>
-    <symbol id="folder" viewBox="0 0 24 24"><path d="M3 7V5h6l2 3h10v12H3Z"/></symbol>
+    <symbol id="grid" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path fill-rule="evenodd" d="M4 3h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm11 0h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1ZM4 14h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Zm11 0h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Z"/></g></symbol>
+    <symbol id="home" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path d="m12 2 9 7v2h-2v9a1 1 0 0 1-1 1h-4v-7h-4v7H6a1 1 0 0 1-1-1v-9H3V9Z"/></g></symbol>
+    <symbol id="workspace" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path fill-rule="evenodd" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 4v1.5h14V7Zm3 3v9h1.5v-9Z"/></g></symbol>
+    <symbol id="plugin" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path d="M9 3H5a2 2 0 0 0-2 2v4h2a2 2 0 0 1 0 4H3v6a2 2 0 0 0 2 2h4v-2a2 2 0 0 1 4 0v2h6a2 2 0 0 0 2-2v-6h-2a2 2 0 0 1 0-4h2V5a2 2 0 0 0-2-2h-6v2a2 2 0 0 1-4 0Z"/></g></symbol>
+    <symbol id="settings" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path fill-rule="evenodd" d="m10 3-.6 2.3-2 1.2-2.3-.6-2 3.4L4.8 11v2l-1.7 1.7 2 3.4 2.3-.6 2 1.2L10 21h4l.6-2.3 2-1.2 2.3.6 2-3.4-1.7-1.7v-2l1.7-1.7-2-3.4-2.3.6-2-1.2L14 3Zm5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></g></symbol>
+    <symbol id="folder" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path d="M3 4h6l2 3h9a1 1 0 0 1 1 1v2H3V4Z" opacity=".65"/><path d="M2 10h20l-2 10H4Z"/></g></symbol>
     <symbol id="chevron" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
     <symbol id="down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
-    <symbol id="search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="search" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0ZM5 10a5 5 0 1 0 10 0 5 5 0 0 0-10 0Z"/><path d="m14 16 2-2 6 6-2 2Z"/></g></symbol>
     <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
     <symbol id="plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
-    <symbol id="list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.5M3 12h.5M3 18h.5"/></symbol>
+    <symbol id="list" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path d="M3 4h3v3H3Zm5 .5h13v2H8ZM3 10.5h3v3H3Zm5 .5h13v2H8ZM3 17h3v3H3Zm5 .5h13v2H8Z"/></g></symbol>
     <symbol id="dots" viewBox="0 0 24 24"><circle cx="5" cy="12" r=".8"/><circle cx="12" cy="12" r=".8"/><circle cx="19" cy="12" r=".8"/></symbol>
     <symbol id="cover" viewBox="0 0 240 160"><rect width="240" height="160" fill="#1b2842" rx="4"/><rect x="24" y="24" width="88" height="112" fill="#2563eb" rx="2"/><path d="M44 50h48M44 62h32M44 106h48" stroke="#fff" stroke-width="3"/><rect x="128" y="28" width="88" height="44" rx="2" fill="#dfe7f7"/><rect x="128" y="88" width="40" height="44" rx="2" fill="#8baeff"/><path d="M184 94h32m-32 12h24m-24 12h32" stroke="#8baeff" stroke-width="3"/></symbol>
     <symbol id="layout" viewBox="0 0 240 160"><rect width="240" height="160" fill="#24292c" rx="4"/><rect x="20" y="20" width="200" height="120" rx="3" fill="#171a1d" stroke="#68747b"/><path d="M20 44h200m-152 0v96" stroke="#68747b"/><rect x="30" y="58" width="26" height="8" rx="2" fill="#2563eb"/><rect x="82" y="58" width="124" height="24" rx="2" fill="#303b4e"/><rect x="82" y="94" width="56" height="32" rx="2" fill="#3b444b"/><rect x="150" y="94" width="56" height="32" rx="2" fill="#3b444b"/></symbol>
@@ -94,7 +110,7 @@ body:has(#state-missing:checked) .s-missing{display:block}</style>
     <symbol id="panels" viewBox="0 0 240 160"><rect width="240" height="160" fill="#252b2e" rx="4"/><rect x="20" y="20" width="56" height="120" rx="3" fill="#394650"/><rect x="88" y="20" width="132" height="56" rx="3" fill="#718398"/><rect x="88" y="88" width="60" height="52" rx="3" fill="#d4dce4"/><rect x="160" y="88" width="60" height="52" rx="3" fill="#526b8c"/></symbol>
     <symbol id="icons" viewBox="0 0 240 160"><rect width="240" height="160" fill="#202832" rx="4"/><g fill="none" stroke="#a9bde0" stroke-width="3"><rect x="36" y="36" width="32" height="32" rx="4"/><circle cx="120" cy="52" r="17"/><path d="m172 64 16-28 16 28Zm-124 48h32m-16-16v32m39-32h34v32h-34Zm72 0h32v32h-32Z"/></g></symbol>
     <symbol id="palette" viewBox="0 0 240 160"><rect width="240" height="160" fill="#dbe3eb" rx="4"/><rect x="24" y="24" width="80" height="112" rx="3" fill="#2563eb"/><rect x="116" y="24" width="100" height="32" rx="3" fill="#8baeff"/><rect x="116" y="68" width="100" height="28" rx="3" fill="#1b2842"/><rect x="116" y="108" width="100" height="28" rx="3" fill="#758598"/></symbol>
-  <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 4-4 7-8 9-4-2-8-5-8-9V6Z"/><path d="m8 12 3 3 5-6"/></symbol><symbol id="warning" viewBox="0 0 24 24"><path d="m10.3 4-8 14a2 2 0 0 0 1.7 3h16a2 2 0 0 0 1.7-3l-8-14a2 2 0 0 0-3.4 0Z"/><path d="M12 9v5m0 3h.01"/></symbol><symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="package" viewBox="0 0 24 24"><path d="m3 7 9-4 9 4v10l-9 4-9-4Z"/><path d="m3 7 9 4 9-4M12 11v10M7 5l10 4"/></symbol></defs></svg>
+  <symbol id="shield" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path fill-rule="evenodd" d="m12 2 9 4v6c0 5-5 8-9 10-4-2-9-5-9-10V6Zm-4.5 9.5 3.5 4 6-7-1.2-1-4.8 5.6-2.3-2.6Z"/></g></symbol><symbol id="warning" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path fill-rule="evenodd" d="m10.3 3-8 15A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3l-8-15a2 2 0 0 0-3.4 0Zm.9 5v6h1.6V8Zm0 8v2h1.6v-2Z"/></g></symbol><symbol id="clock" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path fill-rule="evenodd" d="M22 12A10 10 0 1 1 2 12a10 10 0 0 1 20 0ZM11 6v7l5 3 .8-1.4-4.2-2.5V6Z"/></g></symbol><symbol id="package" viewBox="0 0 24 24"><g fill="currentColor" stroke="none"><path d="m3 7 9-4 9 4-9 4Z" opacity=".65"/><path d="m3 9 8 4v9l-8-5Zm10 4 8-4v8l-8 5Z"/></g></symbol></defs></svg>
   <div class="artboard " role="img" aria-label="文件与素材状态静态设计。按钮均为示意，不执行真实业务操作。">
     <div class="window-titlebar"><div class="window-name"><svg class="icon"><use href="#grid"/></svg>模块化工作站</div><div class="window-actions" aria-hidden="true"><span>−</span><span>□</span><span>×</span></div></div>
     <div class="shell">

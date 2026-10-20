@@ -2,6 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { palette } = require('./generate-d2-light.cjs');
+const { applySolidVisuals } = require('./solid-visuals.cjs');
 const dir = __dirname;
 const groups = [
   { id: 'home', name: '首页', source: 'home', preview: 'failed', states: [
@@ -98,7 +99,7 @@ function generate() {
     html=html.replace('</style>',extraCss+selectors+'</style>');
     const controls=`<header class="review-head"><div><h1>${group.name} · ${theme==='dark'?'深色':'浅色'}状态审阅</h1><p>选择设计情境；不创建文件、不安装插件、不发起任务。</p></div><a href="d2-states-${group.id}-${theme==='dark'?'light':'dark'}.html">查看${theme==='dark'?'浅色':'深色'}</a></header><div class="state-controls" role="group" aria-label="设计情境">${group.states.map((s,i)=>`<input type="radio" name="state" id="state-${s.id}" ${i===0?'checked':''}><label for="state-${s.id}">${s.label}</label>`).join('')}</div>`;
     html=html.replace('<body>','<body>'+controls);
-    fs.writeFileSync(path.join(dir,`d2-states-${group.id}-${theme}.html`),html.replace(/[ \t]+$/gm,''));
+    fs.writeFileSync(path.join(dir,`d2-states-${group.id}-${theme}.html`),applySolidVisuals(html));
   }
   const cards=groups.map(g=>`<section><h2>${g.name}</h2><div class="pair">${['dark','light'].map(t=>`<a href="d2-states-${g.id}-${t}.html"><img src="previews/d2-states-${g.id}-${t}-1440.png" alt="${g.name}${t==='dark'?'深色':'浅色'}状态稿；点击打开所有设计情境"><span>${t==='dark'?'深色':'浅色'} · ${g.states.length} 个情境 →</span></a>`).join('')}</div></section>`).join('');
   fs.writeFileSync(path.join(dir,'d2-state-review.html'),`<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'"><title>D2 状态与恢复审阅</title><style>*{box-sizing:border-box}body{margin:0;padding:32px;background:#f5f6f6;color:#1e2b34;font:14px/1.7 "Segoe UI","Microsoft YaHei UI",sans-serif}main{max-width:1600px;margin:auto}h1{font-size:26px;font-weight:600;margin:0 0 8px}p{color:#526970;margin:0 0 20px}h2{font-size:18px;margin:28px 0 12px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}a{display:block;color:#1d4ed8;text-decoration:none}a:focus-visible{outline:2px solid #2563eb;outline-offset:4px}img{width:100%;display:block;border:1px solid #63767e;border-radius:6px}a span{display:block;margin-top:8px}footer{border-top:1px solid #d2dadd;padding-top:20px;margin-top:32px;color:#526970;font-size:12px}@media(max-width:800px){body{padding:20px}.pair{grid-template-columns:1fr}}</style></head><body><main><h1>每一步，都有清楚的反馈。</h1><p>14 个状态情境 × 深浅主题。点击预览，切换查看空白、处理、失败与恢复设计。<br>保留 B 轻量首页与钴蓝；这些是静态稿，业务操作尚未实现。</p>${cards}<footer>统一图标采用项目自绘 SVG：面板表示工作区，拼图表示插件，盾牌表示授权说明。没有接入 Morphicons 或播放自动动效。系统恢复、未保存关闭等 Shell 状态流需后续分批设计。</footer></main></body></html>\n`);

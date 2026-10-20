@@ -1,32 +1,32 @@
 {
-  "date": "2026-10-20T12:30:09.928Z",
+  "date": "2026-10-20T13:10:48.634Z",
   "kind": "static-design-only",
   "interaction": "review selectors only; business controls are inert artwork",
   "sourceHashFormat": "sha256-of-utf8-with-lf-newlines",
   "sources": [
     {
       "file": "d2-states-home-dark.html",
-      "sha256": "872c8ccd0d0389b50fc17fa0ddcca5a574cced5de32a72c3edbe1d661588fa84"
+      "sha256": "16584c98cf835a54cb5ce1a1ca08e23de93092c2f637afa8e49d1c03ee47c46b"
     },
     {
       "file": "d2-states-home-light.html",
-      "sha256": "93d7485cde15c7c81b35bdc69665c1810e50e04f01cae71721831eaf372b87a4"
+      "sha256": "7801cd5b18c79b8c286280f281fb8c94bd4a61d7073b59c6d29f2fc3c22cf7f6"
     },
     {
       "file": "d2-states-assets-dark.html",
-      "sha256": "ef6477f0d4fc4df74f8fd3964e48ab4acb7d28e614636888628f4aecef7a9e17"
+      "sha256": "2281f1238f5bcb952fc332cbb3695cc6cb0715170ec6e260acce6e95b990f830"
     },
     {
       "file": "d2-states-assets-light.html",
-      "sha256": "5f87c7a6fb28b95fe46888646e99fd1870c5600bb3a150d4126f486a3fb7331a"
+      "sha256": "8a05c76a14a6dc74ae5ed63307b8e9abefeb7e14177cde922decc6cf4df787c0"
     },
     {
       "file": "d2-states-plugins-dark.html",
-      "sha256": "3b8ea07e654d6cc32d1de2b84a3c8e6bdeee210ef12f95dbd98167f564136932"
+      "sha256": "648e0f5bcdff32df1d9f02d83658a4a36a93e79a09a2b5166be5208f2267330c"
     },
     {
       "file": "d2-states-plugins-light.html",
-      "sha256": "2f8fed69fb1cdd947fe0b15d7d3f1b7932bfa029b2f6be9ee31010ed0260467b"
+      "sha256": "971bbd62b9213a490aab51464246627f3dafd12d2db230e664f79eea8aedcdce"
     }
   ],
   "indexImages": 6,

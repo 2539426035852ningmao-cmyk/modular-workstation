@@ -1,5 +1,6 @@
 // Design exports only. Runtime theme tokens remain in src/tokens.css.
 const fs=require('node:fs'),path=require('node:path');
+const {applySolidVisuals}=require('./solid-visuals.cjs');
 const dir=__dirname;
 const variants=['home','assets','plugins-empty','plugins-permissions'];
 function gallery(){
@@ -32,6 +33,8 @@ function generate(){
   fs.writeFileSync(path.join(dir,`d2-${variant}-light.html`),source.replace('<html lang="zh-CN">',note+'<html lang="zh-CN">'));
  }
  gallery();
+ const galleryFile=path.join(dir,'d2-theme-review.html');
+ fs.writeFileSync(galleryFile,applySolidVisuals(fs.readFileSync(galleryFile,'utf8')));
  return colors;
 }
 module.exports={variants,palette,generate};
