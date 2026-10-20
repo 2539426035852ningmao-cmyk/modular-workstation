@@ -41,9 +41,25 @@ fs.mkdirSync(previewDir, {recursive:true});
     }
     const d1=fs.readFileSync(path.join(root,'docs/DESIGN_PROPOSAL_D1.md'),'utf8');
     const source=fs.readFileSync(path.join(root,'docs/design/d2-home-dark.html'),'utf8');
-    const palette=[...d1.matchAll(/^\| `(--color-[\w-]+)`(?:（新增）)? \| (#[0-9A-F]{6})/gm)];
+    const palette=[...d1.matchAll(/^\| `(--color-[\w-]+)`(?:（新增）)? \| (#[0-9A-F]{6}) \| (#[0-9A-F]{6})/gm)];
     for(const m of palette)if(!source.toLowerCase().includes(`${m[1]}: ${m[2].toLowerCase()}`))throw new Error('D1 variable mismatch: '+m[1]);
-    fs.writeFileSync(path.join(outputDir,'d2-home-validation.json'),JSON.stringify({kind:'static-design-only',date:'2026-10-20',candidateTokenMatches:palette.length,results},null,2)+'\n');
-    console.log(JSON.stringify({candidateTokenMatches:palette.length,results},null,2));
+    const colors=Object.fromEntries(palette.map(m=>[m[1],[m[2],m[3]]]));
+    const luminance=h=>{const c=h.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return .2126*c[0]+.7152*c[1]+.0722*c[2];};
+    const contrast=(a,b)=>(Math.max(luminance(a),luminance(b))+.05)/(Math.min(luminance(a),luminance(b))+.05);
+    const contrastResults=[];
+    for(let theme=0;theme<2;theme++){
+      const check=(fg,bg,minimum)=>{
+        const ratio=contrast(colors[fg][theme],colors[bg][theme]);
+        contrastResults.push({theme:['dark','light'][theme],fg,bg,minimum,ratio});
+        if(ratio<minimum)throw new Error('color contrast below threshold: '+JSON.stringify(contrastResults.at(-1)));
+      };
+      for(const fg of ['--color-text','--color-muted','--color-subtle','--color-accent','--color-success','--color-warning','--color-error','--color-info'])
+        for(const bg of ['--color-bg','--color-sidebar','--color-surface','--color-surface-subtle','--color-surface-elevated','--color-selected'])check(fg,bg,4.5);
+      for(const fg of ['--color-focus','--color-selected-border','--color-border'])
+        for(const bg of ['--color-bg','--color-surface','--color-selected'])check(fg,bg,3);
+      check('--color-on-accent','--color-accent-solid',4.5);
+    }
+    fs.writeFileSync(path.join(outputDir,'d2-home-validation.json'),JSON.stringify({kind:'static-design-only',date:'2026-10-20',candidateTokenMatches:palette.length,contrastResults,results},null,2)+'\n');
+    console.log(JSON.stringify({candidateTokenMatches:palette.length,contrastChecks:contrastResults.length,results},null,2));
   } finally { await browser.close(); }
 })().catch(e=>{console.error(e);process.exitCode=1;});

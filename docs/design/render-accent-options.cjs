@@ -29,7 +29,7 @@ fs.writeFileSync(path.join(dir,'accent-options.html'),html);
   for(const c of palette){
    const css=`<style>:root{--color-accent:${c.text};--color-selected:${c.selected};--color-selected-border:${c.text};--color-focus:${c.text};--color-accent-solid:${c.solid};--color-on-accent:${c.onSolid}}.primary{background:var(--color-accent-solid);border-color:var(--color-accent-solid);color:var(--color-on-accent)}</style>`;
    const page=await browser.newPage({viewport:{width:1440,height:900},deviceScaleFactor:1});
-   await page.setContent(base.replace('</head>',css+'</head>').replace('深色候选 · 首页首稿 v0.1 · 2026.10.20',`${c.id} ${c.name} · ${c.solid} · 颜色候选，未定案`));
+   await page.setContent(base.replace('</head>',css+'</head>').replace('钴蓝 #2563EB · 首页 v0.2 · 2026.10.20',`${c.id} ${c.name} · ${c.solid} · 颜色候选，未定案`));
    await page.evaluate(async()=>{await document.fonts.ready});
    await page.screenshot({path:path.join(preview,`d2-home-accent-${c.id}.png`)});
    const pairs={button:contrast(c.solid,c.onSolid),emphasis:contrast(c.text,'#181a1b'),selected:contrast(c.text,c.selected)};

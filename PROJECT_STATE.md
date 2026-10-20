@@ -10,7 +10,7 @@
 
 [D1 PR #14](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/14) 已提交待审；用户随后授权制作 D2 首页深色首稿。[设计预览与说明](docs/DESIGN_REVIEW_D2_HOME.md)已交付，仍是静态候选设计，应用源码与组件依赖保持现状。完整 D2 三页深浅稿、状态稿与用户视觉验收尚未完成。
 
-最新反馈：青绿退出候选，首页 B 布局保留；[五色小样与 Morphicons 动效候选记录](docs/DESIGN_COLOR_REVIEW.md)已补充到 [PR #15](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/15)，等待用户从蓝色/橙红色 A–E 中选择。Morphicons 尚未安装或实测。
+最新反馈：产品所有者从 [五色小样](docs/DESIGN_COLOR_REVIEW.md) 明确选择 **B 钴蓝 #2563EB**；首页 B 布局保留，青绿退出后续设计基线。首页与 D1 变量已在 [PR #15](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/15) 修订；应用暂未改色。Morphicons 尚未安装或实测。
 
 ## 已完成的基础
 - 公开仓库 `modular-workstation` 已创建，默认分支 `main`，初始许可 Apache-2.0。
@@ -40,7 +40,7 @@
 - 用户具备 Google AI Pro 订阅，但 Gemini CLI 本机 OAuth 授权未完成；订阅与 API 用量不能等同，联合审查尚未验证。详见 [#3 记录](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3#issuecomment-6264106826)。
 
 ## 唯一下一步
-当前唯一下一步为 **等待用户从 A–E 中选择强调色**；随后按所选配色继续文件素材专业工作区深色稿，再补插件中心及浅色稿。#10 的窗口、导航、便携构建技术验证与 PR #11 已完成，产品验收仍待用户；正式任务切换须记录。#4 的 Gemini 独立审查、#5 的 CI 和 Electron/Tauri 对照继续保留，S0 尚未完成。
+当前设计下一步为按已选钴蓝制作 **文件素材专业工作区深色稿**，再补插件中心及浅色稿。#10 的窗口、导航、便携构建技术验证与 PR #11 已完成，产品验收仍待用户；正式任务切换须记录。#4 的 Gemini 独立审查、#5 的 CI 和 Electron/Tauri 对照继续保留，S0 尚未完成。
 
 ## 角色与权责
 - 用户：最终审美、重大方向、安全权限及发布决策。
