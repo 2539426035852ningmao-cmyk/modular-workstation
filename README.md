@@ -7,7 +7,7 @@
 让普通用户轻松使用，让专业用户组合工作空间，让开发者与 AI 能按照统一插件规范快速扩展功能。工作站重点覆盖项目/素材管理、工具插件、统一 AI 模型接口与未来的自动化协作；所有默认核心能力须可离线使用。
 
 ## 从哪里开始？
-- **[P0 整合与验收报告](docs/P0_ACCEPTANCE.md)** — 当前推荐 Windows 候选、PR 依赖/冲突、真实测试和最少人工验收项；尚未合并或关闭任务。
+- **[P0 整合与验收报告](docs/P0_ACCEPTANCE.md)** — 历史预检与验收证据；[最新实际整合记录](docs/P0_INTEGRATION_COMPLETED.md)包含已合并 PR、#10 关闭和 #4 阻塞。
 - **[已确认主题的实际 Shell 实施](docs/SHELL_THEME_IMPLEMENTATION.md)** — 四页深浅主题、面型图标和实体层次的运行截图、验证与便携候选；业务仍按计划实施。
 - **[运行桌面原型](docs/PROTOTYPE.md)** — Windows 上安装、启动、验证与已知限制。
 - **[桌面界面基础规范](docs/DESIGN_FOUNDATIONS.md)** — 首版 Shell 实际使用的主题、字体、间距、状态与缩放规则。
@@ -28,7 +28,7 @@
 - 日常开发由 Codex 为主、Gemini 独立审查、ChatGPT 组织产品与任务协作；**产品所有者负责最终决策与验收**。
 
 ## 当前优先级
-项目所有者已授权先交付可运行的桌面窗口与基础导航，见 [Issue #10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)。首页初始视觉基线已选择“B：轻量模块”。这是 Electron 候选技术原型；S0 的 Gemini 审查与 CI 仍待完成，S1 的完整设计验收及 Electron/Tauri 对照仍待执行。阶段完成不以文档数量为依据，而以实测、审查和验收为依据。
+桌面窗口与基础导航已获用户体验验收并整合，见 [Issue #10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)。首页初始视觉基线已选择“B：轻量模块”。这是 Electron 候选技术原型；当前唯一主任务是 #4 Gemini 独立审查，CI 排队，S1 的完整设计验收及 Electron/Tauri 对照仍待执行。阶段完成不以文档数量为依据，而以实测、审查和验收为依据。
 
 ## 开源许可
 [Apache License 2.0](LICENSE)。正式发布前仍需审查第三方依赖与插件生态的许可兼容性。

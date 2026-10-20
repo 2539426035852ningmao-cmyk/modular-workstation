@@ -21,14 +21,14 @@
   },
   "neutralHomeCards": true,
   "verifiedPayloadSHA256": {
-    "electron/main.cjs": "3eb96406ce73548f15ceef3b9619878982c962ef1f9cd2da0a594324c2e258ef",
+    "electron/main.cjs": "4c7c89d46d805104c6111d24685ce97629e7bed549e22c4370cae088f932517a",
     "package.json": "bb36c963fe484d9e46dad2c99d61c90a1cb8bbc8d5b853dd3bd3852763dd0723",
     "dist/index.html": "c31a856c9f8255d98c6542aacd472a71d36111744a443d9ae3a521747732d3f8",
     "dist/assets/index-Aye_Az6U.css": "3e102556b15fa397ae983dd16b185ad46a18b684112de194c3f6f4d48f357d42",
     "dist/assets/index-BPZ1Djf0.js": "d9a547af0b759355ad26d6165844a1023ef3ac8150cfd468d8b9923194316081"
   },
-  "exeSHA256": "88a50ad927639ae3afcd83c2fce7e48ccec621f920b7328eb5f2544c96a7bb8e",
-  "archiveSHA256": "6a4252d6c79df082ee8c2d3adb62294f9be7b575615ed47db4d916b41ba3fd2c",
+  "exeSHA256": "172d65a6c5a59ae96f184dcf6559b035b57cf10ea196e1def0e7508016ddee40",
+  "archiveSHA256": "3c695a303a0dc9f2c9634fb5e211be77fe2c7eefbfbbb0d6c04d361b51d5b5c9",
   "pagesPerTheme": 4,
   "themes": 2,
   "locales": 2,

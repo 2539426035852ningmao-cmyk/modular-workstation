@@ -11,12 +11,12 @@
 
 ## 关键阶段与门槛
 
-2026-10-20 当前执行补充：产品负责人授权 **P0 桌面 Shell 收束与验收准备**，仍归属 #10，不是新增产品阶段。先完成现有 PR 预检、规范归并、代码审查、真实窗口和 Windows 候选核验，再等待产品验收与正式合并审批；详见 [P0 报告](P0_ACCEPTANCE.md)。不据此进入插件/文件业务开发。收尾后建议依次恢复 #4 独立审查、#5 最小 CI、#12/S1 余项，不同时开启多项主任务。
+2026-10-20 执行更新：P0 桌面 Shell 已获用户体验验收 PR #13–#20 已合并并复验最终 main #10 已关闭。唯一主任务恢复 #4 独立审查 当前官方 Gemini CLI 个人账号层级返回 UNSUPPORTED_CLIENT 尚无审查结果。详见 [实际整合记录](P0_INTEGRATION_COMPLETED.md)。后续 #5、#12/S1 余项排队 不据此宣布阶段通过。
 
 ### S0 项目治理与开发总控（当前）
 交付：仓库、关联看板、产品基线、路线图、状态快照、AI 协作规则、完成定义、决策日志、Issue/PR 模板和质量流程。
 已完成：初始治理基线 [Issue #1](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/1) 及项目状态恢复 [Issue #3](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3)。#3 的 Projects 自动移列事件已触发，Done 列值仍需网页复核。
-项目所有者已明确要求先搭建最小可运行桌面窗口与导航，故当前唯一实施任务临时切换为 [桌面 Shell 技术原型（Issue #10）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)。[S0-03（Issue #4）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4) 与 [S0-04（Issue #5）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/5) 保持未完成、后续恢复；本原型不构成 S0 或 S1 关卡通过。
+桌面 Shell 技术原型 #10 已按用户体验验收关闭 当前唯一实施任务恢复为 [S0-03（Issue #4）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)。[S0-04（Issue #5）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/5) 排队；本原型不构成 S0 或 S1 关卡通过。
 门槛：看板与 Issue/PR 可真实追踪；在不依赖历史聊天的前提下恢复主任务、阻塞与下一步；至少完成一次任务→PR→合并→状态变更的实操验证。Gemini 审查和 CI 必须真实测试，不能凭文档宣称完成。
 
 ### S1 产品信息架构与高保真视觉标准
