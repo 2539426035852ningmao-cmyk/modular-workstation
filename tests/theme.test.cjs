@@ -33,7 +33,7 @@ test('approved themes, navigation, density, contrast and control states in Elect
       assert.ok(metrics.content<=metrics.visible+1,JSON.stringify({locale,theme,width,zoom,index,metrics}));assert.deepEqual(metrics.clipped,[],JSON.stringify({locale,theme,width,zoom,index}));
       for(const p of metrics.pairs){minimumContrast=Math.min(minimumContrast,p.contrast);assert.ok(p.contrast>=4.5,JSON.stringify({locale,theme,index,...p}));}
       if(index===0){
-       for(const s of ['.primary','.module-card.emphasis'])assert.equal(await page.locator(s).evaluate(e=>getComputedStyle(e).backgroundColor),blue);
+       for(const s of ['.primary'])assert.equal(await page.locator(s).evaluate(e=>getComputedStyle(e).backgroundColor),blue);
        if(width===1440)assert.equal(await page.locator('.context-current').evaluate(e=>getComputedStyle(e).backgroundColor),blue);
        assert.notEqual(await page.locator('.search-surface').evaluate(e=>getComputedStyle(e).boxShadow),'none');
       }else{

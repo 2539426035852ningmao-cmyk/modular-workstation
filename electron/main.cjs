@@ -1,5 +1,5 @@
 const path = require('node:path');
-const { app, BrowserWindow, nativeTheme } = require('electron');
+const { app, BrowserWindow, nativeTheme, Menu } = require('electron');
 
 function createWindow() {
   const window = new BrowserWindow({
@@ -26,6 +26,7 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  Menu.setApplicationMenu(null);
   createWindow();
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();

@@ -51,7 +51,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 1440,
-      "textPairs": 32
+      "textPairs": 28
     },
     {
       "locale": "zh-CN",
@@ -61,7 +61,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 1440,
-      "textPairs": 24
+      "textPairs": 20
     },
     {
       "locale": "zh-CN",
@@ -71,7 +71,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 1440,
-      "textPairs": 24
+      "textPairs": 20
     },
     {
       "locale": "zh-CN",
@@ -81,7 +81,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 1440,
-      "textPairs": 25
+      "textPairs": 21
     },
     {
       "locale": "zh-CN",
@@ -91,7 +91,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 1120,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "zh-CN",
@@ -101,7 +101,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 1120,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -111,7 +111,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 1120,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -121,7 +121,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 1120,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "zh-CN",
@@ -131,7 +131,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 800,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "zh-CN",
@@ -141,7 +141,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 800,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -151,7 +151,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 800,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -161,7 +161,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 800,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "zh-CN",
@@ -171,7 +171,7 @@
       "zoom": 1.25,
       "page": 0,
       "viewport": 896,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "zh-CN",
@@ -181,7 +181,7 @@
       "zoom": 1.25,
       "page": 1,
       "viewport": 896,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -191,7 +191,7 @@
       "zoom": 1.25,
       "page": 2,
       "viewport": 896,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -201,7 +201,7 @@
       "zoom": 1.25,
       "page": 3,
       "viewport": 896,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "zh-CN",
@@ -211,7 +211,7 @@
       "zoom": 1.5,
       "page": 0,
       "viewport": 746,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "zh-CN",
@@ -221,7 +221,7 @@
       "zoom": 1.5,
       "page": 1,
       "viewport": 746,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -231,7 +231,7 @@
       "zoom": 1.5,
       "page": 2,
       "viewport": 746,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -241,7 +241,7 @@
       "zoom": 1.5,
       "page": 3,
       "viewport": 746,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "zh-CN",
@@ -251,7 +251,7 @@
       "zoom": 2,
       "page": 0,
       "viewport": 400,
-      "textPairs": 26
+      "textPairs": 23
     },
     {
       "locale": "zh-CN",
@@ -261,7 +261,7 @@
       "zoom": 2,
       "page": 1,
       "viewport": 400,
-      "textPairs": 18
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -271,7 +271,7 @@
       "zoom": 2,
       "page": 2,
       "viewport": 400,
-      "textPairs": 18
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -281,7 +281,7 @@
       "zoom": 2,
       "page": 3,
       "viewport": 400,
-      "textPairs": 19
+      "textPairs": 16
     },
     {
       "locale": "zh-CN",
@@ -291,7 +291,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 1440,
-      "textPairs": 32
+      "textPairs": 28
     },
     {
       "locale": "zh-CN",
@@ -301,7 +301,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 1440,
-      "textPairs": 24
+      "textPairs": 20
     },
     {
       "locale": "zh-CN",
@@ -311,7 +311,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 1440,
-      "textPairs": 24
+      "textPairs": 20
     },
     {
       "locale": "zh-CN",
@@ -321,7 +321,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 1440,
-      "textPairs": 25
+      "textPairs": 21
     },
     {
       "locale": "zh-CN",
@@ -331,7 +331,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 1120,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "zh-CN",
@@ -341,7 +341,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 1120,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -351,7 +351,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 1120,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -361,7 +361,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 1120,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "zh-CN",
@@ -371,7 +371,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 800,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "zh-CN",
@@ -381,7 +381,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 800,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -391,7 +391,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 800,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -401,7 +401,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 800,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "zh-CN",
@@ -411,7 +411,7 @@
       "zoom": 1.25,
       "page": 0,
       "viewport": 896,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "zh-CN",
@@ -421,7 +421,7 @@
       "zoom": 1.25,
       "page": 1,
       "viewport": 896,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -431,7 +431,7 @@
       "zoom": 1.25,
       "page": 2,
       "viewport": 896,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -441,7 +441,7 @@
       "zoom": 1.25,
       "page": 3,
       "viewport": 896,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "zh-CN",
@@ -451,7 +451,7 @@
       "zoom": 1.5,
       "page": 0,
       "viewport": 746,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "zh-CN",
@@ -461,7 +461,7 @@
       "zoom": 1.5,
       "page": 1,
       "viewport": 746,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -471,7 +471,7 @@
       "zoom": 1.5,
       "page": 2,
       "viewport": 746,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -481,7 +481,7 @@
       "zoom": 1.5,
       "page": 3,
       "viewport": 746,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "zh-CN",
@@ -491,7 +491,7 @@
       "zoom": 2,
       "page": 0,
       "viewport": 400,
-      "textPairs": 26
+      "textPairs": 23
     },
     {
       "locale": "zh-CN",
@@ -501,7 +501,7 @@
       "zoom": 2,
       "page": 1,
       "viewport": 400,
-      "textPairs": 18
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -511,7 +511,7 @@
       "zoom": 2,
       "page": 2,
       "viewport": 400,
-      "textPairs": 18
+      "textPairs": 15
     },
     {
       "locale": "zh-CN",
@@ -521,7 +521,7 @@
       "zoom": 2,
       "page": 3,
       "viewport": 400,
-      "textPairs": 19
+      "textPairs": 16
     },
     {
       "locale": "en-US",
@@ -531,7 +531,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 1440,
-      "textPairs": 32
+      "textPairs": 28
     },
     {
       "locale": "en-US",
@@ -541,7 +541,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 1440,
-      "textPairs": 24
+      "textPairs": 20
     },
     {
       "locale": "en-US",
@@ -551,7 +551,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 1440,
-      "textPairs": 24
+      "textPairs": 20
     },
     {
       "locale": "en-US",
@@ -561,7 +561,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 1440,
-      "textPairs": 25
+      "textPairs": 21
     },
     {
       "locale": "en-US",
@@ -571,7 +571,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 1120,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "en-US",
@@ -581,7 +581,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 1120,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -591,7 +591,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 1120,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -601,7 +601,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 1120,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "en-US",
@@ -611,7 +611,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 800,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "en-US",
@@ -621,7 +621,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 800,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -631,7 +631,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 800,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -641,7 +641,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 800,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "en-US",
@@ -651,7 +651,7 @@
       "zoom": 1.25,
       "page": 0,
       "viewport": 896,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "en-US",
@@ -661,7 +661,7 @@
       "zoom": 1.25,
       "page": 1,
       "viewport": 896,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -671,7 +671,7 @@
       "zoom": 1.25,
       "page": 2,
       "viewport": 896,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -681,7 +681,7 @@
       "zoom": 1.25,
       "page": 3,
       "viewport": 896,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "en-US",
@@ -691,7 +691,7 @@
       "zoom": 1.5,
       "page": 0,
       "viewport": 746,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "en-US",
@@ -701,7 +701,7 @@
       "zoom": 1.5,
       "page": 1,
       "viewport": 746,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -711,7 +711,7 @@
       "zoom": 1.5,
       "page": 2,
       "viewport": 746,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -721,7 +721,7 @@
       "zoom": 1.5,
       "page": 3,
       "viewport": 746,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "en-US",
@@ -731,7 +731,7 @@
       "zoom": 2,
       "page": 0,
       "viewport": 400,
-      "textPairs": 26
+      "textPairs": 23
     },
     {
       "locale": "en-US",
@@ -741,7 +741,7 @@
       "zoom": 2,
       "page": 1,
       "viewport": 400,
-      "textPairs": 18
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -751,7 +751,7 @@
       "zoom": 2,
       "page": 2,
       "viewport": 400,
-      "textPairs": 18
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -761,7 +761,7 @@
       "zoom": 2,
       "page": 3,
       "viewport": 400,
-      "textPairs": 19
+      "textPairs": 16
     },
     {
       "locale": "en-US",
@@ -771,7 +771,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 1440,
-      "textPairs": 32
+      "textPairs": 28
     },
     {
       "locale": "en-US",
@@ -781,7 +781,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 1440,
-      "textPairs": 24
+      "textPairs": 20
     },
     {
       "locale": "en-US",
@@ -791,7 +791,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 1440,
-      "textPairs": 24
+      "textPairs": 20
     },
     {
       "locale": "en-US",
@@ -801,7 +801,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 1440,
-      "textPairs": 25
+      "textPairs": 21
     },
     {
       "locale": "en-US",
@@ -811,7 +811,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 1120,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "en-US",
@@ -821,7 +821,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 1120,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -831,7 +831,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 1120,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -841,7 +841,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 1120,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "en-US",
@@ -851,7 +851,7 @@
       "zoom": 1,
       "page": 0,
       "viewport": 800,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "en-US",
@@ -861,7 +861,7 @@
       "zoom": 1,
       "page": 1,
       "viewport": 800,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -871,7 +871,7 @@
       "zoom": 1,
       "page": 2,
       "viewport": 800,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -881,7 +881,7 @@
       "zoom": 1,
       "page": 3,
       "viewport": 800,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "en-US",
@@ -891,7 +891,7 @@
       "zoom": 1.25,
       "page": 0,
       "viewport": 896,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "en-US",
@@ -901,7 +901,7 @@
       "zoom": 1.25,
       "page": 1,
       "viewport": 896,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -911,7 +911,7 @@
       "zoom": 1.25,
       "page": 2,
       "viewport": 896,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -921,7 +921,7 @@
       "zoom": 1.25,
       "page": 3,
       "viewport": 896,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "en-US",
@@ -931,7 +931,7 @@
       "zoom": 1.5,
       "page": 0,
       "viewport": 746,
-      "textPairs": 27
+      "textPairs": 23
     },
     {
       "locale": "en-US",
@@ -941,7 +941,7 @@
       "zoom": 1.5,
       "page": 1,
       "viewport": 746,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -951,7 +951,7 @@
       "zoom": 1.5,
       "page": 2,
       "viewport": 746,
-      "textPairs": 19
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -961,7 +961,7 @@
       "zoom": 1.5,
       "page": 3,
       "viewport": 746,
-      "textPairs": 20
+      "textPairs": 16
     },
     {
       "locale": "en-US",
@@ -971,7 +971,7 @@
       "zoom": 2,
       "page": 0,
       "viewport": 400,
-      "textPairs": 26
+      "textPairs": 23
     },
     {
       "locale": "en-US",
@@ -981,7 +981,7 @@
       "zoom": 2,
       "page": 1,
       "viewport": 400,
-      "textPairs": 18
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -991,7 +991,7 @@
       "zoom": 2,
       "page": 2,
       "viewport": 400,
-      "textPairs": 18
+      "textPairs": 15
     },
     {
       "locale": "en-US",
@@ -1001,7 +1001,7 @@
       "zoom": 2,
       "page": 3,
       "viewport": 400,
-      "textPairs": 19
+      "textPairs": 16
     }
   ]
 }
