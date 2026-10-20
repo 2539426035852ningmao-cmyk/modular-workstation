@@ -7,7 +7,7 @@
 
 侧边设计交接补充：用户已认可 [明亮米白与深蓝、轻微凹凸层次的浅色首页方向](docs/DESIGN_REVIEW_IVORY_TACTILE.md)。原样稿已归档，偏好记录及 D1 已标注优先级；该段为交接归档时点；随后深色已确认，应用映射进展见下一段。此项不改变唯一主任务或阶段验收状态。
 
-最新实施（产品负责人通过侧边讨论明确授权）：[深浅主题统一映射到四页 Shell](docs/SHELL_THEME_IMPLEMENTATION.md)，分支 `feat/s1-approved-theme-shell`，承接 PR #19 的已确认设计。深色方向已确认 `#1C1D20` / `#225487`，浅色为 `#F8F5EF` / `#0C3967`；真实导航、只读主题说明与空态已换装，文件/插件业务仍未实现。中英文、四页、双主题、六种尺寸与缩放共 96 个实际窗口案例、Windows 便携包启动与退出核验已通过，待审查和最终产品验收；旧稿进展段落按历史时点理解。
+最新实施（产品负责人通过侧边讨论明确授权）：[深浅主题统一映射到四页 Shell](docs/SHELL_THEME_IMPLEMENTATION.md)，[实施 PR #20](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/20)，分支 `feat/s1-approved-theme-shell`，承接 PR #19 的已确认设计。深色方向已确认 `#1C1D20` / `#225487`，浅色为 `#F8F5EF` / `#0C3967`；真实导航、只读主题说明与空态已换装，文件/插件业务仍未实现。中英文、四页、双主题、六种尺寸与缩放共 96 个实际窗口案例、Windows 便携包启动与退出核验已通过，待审查和最终产品验收；旧稿进展段落按历史时点理解。
 
 ## 唯一当前主任务
 **[桌面 Shell 技术原型（Issue #10）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)**。项目所有者明确要求先实现可启动窗口与导航；这是当前唯一实施任务，不表示 S0/S1 已验收。

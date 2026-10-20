@@ -2,6 +2,8 @@
 
 日期：2026-10-20。主任务 [#10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)，设计依据 [#12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)。用户在侧边讨论最终确认深色方案，并明确要求统一更新现有工作站。本轮为该新增授权的可逆视觉实施，不关闭任务、不宣布阶段通过。
 
+交付：[实施 PR #20](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/20)，首个实施提交 `016a333`。PR 已创建待审，尚未合并。
+
 ## 分支与依赖
 
 实施分支 `feat/s1-approved-theme-shell`，基于 `docs/s1-d2-light-comparison`（PR #19，归档提交 `268c1d1`）。使用独立 PR，以 #19 分支为 base，避免把整条设计 PR 链混入实施差异；先处理设计前置 PR，再按既有流程审查本 PR。不直接合并或推送 main。
