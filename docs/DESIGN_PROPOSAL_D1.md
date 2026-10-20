@@ -6,6 +6,8 @@
 
 关联：[设计任务 #12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)、[交接 PR #13](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/13)、[桌面原型 #10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)。
 
+最新浅色方向补充（优先于本文旧浅色颜色与无阴影候选）：产品负责人已认可明亮米白 `#F8F5EF` + 深蓝 `#0C3967`，搜索轻微内凹、重点入口与卡片凸起、其余卡片层次较轻。见 [认可样稿归档](DESIGN_REVIEW_IVORY_TACTILE.md) 与 [偏好记录](DESIGN_PREFERENCES.md)。下方既有 D1 / D2 Token 表保留历史候选，尚未迁移，不应据此恢复浅色钴蓝或完全平面的旧方向；深色方案仍待确认。
+
 ## 1. 依据、范围与项目位置
 
 产品所有者授权本轮完成 D1。方向为 **LobeHub 视觉美学 + Figma 专业工作台布局 + 保留 B「轻量模块」首页**。本提案定义设计稿和后续小范围实现的约束；所有新增尺寸、色值和组件规格仍为候选。
