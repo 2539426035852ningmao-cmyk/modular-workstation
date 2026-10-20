@@ -2,6 +2,7 @@
   "date": "2026-10-20",
   "kind": "static-design-only",
   "tokenMatchesPerSource": 23,
+  "sourceHashFormat": "sha256-of-utf8-with-lf-newlines",
   "sources": [
     {
       "file": "d2-home-light.html",

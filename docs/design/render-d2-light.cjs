@@ -17,7 +17,7 @@ const contrast=(a,b)=>(Math.max(luminance(a),luminance(b))+.05)/(Math.min(lumina
   for(const variant of variants){
    const file=path.join(dir,`d2-${variant}-light.html`),source=fs.readFileSync(file,'utf8');
    if(/<script\b|<iframe\b/i.test(source))throw new Error('Static design must not execute business scripts');
-   sources.push({file:path.basename(file),sha256:crypto.createHash('sha256').update(source).digest('hex')});
+   sources.push({file:path.basename(file),sha256:crypto.createHash('sha256').update(source.replace(/\r\n/g,'\n')).digest('hex')});
    for(const [width,height] of [[1440,900],[1120,900],[800,900],[640,900],[400,900],[800,540]]){
     const page=await browser.newPage({viewport:{width,height},deviceScaleFactor:1}),errors=[],remote=[];
     page.on('pageerror',e=>errors.push(String(e)));page.on('console',e=>{if(e.type()==='error')errors.push(e.text())});page.on('request',r=>{if(/^https?:/.test(r.url()))remote.push(r.url())});
@@ -53,7 +53,7 @@ const contrast=(a,b)=>(Math.max(luminance(a),luminance(b))+.05)/(Math.min(lumina
     results.push({variant,layout,end,errors,remote});await page.close();
    }
   }
-  fs.writeFileSync(path.join(preview,'d2-light-validation.json'),JSON.stringify({date:new Date().toISOString().slice(0,10),kind:'static-design-only',tokenMatchesPerSource:colors.length,sources,contrastResults,results},null,2)+'\n');
+  fs.writeFileSync(path.join(preview,'d2-light-validation.json'),JSON.stringify({date:new Date().toISOString().slice(0,10),kind:'static-design-only',tokenMatchesPerSource:colors.length,sourceHashFormat:'sha256-of-utf8-with-lf-newlines',sources,contrastResults,results},null,2)+'\n');
   console.log(JSON.stringify({sources:sources.length,cases:results.length,tokenMatchesPerSource:colors.length,contrastChecks:contrastResults.length,minTextContrast:Math.min(...contrastResults.filter(x=>x.minimum===4.5).map(x=>x.ratio)),minBoundaryContrast:Math.min(...contrastResults.filter(x=>x.minimum===3).map(x=>x.ratio)),errors:results.reduce((n,x)=>n+x.errors.length,0),remoteRequests:results.reduce((n,x)=>n+x.remote.length,0)},null,2));
  }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exitCode=1});

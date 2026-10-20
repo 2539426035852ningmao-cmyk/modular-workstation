@@ -20,7 +20,7 @@ function palette(){
 function generate(){
  const colors=palette();
  for(const variant of variants){
-  let source=fs.readFileSync(path.join(dir,`d2-${variant}-dark.html`),'utf8');
+  let source=fs.readFileSync(path.join(dir,`d2-${variant}-dark.html`),'utf8').replace(/\r\n/g,'\n');
   for(const token of colors){
    const re=new RegExp('('+token.name+':\\s*)'+token.dark+'\\b','ig');
    if([...source.matchAll(re)].length!==1)throw new Error('Expected one dark declaration: '+variant+' '+token.name);
