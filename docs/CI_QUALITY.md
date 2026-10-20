@@ -23,7 +23,7 @@
 | Local documentation links | lychee 离线检查根目录 docs 与 PR 模板 Markdown 本地目标 |
 | Windows desktop checks | Windows runner Node 24.18.0 npm ci npm test Windows 打包及包内一致性与实际窗口操作 |
 
-使用只读 contents 权限 checkout 不保留凭据 禁用包管理器缓存 不提供仓库密钥 不发布 Release。测试证据保存 14 天 在 Actions 运行页面下载。首次运行的截图可能包含仓库内历史证据 必须以该次成功测试日志及更新的 JSON 为准 失败不能因产物存在而当作通过。
+使用只读 contents 权限 checkout 不保留凭据 禁用包管理器缓存 不提供仓库密钥 不发布 Release。测试前清理签入的历史验证文件 测试证据保存 14 天 在 Actions 运行页面下载。失败不能因产物存在而当作通过。
 
 ## 本机验证
 
@@ -35,6 +35,8 @@
 - 模板人工核对现有目标 范围 验收 风险字段和默认 Related to 引用 不另造测试 Issue
 
 云端运行以 PR 检查记录为准 本机通过不等于 GitHub 已执行。
+
+首次云端运行 [39454859987](https://github.com/2539426035852ningmao-cmyk/modular-workstation/actions/runs/39454859987) 文档检查通过 Windows 测试 3/4 失败。卡片常规底色断言实际读到悬停底色 rgb(238 235 229)；修正为先移开鼠标并断言卡片不在 hover 状态 再核对常规底色 不改变产品颜色或放宽断言。首次产物可能混有历史文件 后续工作流增加执行前清理。
 
 ## 分支与安全设置
 

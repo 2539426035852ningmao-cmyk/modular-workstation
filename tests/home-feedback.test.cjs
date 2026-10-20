@@ -6,6 +6,9 @@ test('minimal chrome and neutral home cards with blue icon tiles',async()=>{
  await p.keyboard.press('Alt');assert.equal(await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].isMenuBarVisible()),false);
  for(const [theme,blue,surface]of [['light','rgb(12, 57, 103)','rgb(255, 253, 250)'],['dark','rgb(34, 84, 135)','rgb(41, 43, 48)']]){
   await p.emulateMedia({colorScheme:theme});
+  // Native runner cursors may initially overlap a card; this check targets the resting state.
+  await p.mouse.move(0,0);
+  assert.equal(await p.locator('.module-card:hover').count(),0);
   assert.equal(await p.locator('.module-card').count(),3);
   assert.equal(await p.locator('.module-card[data-selected="true"]').count(),0);
   for(const c of await p.locator('.module-card').all()){assert.equal(await c.evaluate(e=>getComputedStyle(e).backgroundColor),surface);const icon=c.locator('.module-icon');assert.deepEqual(await icon.evaluate(e=>({bg:getComputedStyle(e).backgroundColor,fg:getComputedStyle(e).color})),{bg:blue,fg:'rgb(255, 255, 255)'});}

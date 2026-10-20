@@ -44,6 +44,8 @@ jobs:
           package-manager-cache: false
       - name: Clean dependency install
         run: npm ci
+      - name: Clear historical verification evidence
+        run: Get-ChildItem -LiteralPath docs/design/previews/runtime -File | Remove-Item
       - name: Build and existing Electron tests
         run: npm test
       - name: Package Windows candidate
