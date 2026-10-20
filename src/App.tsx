@@ -1,80 +1,38 @@
 import { useState } from 'react';
 import { getMessages, type PageId } from './i18n';
+import { Icon, type IconName } from './Icons';
 import './styles.css';
-
 const pageIds: PageId[] = ['home', 'workspace', 'plugins', 'settings'];
-
+const moduleTargets: PageId[] = ['workspace', 'workspace', 'plugins'];
+const moduleIcons: IconName[] = ['workspace', 'folder', 'plugins'];
 export default function App() {
-  const [page, setPage] = useState<PageId>('home');
-  const messages = getMessages(navigator.language);
-  const current = messages.pages[page];
-
-  return (
-    <div className="shell">
-      <aside className="sidebar">
-        <div className="brand">
-          <div className="brand-mark" aria-hidden="true"><span /><span /><span /><span /></div>
-          <div className="brand-copy">
-            <div className="brand-name">{messages.appName}</div>
-            <div className="brand-caption">{messages.prototype}</div>
-          </div>
-        </div>
-
-        <nav className="navigation" aria-label={messages.navigation}>
-          {pageIds.map((id, index) => (
-            <button
-              key={id}
-              type="button"
-              aria-label={messages.pages[id].label}
-              className={`nav-item${page === id ? ' active' : ''}`}
-              aria-current={page === id ? 'page' : undefined}
-              onClick={() => setPage(id)}
-            >
-              <span className="nav-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-              <span className="nav-label">{messages.pages[id].label}</span>
-            </button>
-          ))}
-        </nav>
-
-        <div className="sidebar-footer" aria-label={messages.status}><span className="status-dot" aria-hidden="true" /><span className="status-label">{messages.status}</span></div>
-      </aside>
-
-      <main className="main-panel" id="main-content">
-        <header className="topbar">
-          <span className="breadcrumb">{messages.appName} <span aria-hidden="true">/</span> {current.label}</span>
-          <span className="topbar-tag">PREVIEW 0.1</span>
-        </header>
-        <section className="content" aria-labelledby="page-title">
-          <div className="content-intro">
-            <span className="eyebrow">{messages.prototype}</span>
-            <h1 id="page-title">{current.title}</h1>
-            <p>{current.description}</p>
-          </div>
-          {page === 'home' ? (
-            <>
-              <div className="welcome-panel">
-                <div><span className="eyebrow">{messages.firstStep}</span><h2>{messages.welcomeTitle}</h2><p>{messages.welcomeDescription}</p></div>
-                <div className="welcome-art" aria-hidden="true"><span /><span /><span /></div>
-              </div>
-              <h2 className="section-title">{messages.explore}</h2>
-              <div className="module-grid">
-                {messages.modules.map((module) => (
-                  <article className="module-card" key={module.title}>
-                    <span className="module-icon" aria-hidden="true">{module.symbol}</span>
-                    <h3>{module.title}</h3><p>{module.description}</p><span className="module-status">{module.status}</span>
-                  </article>
-                ))}
-              </div>
-            </>
-          ) : (
-            <div className="empty-panel">
-              <div className="empty-symbol" aria-hidden="true"><span /><span /></div>
-              <div className="empty-label">{messages.emptyLabel}</div>
-              <p>{current.description}</p>
-            </div>
-          )}
-        </section>
-      </main>
-    </div>
-  );
+ const [page, setPage] = useState<PageId>('home');
+ const messages = getMessages(navigator.language);
+ const current = messages.pages[page];
+ return (
+  <div className="shell">
+   <a className="skip-link" href="#main-content">{messages.skip}</a>
+   <header className="app-title"><Icon name="grid" /><strong>{messages.appName}</strong><span>{messages.prototype}</span></header>
+   <nav className="rail navigation" aria-label={messages.navigation}>
+    <div className="brand-mark"><Icon name="grid" /></div>
+    {pageIds.map(id=><button key={id} type="button" aria-label={messages.pages[id].label} className={`nav-item${page===id?' active':''}${id==='settings'?' bottom':''}`} aria-current={page===id?'page':undefined} onClick={()=>setPage(id)}><Icon name={id}/><span>{messages.pages[id].label}</span></button>)}
+   </nav>
+   <div className="body-shell">
+    <aside className="sidebar" aria-label={messages.context}>
+     <h2>{page==='home'?messages.myStation:current.label}</h2>
+     <div className="context-current"><Icon name={page==='home'?'grid':page}/><span>{page==='home'?messages.overview:messages.sections[page]}</span></div>
+     <div className="context-note"><span className="eyebrow">{messages.localSpace}</span><p>{messages.contextNote}</p></div>
+     <div className="sidebar-footer"><span className="status-dot"/>{messages.status}</div>
+    </aside>
+    <main className="main-panel" id="main-content" tabIndex={-1}>
+     <header className="topbar"><span className="breadcrumb">{messages.myStation}<span aria-hidden="true">/</span><strong>{current.label}</strong></span><div className="search-surface" aria-label={messages.searchUnavailable}><Icon name="search"/><span>{messages.searchUnavailable}</span></div></header>
+     <section className="content" aria-labelledby="page-title">
+      <div className="content-intro"><div><span className="eyebrow">{messages.prototype}</span><h1 id="page-title">{current.title}</h1><p>{current.description}</p></div>{page==='home'&&<button className="control primary" type="button" onClick={()=>setPage('workspace')}><Icon name="workspace"/>{messages.viewWorkspace}</button>}</div>
+      {page==='home'?<><h2 className="section-title">{messages.explore}</h2><div className="module-grid">{messages.modules.map((module,index)=><button type="button" className={`module-card${index===1?' emphasis':''}`} key={module.title} onClick={()=>setPage(moduleTargets[index])}><div className="card-head"><span className="module-icon"><Icon name={moduleIcons[index]}/></span><Icon name="arrow"/></div><h3>{module.title}</h3><p>{module.description}</p><span className="module-status">{module.status}</span></button>)}</div><div className="home-note"><Icon name="clock"/><p>{messages.homeNote}</p></div></>:<div className="empty-panel state-panel" data-tone="neutral"><div className="state-emblem"><Icon name={page}/></div><h2>{messages.emptyLabel}</h2><p>{current.description}</p>{page==='workspace'&&<><button className="control" type="button" disabled>{messages.createWorkspace}</button><span className="availability-note">{messages.workspaceUnavailable}</span></>}{page==='plugins'&&<><button className="control" type="button" disabled>{messages.installPlugin}</button><span className="availability-note">{messages.pluginUnavailable}</span></>}{page==='settings'&&<div className="theme-information"><span>{messages.themeLabel}</span><strong>{messages.systemTheme}</strong><p>{messages.themeNote}</p></div>}</div>}
+     </section>
+    </main>
+   </div>
+   <footer className="statusbar"><span>{messages.status}</span><span>{messages.previewOnly}</span></footer>
+  </div>
+ );
 }

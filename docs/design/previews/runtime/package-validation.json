@@ -1,0 +1,30 @@
+{
+  "kind": "packaged-windows-candidate",
+  "identity": {
+    "name": "模块化工作站",
+    "version": "0.1.0-prototype",
+    "path": "<candidate>\\resources\\app.asar"
+  },
+  "preferences": {
+    "nodeIntegration": false,
+    "contextIsolation": true,
+    "sandbox": true,
+    "webSecurity": true
+  },
+  "security": {
+    "require": "undefined",
+    "process": "undefined"
+  },
+  "verifiedPayloadSHA256": {
+    "electron/main.cjs": "dfac68c26ff15beb4ff9bd2f2c54413feb290d6f0d89629a8f3947ea11783153",
+    "package.json": "bb36c963fe484d9e46dad2c99d61c90a1cb8bbc8d5b853dd3bd3852763dd0723",
+    "dist/index.html": "b1b2497bcf097b255e78fca889679de279d63aae0a0d37c69aefc55a03f76d12",
+    "dist/assets/index-BBgD2M1B.css": "d456d37dbed44c663067366fe7483474ab0651ed206bc3a5ecd567daf9a78035",
+    "dist/assets/index-BQWTziLh.js": "9b985595c09b68dbf23f84dcb010061c11022274f232ad6812b2218409a250a0"
+  },
+  "exeSHA256": "daff885009914e25874c99eba22d26b26af6d3afd3c8ccf0c5e2a7a03e6539c7",
+  "archiveSHA256": "b8f03558b63d5725031b8371b655425a1a8ee8c2cfa38c87015a0ee93a2f764d",
+  "pagesPerTheme": 4,
+  "themes": 2,
+  "windowCloseExits": true
+}
