@@ -23,12 +23,12 @@
   "verifiedPayloadSHA256": {
     "electron/main.cjs": "3eb96406ce73548f15ceef3b9619878982c962ef1f9cd2da0a594324c2e258ef",
     "package.json": "bb36c963fe484d9e46dad2c99d61c90a1cb8bbc8d5b853dd3bd3852763dd0723",
-    "dist/index.html": "b77255b00a9e498d5f4abe7af663d1f6585b8a218b8ad5ffea6be1c8db490fa6",
-    "dist/assets/index-C4_EDSuq.css": "a169c8cfe85a5a47c907c8a00ad653afddc0aab05aa0b81f95ef8d7a6438e3ca",
-    "dist/assets/index-SKytBTzQ.js": "527c39b67504befbe6a56eacf555b36ca9a06f4d44503e29ad82aa4c125c1fd8"
+    "dist/index.html": "c31a856c9f8255d98c6542aacd472a71d36111744a443d9ae3a521747732d3f8",
+    "dist/assets/index-Aye_Az6U.css": "3e102556b15fa397ae983dd16b185ad46a18b684112de194c3f6f4d48f357d42",
+    "dist/assets/index-BPZ1Djf0.js": "d9a547af0b759355ad26d6165844a1023ef3ac8150cfd468d8b9923194316081"
   },
-  "exeSHA256": "ac36180f1ab6be03ab63814c041550aab8f7fc6b8ed07b21e56fcb7af26617f5",
-  "archiveSHA256": "5b3916abb7bb619b932a3074d92ac0ae3bd3c4ee5b4aba89343cb9cb8455e181",
+  "exeSHA256": "43ae80918a37713112c7ebc64f98c75fbe96c0e12983e150bb37712637cccc26",
+  "archiveSHA256": "753428141014b8c764e06cb3caf2ec71da82eb7e0d1b0a7892f83015a6ae1c3b",
   "pagesPerTheme": 4,
   "themes": 2,
   "windowCloseExits": true
