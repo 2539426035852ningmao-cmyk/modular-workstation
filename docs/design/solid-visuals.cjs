@@ -16,7 +16,8 @@ const symbols={
 };
 const css=`
 /* Owner feedback: filled selections, face-led icons with cut-out detail. */
-:root{--status-alert-fill:#c93b3b;--status-alert-foreground:#ffffff}
+:root{--status-alert-fill:#c93b3b;--status-alert-foreground:#ffffff;--control-border-subtle:color-mix(in srgb,var(--color-border,#63767e) 50%,transparent)}
+.search,.view-toggle,.control:not(.primary):not(.disabled),.state-controls label,.page-choice+label{border-color:var(--control-border-subtle);border-width:1px}
 .nav-item.active,.tree-item.active,.category.active,.view-toggle span:first-child,.tab,.filter-tabs .selected,
 .state-controls input:checked+label,.page-choice:checked+label{
  background:var(--color-accent-solid,#2563eb);color:var(--color-on-accent,#fff);border-color:var(--color-accent-solid,#2563eb)

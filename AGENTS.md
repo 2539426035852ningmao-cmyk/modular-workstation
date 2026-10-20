@@ -8,6 +8,7 @@
 4. docs/ROADMAP.md：阶段依赖与关卡。
 5. docs/DECISIONS.md、docs/QUALITY_GATES.md：架构取舍与完成要求。
 6. 与当前 Issue 对应的设计/API/测试文档和最近 PR。
+7. 涉及界面或视觉修改时，必须先读 docs/DESIGN_PREFERENCES.md 与 docs/DESIGN_PROPOSAL_D1.md；交付前逐项核对已确认偏好，不重复询问已确认事项，也不恢复已否定的样式。
 若目标或权限不清晰，停止有破坏性操作并向产品负责人提出一个具体问题。
 
 ## 1. 权责

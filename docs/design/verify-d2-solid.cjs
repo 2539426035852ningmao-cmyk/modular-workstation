@@ -14,6 +14,8 @@ const luminance=rgb=>{const c=rgb.match(/[\d.]+/g).slice(0,3).map(n=>Number(n)/2
    assert.ok(data.surfaces.length>0);
    for(const surface of data.surfaces){assert.equal(surface.background,'rgb(37, 99, 235)',file+surface.selector);assert.equal(surface.foreground,'rgb(255, 255, 255)',file+surface.selector);const a=luminance(surface.foreground),b=luminance(surface.background);surface.contrast=(Math.max(a,b)+.05)/(Math.min(a,b)+.05);assert.ok(surface.contrast>=4.5);}
    for(const icon of data.icons){assert.equal(icon.fill,'currentColor');assert.equal(icon.stroke,'none');}
+   data.frames=await p.locator('.search,.view-toggle,.control:not(.primary):not(.disabled),.state-controls input:not(:checked)+label,.page-choice:not(:checked)+label').evaluateAll(es=>es.filter(e=>e.getBoundingClientRect().width>0).map(e=>{const s=getComputedStyle(e);return{border:s.borderTopColor,width:s.borderTopWidth,opacity:s.opacity,color:s.color}}));
+   for(const frame of data.frames){assert.equal(frame.width,'1px',file);assert.match(frame.border,/(?:\/\s*0\.5|,\s*0\.5)\)$/,file+frame.border);assert.equal(frame.opacity,'1');assert.ok(!frame.color.startsWith('rgba('),'text remains opaque');}
    data.warnings=await p.locator('.state-card.warning .state-emblem').evaluateAll(es=>es.map(e=>{const s=getComputedStyle(e);return{background:s.backgroundColor,foreground:s.color}}));
    for(const warning of data.warnings){assert.equal(warning.background,'rgb(201, 59, 59)');assert.equal(warning.foreground,'rgb(255, 255, 255)');const a=luminance(warning.foreground),b=luminance(warning.background);warning.contrast=(Math.max(a,b)+.05)/(Math.min(a,b)+.05);assert.ok(warning.contrast>=4.5);}
    results.push({file,...data});await p.close();
