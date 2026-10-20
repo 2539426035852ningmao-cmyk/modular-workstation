@@ -1,5 +1,5 @@
 # 项目状态快照（PROJECT_STATE）
-更新：2026-10-20｜当前阶段：S0 未完成；S1 原型待产品验收，D1/D2 首页与素材工作区首稿待视觉确认｜**非实时数据**
+更新：2026-10-20｜当前阶段：S0 未完成；S1 原型待产品验收，D1/D2 三类深色首稿待视觉确认｜**非实时数据**
 
 > 本文件是跨会话的**恢复入口**，不是项目任务数据库。先阅读它，再检查链接中的实时 Issue / PR / Projects；若内容冲突，以 GitHub 实时记录为准。
 
@@ -13,6 +13,10 @@
 最新反馈：产品所有者从 [五色小样](docs/DESIGN_COLOR_REVIEW.md) 明确选择 **B 钴蓝 #2563EB**；首页 B 布局保留，青绿退出后续设计基线。首页与 D1 变量已在 [PR #15](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/15) 修订；应用暂未改色。Morphicons 尚未安装或实测。
 
 已按钴蓝制作 [文件素材专业工作区深色首稿](docs/DESIGN_REVIEW_D2_ASSETS.md)：资源树、中央素材区及按空间显示的详情面板；1440/1120/800/640/400 五种宽度静态检查通过。六张素材均为自绘 SVG 示例，文件操作和窄窗口面板交互未实现，完整 D2 仍待后续稿件与用户验收。
+
+本次远端复核发现新增 [PR #17](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/17)（`16164b4`），已直接读取其分支中的 13 项确认产品决策和 #12 原始记录；该 PR 尚未合并，main 仍为 `1236f61`。统一 Shell、布局/恢复、任务与最小资源授权作为后续约束，跨插件自动协作未定案；不因此扩大 #10 或立即实现全部功能。
+
+[插件中心深色首稿](docs/DESIGN_REVIEW_D2_PLUGINS.md)已制作：首次空态、示例安装包来源与权限详情；两稿共 12 个静态窗口案例通过。安装、资源授权与列表管理均未实现；三类深色稿齐备，浅色、完整状态与视觉验收仍待完成。前置 [PR #14](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/14) → [#15](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/15) → [#16](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/16) 均保持待审。
 
 ## 已完成的基础
 - 公开仓库 `modular-workstation` 已创建，默认分支 `main`，初始许可 Apache-2.0。
@@ -42,7 +46,7 @@
 - 用户具备 Google AI Pro 订阅，但 Gemini CLI 本机 OAuth 授权未完成；订阅与 API 用量不能等同，联合审查尚未验证。详见 [#3 记录](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3#issuecomment-6264106826)。
 
 ## 唯一下一步
-当前设计下一步为制作 **插件中心深色稿**，再补三页浅色对照及必要状态稿。#10 的窗口、导航、便携构建技术验证与 PR #11 已完成，产品验收仍待用户；正式任务切换须记录。#4 的 Gemini 独立审查、#5 的 CI 和 Electron/Tauri 对照继续保留，S0 尚未完成。
+当前设计下一步为补齐 **三类页面的浅色对照稿**，再补必要状态稿。#10 的窗口、导航、便携构建技术验证与 PR #11 已完成，产品验收仍待用户；正式任务切换须记录。#4 的 Gemini 独立审查、#5 的 CI 和 Electron/Tauri 对照继续保留，S0 尚未完成。
 
 ## 角色与权责
 - 用户：最终审美、重大方向、安全权限及发布决策。
