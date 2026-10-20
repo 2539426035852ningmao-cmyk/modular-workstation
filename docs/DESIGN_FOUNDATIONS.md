@@ -39,3 +39,5 @@
 ## 后续审美决策
 
 本次确定 B 方向及能被代码使用的基础规范。项目所有者在看到真实窗口后仍可修改：整体密度、青绿强调色、品牌标记、字体层级、深浅主题细节。S1 高保真页面和插件 UI 规范以此为起点继续推进，不把本原型当成完整设计系统验收。
+
+2026-10-20：项目所有者补充 LobeHub 视觉美学与 Figma 专业工作台布局方向，同时保留 B 首页。后续候选规格见 [D1 页面架构与设计规范提案](DESIGN_PROPOSAL_D1.md)，关联 [Issue #12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12) 与 [交接 PR #13](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/13)。D1 数值尚未实施或获得最终视觉验收；本文上方继续描述当前实际代码。
