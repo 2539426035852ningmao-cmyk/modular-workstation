@@ -1,0 +1,184 @@
+{
+  "kind": "static-design-only",
+  "date": "2026-10-20",
+  "candidateTokenMatches": 21,
+  "results": [
+    {
+      "width": 1440,
+      "layout": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "document": {
+          "width": 1440,
+          "height": 900
+        },
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 1384,
+          "height": 48,
+          "bottom": 80
+        },
+        "content": {
+          "x": 188,
+          "y": 80,
+          "width": 1120,
+          "height": 776.828125,
+          "bottom": 856.828125
+        },
+        "start": {
+          "x": 188,
+          "y": 198,
+          "width": 1120,
+          "height": 116,
+          "bottom": 314
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1440,
+          "height": 28,
+          "bottom": 900
+        },
+        "moduleColumns": 3,
+        "moduleCount": 3,
+        "clipped": [],
+        "fonts": {
+          "segoe": true,
+          "yahei": true
+        }
+      },
+      "errors": [],
+      "remote": [],
+      "settingsReachableAfterScroll": true,
+      "fullPage": false
+    },
+    {
+      "width": 800,
+      "layout": {
+        "viewport": {
+          "width": 800,
+          "height": 900
+        },
+        "document": {
+          "width": 800,
+          "height": 1089
+        },
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 744,
+          "height": 48,
+          "bottom": 80
+        },
+        "content": {
+          "x": 80,
+          "y": 80,
+          "width": 696,
+          "height": 980.828125,
+          "bottom": 1060.828125
+        },
+        "start": {
+          "x": 80,
+          "y": 198,
+          "width": 696,
+          "height": 116,
+          "bottom": 314
+        },
+        "review": {
+          "x": 0,
+          "y": 1060.828125,
+          "width": 800,
+          "height": 28,
+          "bottom": 1088.828125
+        },
+        "moduleColumns": 2,
+        "moduleCount": 3,
+        "clipped": [],
+        "fonts": {
+          "segoe": true,
+          "yahei": true
+        }
+      },
+      "errors": [],
+      "remote": [],
+      "settingsReachableAfterScroll": true,
+      "fullPage": true
+    },
+    {
+      "width": 400,
+      "layout": {
+        "viewport": {
+          "width": 400,
+          "height": 900
+        },
+        "document": {
+          "width": 400,
+          "height": 1316
+        },
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 344,
+          "height": 48,
+          "bottom": 80
+        },
+        "content": {
+          "x": 72,
+          "y": 80,
+          "width": 312,
+          "height": 1190.828125,
+          "bottom": 1270.828125
+        },
+        "start": {
+          "x": 72,
+          "y": 190,
+          "width": 312,
+          "height": 130,
+          "bottom": 320
+        },
+        "review": {
+          "x": 0,
+          "y": 1270.828125,
+          "width": 400,
+          "height": 45,
+          "bottom": 1315.828125
+        },
+        "moduleColumns": 1,
+        "moduleCount": 3,
+        "clipped": [],
+        "fonts": {
+          "segoe": true,
+          "yahei": true
+        }
+      },
+      "errors": [],
+      "remote": [],
+      "settingsReachableAfterScroll": true,
+      "fullPage": true
+    }
+  ]
+}
