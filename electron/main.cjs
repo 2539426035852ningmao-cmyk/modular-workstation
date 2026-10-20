@@ -1,5 +1,5 @@
 const path = require('node:path');
-const { app, BrowserWindow, nativeTheme } = require('electron');
+const { app, BrowserWindow, nativeTheme, Menu } = require('electron');
 
 function createWindow() {
   const window = new BrowserWindow({
@@ -8,7 +8,7 @@ function createWindow() {
     minWidth: 800,
     minHeight: 540,
     show: false,
-    backgroundColor: nativeTheme.shouldUseDarkColors ? '#171e20' : '#f4f6f4',
+    backgroundColor: nativeTheme.shouldUseDarkColors ? '#1c1d20' : '#f8f5ef',
     title: '模块化工作站 · 技术原型',
     webPreferences: {
       nodeIntegration: false,
@@ -26,6 +26,7 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  Menu.setApplicationMenu(null);
   createWindow();
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();

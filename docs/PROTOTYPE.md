@@ -34,3 +34,19 @@ npm run package:win
 ## 回滚
 
 原型在独立分支和 PR 中交付；撤销该 PR 的合并提交即可从主线移除新增代码和文档。便携目录位于仓库外，不属于 Git 版本记录，可直接删除。
+
+## 2026-10-20 · 已确认主题的便携候选
+
+当前深浅主题与四页实际映射、截图和测试见 [实施记录](SHELL_THEME_IMPLEMENTATION.md)。主题继续跟随系统；设置只读显示当前模式，手动主题和偏好保存尚未实现。首页模块卡片和“查看工作区”仅切换已有页面，创建/安装等操作禁用并说明原因。
+
+本机新候选位于项目工作目录上两级的 `outputs/p0-shell-candidate-20261020/ModularWorkstation-win32-x64/`。保留整个文件夹，双击 `ModularWorkstation.exe`；切换 Windows 深浅主题，检查四页、Tab/Enter、最小窗口和关闭退出。不要把单个 EXE 移出目录。旧便携包未覆盖，本候选未经最终产品验收。
+
+重新打包可指定新的输出目录，避免覆盖旧包：
+
+```powershell
+npm run build
+npx --no-install electron-packager . ModularWorkstation --platform=win32 --arch=x64 --out=../../outputs/my-new-candidate --prune=true --ignore=^/\.git --ignore=^/tests --ignore=^/docs
+node scripts/verify-package.cjs ../../outputs/my-new-candidate/ModularWorkstation-win32-x64
+```
+
+验证脚本比较包内构建内容与本地 dist、启动实际 EXE、检查身份/隔离参数/双主题导航和正常关闭；报告写入 `docs/design/previews/runtime/package-validation.json`。这不代替签名、安装升级或发布验证。

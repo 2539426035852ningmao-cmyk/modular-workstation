@@ -1,5 +1,7 @@
 # D2 · 首页深色高保真首稿
 
+> P0 归档说明：本文保留历史设计与当时验证记录；当前有效视觉以 [DESIGN_PREFERENCES](DESIGN_PREFERENCES.md) 和 [DESIGN_FOUNDATIONS](DESIGN_FOUNDATIONS.md) 为准，当前任务与验收入口见 [P0 报告](P0_ACCEPTANCE.md)。旧配色、尺寸、箭头和未实现说明不能覆盖最新运行版本。
+
 日期：2026-10-20｜版本：V0.2 钴蓝修订｜状态：颜色已选定，完整页面待视觉确认
 
 **产品所有者已选择 B 钴蓝 #2563EB，下方首页和源稿已更新；首页 B 布局继续保留。五色比较记录见 [配色审阅](DESIGN_COLOR_REVIEW.md)。Morphicons 图标与动效仍为待实测候选。**

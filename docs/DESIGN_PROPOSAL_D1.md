@@ -1,12 +1,18 @@
 # S1 · D1 页面架构与设计规范提案
 
+> P0 归档说明：本文保留历史设计与当时验证记录；当前有效视觉以 [DESIGN_PREFERENCES](DESIGN_PREFERENCES.md) 和 [DESIGN_FOUNDATIONS](DESIGN_FOUNDATIONS.md) 为准，当前任务与验收入口见 [P0 报告](P0_ACCEPTANCE.md)。旧配色、尺寸、箭头和未实现说明不能覆盖最新运行版本。
+
 版本：V0.1｜2026-10-20｜状态：待视觉确认，未实施
 
 更新：产品所有者随后否定青绿，并从 [五色审阅](DESIGN_COLOR_REVIEW.md) 中明确选择 **B 钴蓝 #2563EB**。第 5 节已更新为钴蓝设计变量；B 首页布局继续保留。颜色选择不等于完整页面或运行时主题已验收。
 
 关联：[设计任务 #12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)、[交接 PR #13](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/13)、[桌面原型 #10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)。
 
-最新浅色方向补充（优先于本文旧浅色颜色与无阴影候选）：产品负责人已认可明亮米白 `#F8F5EF` + 深蓝 `#0C3967`，搜索轻微内凹、重点入口与卡片凸起、其余卡片层次较轻。见 [认可样稿归档](DESIGN_REVIEW_IVORY_TACTILE.md) 与 [偏好记录](DESIGN_PREFERENCES.md)。下方既有 D1 / D2 Token 表保留历史候选，尚未迁移，不应据此恢复浅色钴蓝或完全平面的旧方向；深色方案仍待确认。
+最新浅色方向补充（优先于本文旧浅色颜色与无阴影候选）：产品负责人已认可明亮米白 `#F8F5EF` + 深蓝 `#0C3967`，搜索轻微内凹、重点入口与卡片凸起、其余卡片层次较轻。见 [认可样稿归档](DESIGN_REVIEW_IVORY_TACTILE.md) 与 [偏好记录](DESIGN_PREFERENCES.md)。下方既有 D1 / D2 Token 表保留历史候选，尚未迁移，不应据此恢复浅色钴蓝或完全平面的旧方向；深色随后已确认中性炭灰 `#1C1D20` 与统一深蓝 `#225487`；四页 Shell 运行时映射见 [实施记录](SHELL_THEME_IMPLEMENTATION.md)。本文旧 D2 数值继续作为历史设计记录，不覆盖最新运行时 Token。
+
+最新运行截图修正：移除默认菜单、重复品牌横栏与全宽底栏；首页三卡常规状态一致、无默认蓝色卡，图标块为主题深蓝底与纯白图形。选择卡面只为未来真实选择预留，当前点击仍导航。该反馈优先于历史稿中的默认文件强调卡；详见 [偏好记录](DESIGN_PREFERENCES.md)。
+
+最新文字与图形反馈：横向信息左重右轻，面包屑右侧和右侧主操作不加粗；标题与辅助文案精简，注释及占位不用标点。模块卡导向提示改为留有内边距的圆角直角，不使用带箭杆的完整箭头。已在 PR #20 的运行版本修订；后续沿用 [偏好记录](DESIGN_PREFERENCES.md)，不恢复历史稿中的长文案或箭头。
 
 ## 1. 依据、范围与项目位置
 

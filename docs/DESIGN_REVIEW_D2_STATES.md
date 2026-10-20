@@ -1,5 +1,7 @@
 # D2 · 页面状态、恢复入口与统一图标候选
 
+> P0 归档说明：本文保留历史设计与当时验证记录；当前有效视觉以 [DESIGN_PREFERENCES](DESIGN_PREFERENCES.md) 和 [DESIGN_FOUNDATIONS](DESIGN_FOUNDATIONS.md) 为准，当前任务与验收入口见 [P0 报告](P0_ACCEPTANCE.md)。旧配色、尺寸、箭头和未实现说明不能覆盖最新运行版本。
+
 日期：2026-10-20｜状态：三类页面基础状态稿已制作，待视觉确认；不是业务实现或完整 D2 验收
 
 关联：[#12 设计记录](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)、[#19 现有设计 PR](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/19)、[深浅主稿](DESIGN_REVIEW_D2_LIGHT.md)、[13 项决策对照与图标规范](DESIGN_SYNC_2026-10-20.md)。本轮远端 main 仍为 `1236f61`，没有新的合并；#13–#19 均待审，#10 仍是唯一主实施任务、待产品验收。
