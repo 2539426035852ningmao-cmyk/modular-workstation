@@ -2,6 +2,8 @@
 
 日期：2026-10-20｜版本：V0.1｜状态：候选设计，待产品所有者视觉确认
 
+**后续颜色反馈：青绿已被产品所有者否定，蓝色/橙红色五个候选见 [配色审阅](DESIGN_COLOR_REVIEW.md)。下图保留为初稿记录，颜色不再作为新增设计基线；首页 B 布局方向继续保留。Morphicons 图标与动效已记录为待实测候选。**
+
 关联：[Issue #12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)、[D1 提案 PR #14](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/14)、[设计交接 PR #13](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/13)。本稿以 D1 候选规范为起点，尚不代表 D1 已获全部视觉确认。
 
 ## 预览与源文件

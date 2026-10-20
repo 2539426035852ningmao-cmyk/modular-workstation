@@ -1,0 +1,61 @@
+{
+  "kind": "static-color-review",
+  "date": "2026-10-20",
+  "bounds": {
+    "width": 1600,
+    "height": 1000,
+    "cards": 5
+  },
+  "results": [
+    {
+      "id": "A",
+      "solid": "#3B82F6",
+      "onSolid": "#141617",
+      "ratios": {
+        "button": 4.935494810017095,
+        "emphasis": 8.251401794572779,
+        "selected": 6.642946027787841
+      }
+    },
+    {
+      "id": "B",
+      "solid": "#2563EB",
+      "onSolid": "#FFFFFF",
+      "ratios": {
+        "button": 5.168555560022562,
+        "emphasis": 7.98073620567881,
+        "selected": 6.716329125582076
+      }
+    },
+    {
+      "id": "C",
+      "solid": "#5264F5",
+      "onSolid": "#FFFFFF",
+      "ratios": {
+        "button": 4.666510405323122,
+        "emphasis": 8.445030067861726,
+        "selected": 6.8908380055298775
+      }
+    },
+    {
+      "id": "D",
+      "solid": "#F97316",
+      "onSolid": "#141617",
+      "ratios": {
+        "button": 6.475885519358889,
+        "emphasis": 9.8235624616797,
+        "selected": 7.68012916500747
+      }
+    },
+    {
+      "id": "E",
+      "solid": "#F2553D",
+      "onSolid": "#141617",
+      "ratios": {
+        "button": 5.309306133864874,
+        "emphasis": 8.698613515189242,
+        "selected": 6.902340682075017
+      }
+    }
+  ]
+}

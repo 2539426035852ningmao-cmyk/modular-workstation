@@ -2,6 +2,8 @@
 
 版本：V0.1｜2026-10-20｜状态：待视觉确认，未实施
 
+更新：产品所有者随后否定青绿，提出中高饱和蓝色/橙红色方向。本文第 5 节颜色保留为历史候选；下一轮以 [五色审阅及最终选择](DESIGN_COLOR_REVIEW.md) 更新，B 首页布局继续保留。
+
 关联：[设计任务 #12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)、[交接 PR #13](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/13)、[桌面原型 #10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)。
 
 ## 1. 依据、范围与项目位置
