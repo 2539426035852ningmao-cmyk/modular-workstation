@@ -1,6 +1,6 @@
 {
   "kind": "static-design-only",
-  "date": "2026-10-20T13:20:00.940Z",
+  "date": "2026-10-20T13:26:15.833Z",
   "results": [
     {
       "file": "d2-home-dark.html",
@@ -566,14 +566,14 @@
       ],
       "warnings": [
         {
-          "background": "rgb(168, 75, 80)",
+          "background": "rgb(201, 59, 59)",
           "foreground": "rgb(255, 255, 255)",
-          "contrast": 5.544943289897898
+          "contrast": 5.033266688764529
         },
         {
-          "background": "rgb(168, 75, 80)",
+          "background": "rgb(201, 59, 59)",
           "foreground": "rgb(255, 255, 255)",
-          "contrast": 5.544943289897898
+          "contrast": 5.033266688764529
         }
       ]
     },
@@ -645,14 +645,14 @@
       ],
       "warnings": [
         {
-          "background": "rgb(168, 75, 80)",
+          "background": "rgb(201, 59, 59)",
           "foreground": "rgb(255, 255, 255)",
-          "contrast": 5.544943289897898
+          "contrast": 5.033266688764529
         },
         {
-          "background": "rgb(168, 75, 80)",
+          "background": "rgb(201, 59, 59)",
           "foreground": "rgb(255, 255, 255)",
-          "contrast": 5.544943289897898
+          "contrast": 5.033266688764529
         }
       ]
     },
@@ -712,9 +712,9 @@
       ],
       "warnings": [
         {
-          "background": "rgb(168, 75, 80)",
+          "background": "rgb(201, 59, 59)",
           "foreground": "rgb(255, 255, 255)",
-          "contrast": 5.544943289897898
+          "contrast": 5.033266688764529
         }
       ]
     },
@@ -774,9 +774,9 @@
       ],
       "warnings": [
         {
-          "background": "rgb(168, 75, 80)",
+          "background": "rgb(201, 59, 59)",
           "foreground": "rgb(255, 255, 255)",
-          "contrast": 5.544943289897898
+          "contrast": 5.033266688764529
         }
       ]
     },

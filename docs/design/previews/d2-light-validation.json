@@ -6,19 +6,19 @@
   "sources": [
     {
       "file": "d2-home-light.html",
-      "sha256": "f7fc57a0d5fdfa60b12a2b7193ea907be7cc07bf83d8819387e8715cdca4eb26"
+      "sha256": "92e754a4be74465d031579c59b7584baf8a6c94fe69ab94299cbcc6b9124dc66"
     },
     {
       "file": "d2-assets-light.html",
-      "sha256": "914d091cecbaabff7cb602d714529f2cb28a0b3e7d871518c2d683e5f2e5c6dc"
+      "sha256": "57782e9da840991d64e44e645247542ad26404cea001516d149b0a909c825ee3"
     },
     {
       "file": "d2-plugins-empty-light.html",
-      "sha256": "d0bb0656ab6787599d7febcd023ccdd46ac53800fc65330461449ce02827b737"
+      "sha256": "4f0e337fa580164a11414187828cedfd35a8e4b70f146dfbb112a0ccd794e796"
     },
     {
       "file": "d2-plugins-permissions-light.html",
-      "sha256": "054212811dfb63e793ba35b3715d894c496c1d4e7774c30c0664a2c136eb7501"
+      "sha256": "98b18a922c51239bdcec45d33b8815b18d00c4faa529eadbd0765e5265181e85"
     }
   ],
   "contrastResults": [
