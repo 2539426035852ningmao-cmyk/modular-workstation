@@ -1,0 +1,327 @@
+{
+  "date": "2026-10-20",
+  "kind": "static-design-only",
+  "tokenMatches": 23,
+  "results": [
+    {
+      "layout": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 856,
+          "height": 768,
+          "bottom": 848
+        },
+        "context": {
+          "x": 56,
+          "y": 80,
+          "width": 240,
+          "height": 768,
+          "bottom": 848
+        },
+        "detail": {
+          "x": 1152,
+          "y": 80,
+          "width": 288,
+          "height": 768,
+          "bottom": 848
+        },
+        "inspectorVisible": true,
+        "contextVisible": true,
+        "resourceTrigger": false,
+        "detailTrigger": false,
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1440,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "assetCount": 6,
+        "selectedCount": 1,
+        "centralScroll": {
+          "width": 856,
+          "scrollWidth": 856,
+          "height": 684,
+          "scrollHeight": 684
+        },
+        "clipped": []
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "layout": {
+        "width": 1120,
+        "pageWidth": 1120,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 536,
+          "height": 768,
+          "bottom": 848
+        },
+        "context": {
+          "x": 56,
+          "y": 80,
+          "width": 240,
+          "height": 768,
+          "bottom": 848
+        },
+        "detail": {
+          "x": 832,
+          "y": 80,
+          "width": 288,
+          "height": 768,
+          "bottom": 848
+        },
+        "inspectorVisible": true,
+        "contextVisible": true,
+        "resourceTrigger": false,
+        "detailTrigger": false,
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1120,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "assetCount": 6,
+        "selectedCount": 1,
+        "centralScroll": {
+          "width": 536,
+          "scrollWidth": 536,
+          "height": 684,
+          "scrollHeight": 750
+        },
+        "clipped": []
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "layout": {
+        "width": 800,
+        "pageWidth": 800,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "center": {
+          "x": 296,
+          "y": 80,
+          "width": 504,
+          "height": 768,
+          "bottom": 848
+        },
+        "context": {
+          "x": 56,
+          "y": 80,
+          "width": 240,
+          "height": 768,
+          "bottom": 848
+        },
+        "detail": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "bottom": 0
+        },
+        "inspectorVisible": false,
+        "contextVisible": true,
+        "resourceTrigger": false,
+        "detailTrigger": true,
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 800,
+          "height": 28,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 812,
+          "width": 47,
+          "height": 48,
+          "bottom": 860
+        },
+        "assetCount": 6,
+        "selectedCount": 1,
+        "centralScroll": {
+          "width": 504,
+          "scrollWidth": 504,
+          "height": 684,
+          "scrollHeight": 750
+        },
+        "clipped": []
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "layout": {
+        "width": 640,
+        "pageWidth": 640,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "center": {
+          "x": 56,
+          "y": 80,
+          "width": 584,
+          "height": 751,
+          "bottom": 831
+        },
+        "context": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "bottom": 0
+        },
+        "detail": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "bottom": 0
+        },
+        "inspectorVisible": false,
+        "contextVisible": false,
+        "resourceTrigger": true,
+        "detailTrigger": true,
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 640,
+          "height": 45,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "assetCount": 6,
+        "selectedCount": 1,
+        "centralScroll": {
+          "width": 584,
+          "scrollWidth": 584,
+          "height": 667,
+          "scrollHeight": 734
+        },
+        "clipped": []
+      },
+      "errors": [],
+      "remote": []
+    },
+    {
+      "layout": {
+        "width": 400,
+        "pageWidth": 400,
+        "pageHeight": 900,
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 823,
+          "bottom": 855
+        },
+        "center": {
+          "x": 56,
+          "y": 80,
+          "width": 344,
+          "height": 751,
+          "bottom": 831
+        },
+        "context": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "bottom": 0
+        },
+        "detail": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "bottom": 0
+        },
+        "inspectorVisible": false,
+        "contextVisible": false,
+        "resourceTrigger": true,
+        "detailTrigger": true,
+        "review": {
+          "x": 0,
+          "y": 855,
+          "width": 400,
+          "height": 45,
+          "bottom": 900
+        },
+        "settings": {
+          "x": 4,
+          "y": 795,
+          "width": 47,
+          "height": 48,
+          "bottom": 843
+        },
+        "assetCount": 6,
+        "selectedCount": 1,
+        "centralScroll": {
+          "width": 344,
+          "scrollWidth": 344,
+          "height": 667,
+          "scrollHeight": 1417
+        },
+        "clipped": []
+      },
+      "errors": [],
+      "remote": []
+    }
+  ]
+}
