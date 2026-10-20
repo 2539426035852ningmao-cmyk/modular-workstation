@@ -14,6 +14,8 @@ const luminance=rgb=>{const c=rgb.match(/[\d.]+/g).slice(0,3).map(n=>Number(n)/2
    assert.ok(data.surfaces.length>0);
    for(const surface of data.surfaces){assert.equal(surface.background,'rgb(37, 99, 235)',file+surface.selector);assert.equal(surface.foreground,'rgb(255, 255, 255)',file+surface.selector);const a=luminance(surface.foreground),b=luminance(surface.background);surface.contrast=(Math.max(a,b)+.05)/(Math.min(a,b)+.05);assert.ok(surface.contrast>=4.5);}
    for(const icon of data.icons){assert.equal(icon.fill,'currentColor');assert.equal(icon.stroke,'none');}
+   data.warnings=await p.locator('.state-card.warning .state-emblem').evaluateAll(es=>es.map(e=>{const s=getComputedStyle(e);return{background:s.backgroundColor,foreground:s.color}}));
+   for(const warning of data.warnings){assert.equal(warning.background,'rgb(220, 38, 38)');assert.equal(warning.foreground,'rgb(255, 255, 255)');const a=luminance(warning.foreground),b=luminance(warning.background);warning.contrast=(Math.max(a,b)+.05)/(Math.min(a,b)+.05);assert.ok(warning.contrast>=4.5);}
    results.push({file,...data});await p.close();
   }
   fs.writeFileSync(path.join(__dirname,'previews/d2-solid-validation.json'),JSON.stringify({kind:'static-design-only',date:new Date().toISOString(),results},null,2)+'\n');

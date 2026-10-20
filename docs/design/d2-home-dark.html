@@ -17,7 +17,7 @@
       --color-accent-solid: #2563eb; --color-on-accent: #ffffff;
       --color-selected: #1b2842; --color-selected-border: #8baeff;
       --color-hover: #2d3436; --color-pressed: #374246; --color-focus: #8baeff;
-      --color-success: #89c9b0; --color-warning: #e4bc74; --color-error: #f2a5a5; --color-info: #9cc7eb;
+      --color-success: #89c9b0; --color-warning: #f2a5a5; --color-error: #f2a5a5; --color-info: #9cc7eb;
       --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
       --space-5: 20px; --space-6: 24px; --space-8: 32px;
       --radius-sm: 4px; --radius-md: 6px; --radius-lg: 8px;
@@ -90,6 +90,7 @@
   </style>
 <style data-solid-visuals>
 /* Owner feedback: filled selections, face-led icons with cut-out detail. */
+:root{--status-alert-fill:#dc2626;--status-alert-foreground:#ffffff}
 .nav-item.active,.tree-item.active,.category.active,.view-toggle span:first-child,.tab,.filter-tabs .selected,
 .state-controls input:checked+label,.page-choice:checked+label{
  background:var(--color-accent-solid,#2563eb);color:var(--color-on-accent,#fff);border-color:var(--color-accent-solid,#2563eb)
@@ -101,8 +102,7 @@
 .asset.selected{border-color:var(--color-accent-solid)}.asset.selected .asset-meta{background:var(--color-accent-solid);color:var(--color-on-accent)}.asset.selected .asset-name,.asset.selected .asset-kind{color:inherit}
 .start-icon,.module-icon,.plugin-logo,.state-emblem{background:var(--color-selected);color:var(--color-accent)}
 .state-emblem{background:var(--color-accent-solid);color:var(--color-on-accent)}
-.state-card.warning .state-emblem{background:var(--color-warning);color:var(--color-bg)}
-.state-card.error .state-emblem{background:var(--color-error);color:var(--color-bg)}
+.state-card.warning .state-emblem,.state-card.error .state-emblem{background:var(--status-alert-fill);color:var(--status-alert-foreground)}
 </style>
 </head>
 <body>

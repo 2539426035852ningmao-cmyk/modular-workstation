@@ -17,7 +17,7 @@
       --color-accent-solid:#2563eb; --color-on-accent:#ffffff;
       --color-selected:#e6eeff; --color-selected-border:#2563eb;
       --color-hover:#e7edee; --color-pressed:#dce6e8; --color-focus:#2563eb;
-      --color-success:#287265; --color-warning:#835300; --color-error:#b23535; --color-info:#245f95;
+      --color-success:#287265; --color-warning:#b23535; --color-error:#b23535; --color-info:#245f95;
     }
     *{box-sizing:border-box} html,body{margin:0;min-width:320px;background:var(--color-bg);color:var(--color-text);font-size:14px;line-height:1.57}
     svg.icon{display:block;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
@@ -74,6 +74,7 @@ body:has(#state-denied:checked) .s-denied{display:block}
 body:has(#state-missing:checked) .s-missing{display:block}</style>
 <style data-solid-visuals>
 /* Owner feedback: filled selections, face-led icons with cut-out detail. */
+:root{--status-alert-fill:#dc2626;--status-alert-foreground:#ffffff}
 .nav-item.active,.tree-item.active,.category.active,.view-toggle span:first-child,.tab,.filter-tabs .selected,
 .state-controls input:checked+label,.page-choice:checked+label{
  background:var(--color-accent-solid,#2563eb);color:var(--color-on-accent,#fff);border-color:var(--color-accent-solid,#2563eb)
@@ -85,8 +86,7 @@ body:has(#state-missing:checked) .s-missing{display:block}</style>
 .asset.selected{border-color:var(--color-accent-solid)}.asset.selected .asset-meta{background:var(--color-accent-solid);color:var(--color-on-accent)}.asset.selected .asset-name,.asset.selected .asset-kind{color:inherit}
 .start-icon,.module-icon,.plugin-logo,.state-emblem{background:var(--color-selected);color:var(--color-accent)}
 .state-emblem{background:var(--color-accent-solid);color:var(--color-on-accent)}
-.state-card.warning .state-emblem{background:var(--color-warning);color:var(--color-bg)}
-.state-card.error .state-emblem{background:var(--color-error);color:var(--color-bg)}
+.state-card.warning .state-emblem,.state-card.error .state-emblem{background:var(--status-alert-fill);color:var(--status-alert-foreground)}
 </style>
 </head>
 <body><header class="review-head"><div><h1>文件与素材 · 浅色状态审阅</h1><p>选择设计情境；不创建文件、不安装插件、不发起任务。</p></div><a href="d2-states-assets-dark.html">查看深色</a></header><div class="state-controls" role="group" aria-label="设计情境"><input type="radio" name="state" id="state-empty" checked><label for="state-empty">首次空白</label><input type="radio" name="state" id="state-loading" ><label for="state-loading">索引中</label><input type="radio" name="state" id="state-no-match" ><label for="state-no-match">无匹配</label><input type="radio" name="state" id="state-denied" ><label for="state-denied">无访问权限</label><input type="radio" name="state" id="state-missing" ><label for="state-missing">文件失联</label></div>

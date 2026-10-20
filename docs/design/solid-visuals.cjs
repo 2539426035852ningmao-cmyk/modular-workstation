@@ -16,6 +16,7 @@ const symbols={
 };
 const css=`
 /* Owner feedback: filled selections, face-led icons with cut-out detail. */
+:root{--status-alert-fill:#dc2626;--status-alert-foreground:#ffffff}
 .nav-item.active,.tree-item.active,.category.active,.view-toggle span:first-child,.tab,.filter-tabs .selected,
 .state-controls input:checked+label,.page-choice:checked+label{
  background:var(--color-accent-solid,#2563eb);color:var(--color-on-accent,#fff);border-color:var(--color-accent-solid,#2563eb)
@@ -27,8 +28,7 @@ const css=`
 .asset.selected{border-color:var(--color-accent-solid)}.asset.selected .asset-meta{background:var(--color-accent-solid);color:var(--color-on-accent)}.asset.selected .asset-name,.asset.selected .asset-kind{color:inherit}
 .start-icon,.module-icon,.plugin-logo,.state-emblem{background:var(--color-selected);color:var(--color-accent)}
 .state-emblem{background:var(--color-accent-solid);color:var(--color-on-accent)}
-.state-card.warning .state-emblem{background:var(--color-warning);color:var(--color-bg)}
-.state-card.error .state-emblem{background:var(--color-error);color:var(--color-bg)}
+.state-card.warning .state-emblem,.state-card.error .state-emblem{background:var(--status-alert-fill);color:var(--status-alert-foreground)}
 `;
 function applySolidVisuals(html){
  for(const [id,shape]of Object.entries(symbols)){

@@ -1,6 +1,6 @@
 {
   "kind": "static-design-only",
-  "date": "2026-10-20T13:10:54.116Z",
+  "date": "2026-10-20T13:17:11.557Z",
   "results": [
     {
       "file": "d2-home-dark.html",
@@ -38,7 +38,8 @@
           "fill": "currentColor",
           "stroke": "none"
         }
-      ]
+      ],
+      "warnings": []
     },
     {
       "file": "d2-home-light.html",
@@ -76,7 +77,8 @@
           "fill": "currentColor",
           "stroke": "none"
         }
-      ]
+      ],
+      "warnings": []
     },
     {
       "file": "d2-assets-dark.html",
@@ -138,7 +140,8 @@
           "fill": "currentColor",
           "stroke": "none"
         }
-      ]
+      ],
+      "warnings": []
     },
     {
       "file": "d2-assets-light.html",
@@ -200,7 +203,8 @@
           "fill": "currentColor",
           "stroke": "none"
         }
-      ]
+      ],
+      "warnings": []
     },
     {
       "file": "d2-plugins-empty-dark.html",
@@ -250,7 +254,8 @@
           "fill": "currentColor",
           "stroke": "none"
         }
-      ]
+      ],
+      "warnings": []
     },
     {
       "file": "d2-plugins-empty-light.html",
@@ -300,7 +305,8 @@
           "fill": "currentColor",
           "stroke": "none"
         }
-      ]
+      ],
+      "warnings": []
     },
     {
       "file": "d2-plugins-permissions-dark.html",
@@ -344,7 +350,8 @@
           "fill": "currentColor",
           "stroke": "none"
         }
-      ]
+      ],
+      "warnings": []
     },
     {
       "file": "d2-plugins-permissions-light.html",
@@ -388,7 +395,8 @@
           "fill": "currentColor",
           "stroke": "none"
         }
-      ]
+      ],
+      "warnings": []
     },
     {
       "file": "d2-states-home-dark.html",
@@ -437,7 +445,8 @@
           "fill": "currentColor",
           "stroke": "none"
         }
-      ]
+      ],
+      "warnings": []
     },
     {
       "file": "d2-states-home-light.html",
@@ -486,7 +495,8 @@
           "fill": "currentColor",
           "stroke": "none"
         }
-      ]
+      ],
+      "warnings": []
     },
     {
       "file": "d2-states-assets-dark.html",
@@ -552,6 +562,18 @@
           "id": "warning",
           "fill": "currentColor",
           "stroke": "none"
+        }
+      ],
+      "warnings": [
+        {
+          "background": "rgb(220, 38, 38)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 4.829404522659002
+        },
+        {
+          "background": "rgb(220, 38, 38)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 4.829404522659002
         }
       ]
     },
@@ -620,6 +642,18 @@
           "fill": "currentColor",
           "stroke": "none"
         }
+      ],
+      "warnings": [
+        {
+          "background": "rgb(220, 38, 38)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 4.829404522659002
+        },
+        {
+          "background": "rgb(220, 38, 38)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 4.829404522659002
+        }
       ]
     },
     {
@@ -674,6 +708,13 @@
           "id": "warning",
           "fill": "currentColor",
           "stroke": "none"
+        }
+      ],
+      "warnings": [
+        {
+          "background": "rgb(220, 38, 38)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 4.829404522659002
         }
       ]
     },
@@ -730,6 +771,13 @@
           "fill": "currentColor",
           "stroke": "none"
         }
+      ],
+      "warnings": [
+        {
+          "background": "rgb(220, 38, 38)",
+          "foreground": "rgb(255, 255, 255)",
+          "contrast": 4.829404522659002
+        }
       ]
     },
     {
@@ -742,7 +790,8 @@
           "contrast": 5.168555560022562
         }
       ],
-      "icons": []
+      "icons": [],
+      "warnings": []
     }
   ]
 }
