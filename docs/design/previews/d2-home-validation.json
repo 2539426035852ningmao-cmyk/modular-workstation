@@ -1,0 +1,998 @@
+{
+  "kind": "static-design-only",
+  "date": "2026-10-20",
+  "candidateTokenMatches": 23,
+  "contrastResults": [
+    {
+      "theme": "dark",
+      "fg": "--color-text",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 15.007988045414399
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-text",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 15.598790036668792
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-text",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 13.595945298836549
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-text",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 14.251742360398412
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-text",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 11.779900066251344
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-text",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 12.630236688449823
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-muted",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 8.948288843556128
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-muted",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 9.300545711771566
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-muted",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 8.106379433874288
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-muted",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 8.497388642560587
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-muted",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 7.023589572571012
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-muted",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 7.530590090339333
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-subtle",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 7.209762257289494
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-subtle",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 7.493580573587985
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-subtle",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 6.531423997080994
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-subtle",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 6.8464656194878515
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-subtle",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 5.6590049669083315
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-subtle",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 6.067502419475989
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-accent",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 7.98073620567881
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-accent",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 8.294904555741677
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-accent",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 7.229860029773059
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-accent",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 7.578590541614296
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-accent",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 6.2641491100291224
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-accent",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 6.716329125582076
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-success",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 9.185832341176177
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-success",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 9.547440307685324
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-success",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 8.321573395247633
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-success",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 8.722962431480498
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-success",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 7.210039525415091
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-success",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 7.730499004823053
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-warning",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 9.767180774800146
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-warning",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 10.151674008219043
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-warning",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 8.848225034307992
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-warning",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 9.275016982201004
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-warning",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 7.666344956298914
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-warning",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 8.219743018938173
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-error",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 8.899390888336285
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-error",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 9.249722847681545
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-error",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 8.062082095524724
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-error",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 8.450954633042807
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-error",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 6.9852091431496435
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-error",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 7.489439154841584
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-info",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 9.79904177751996
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-info",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 10.184789245936466
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-info",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 8.877088360213762
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-info",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 9.305272523498926
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-info",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 7.69135293384489
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-info",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 8.246556206972766
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-focus",
+      "bg": "--color-bg",
+      "minimum": 3,
+      "ratio": 7.98073620567881
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-focus",
+      "bg": "--color-surface",
+      "minimum": 3,
+      "ratio": 7.229860029773059
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-focus",
+      "bg": "--color-selected",
+      "minimum": 3,
+      "ratio": 6.716329125582076
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-selected-border",
+      "bg": "--color-bg",
+      "minimum": 3,
+      "ratio": 7.98073620567881
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-selected-border",
+      "bg": "--color-surface",
+      "minimum": 3,
+      "ratio": 7.229860029773059
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-selected-border",
+      "bg": "--color-selected",
+      "minimum": 3,
+      "ratio": 6.716329125582076
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-border",
+      "bg": "--color-bg",
+      "minimum": 3,
+      "ratio": 5.5420980553553045
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-border",
+      "bg": "--color-surface",
+      "minimum": 3,
+      "ratio": 5.020663780740543
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-border",
+      "bg": "--color-selected",
+      "minimum": 3,
+      "ratio": 4.664050236308821
+    },
+    {
+      "theme": "dark",
+      "fg": "--color-on-accent",
+      "bg": "--color-accent-solid",
+      "minimum": 4.5,
+      "ratio": 5.168555560022562
+    },
+    {
+      "theme": "light",
+      "fg": "--color-text",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 13.373104950168983
+    },
+    {
+      "theme": "light",
+      "fg": "--color-text",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 12.520896344557615
+    },
+    {
+      "theme": "light",
+      "fg": "--color-text",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 14.479350390369353
+    },
+    {
+      "theme": "light",
+      "fg": "--color-text",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 13.727441211967884
+    },
+    {
+      "theme": "light",
+      "fg": "--color-text",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 14.479350390369353
+    },
+    {
+      "theme": "light",
+      "fg": "--color-text",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 12.437357328097328
+    },
+    {
+      "theme": "light",
+      "fg": "--color-muted",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 5.367724942394193
+    },
+    {
+      "theme": "light",
+      "fg": "--color-muted",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.025663663019778
+    },
+    {
+      "theme": "light",
+      "fg": "--color-muted",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 5.811752059798841
+    },
+    {
+      "theme": "light",
+      "fg": "--color-muted",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 5.5099491751015455
+    },
+    {
+      "theme": "light",
+      "fg": "--color-muted",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 5.811752059798841
+    },
+    {
+      "theme": "light",
+      "fg": "--color-muted",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 4.99213259719865
+    },
+    {
+      "theme": "light",
+      "fg": "--color-subtle",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 5.496480860157697
+    },
+    {
+      "theme": "light",
+      "fg": "--color-subtle",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.146214537784643
+    },
+    {
+      "theme": "light",
+      "fg": "--color-subtle",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 5.9511588808084825
+    },
+    {
+      "theme": "light",
+      "fg": "--color-subtle",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 5.642116633472471
+    },
+    {
+      "theme": "light",
+      "fg": "--color-subtle",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 5.9511588808084825
+    },
+    {
+      "theme": "light",
+      "fg": "--color-subtle",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 5.1118791604163105
+    },
+    {
+      "theme": "light",
+      "fg": "--color-accent",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 6.189604077645626
+    },
+    {
+      "theme": "light",
+      "fg": "--color-accent",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.795168089896187
+    },
+    {
+      "theme": "light",
+      "fg": "--color-accent",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 6.701618401398807
+    },
+    {
+      "theme": "light",
+      "fg": "--color-accent",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 6.353604971907694
+    },
+    {
+      "theme": "light",
+      "fg": "--color-accent",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 6.701618401398807
+    },
+    {
+      "theme": "light",
+      "fg": "--color-accent",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 5.756502915364781
+    },
+    {
+      "theme": "light",
+      "fg": "--color-success",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 5.263289061204505
+    },
+    {
+      "theme": "light",
+      "fg": "--color-success",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 4.927883016872071
+    },
+    {
+      "theme": "light",
+      "fg": "--color-success",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 5.698677069158514
+    },
+    {
+      "theme": "light",
+      "fg": "--color-success",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 5.402746141490911
+    },
+    {
+      "theme": "light",
+      "fg": "--color-success",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 5.698677069158514
+    },
+    {
+      "theme": "light",
+      "fg": "--color-success",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 4.895004340367431
+    },
+    {
+      "theme": "light",
+      "fg": "--color-warning",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 6.056644923156975
+    },
+    {
+      "theme": "light",
+      "fg": "--color-warning",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.670681832021468
+    },
+    {
+      "theme": "light",
+      "fg": "--color-warning",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 6.55766064494494
+    },
+    {
+      "theme": "light",
+      "fg": "--color-warning",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 6.217122907074063
+    },
+    {
+      "theme": "light",
+      "fg": "--color-warning",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 6.55766064494494
+    },
+    {
+      "theme": "light",
+      "fg": "--color-warning",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 5.632847225786411
+    },
+    {
+      "theme": "light",
+      "fg": "--color-error",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 5.615969973808329
+    },
+    {
+      "theme": "light",
+      "fg": "--color-error",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.2580891407207195
+    },
+    {
+      "theme": "light",
+      "fg": "--color-error",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 6.080532332286578
+    },
+    {
+      "theme": "light",
+      "fg": "--color-error",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 5.764771752775073
+    },
+    {
+      "theme": "light",
+      "fg": "--color-error",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 6.080532332286578
+    },
+    {
+      "theme": "light",
+      "fg": "--color-error",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 5.223007339610909
+    },
+    {
+      "theme": "light",
+      "fg": "--color-info",
+      "bg": "--color-bg",
+      "minimum": 4.5,
+      "ratio": 6.16538190882245
+    },
+    {
+      "theme": "light",
+      "fg": "--color-info",
+      "bg": "--color-sidebar",
+      "minimum": 4.5,
+      "ratio": 5.772489492352425
+    },
+    {
+      "theme": "light",
+      "fg": "--color-info",
+      "bg": "--color-surface",
+      "minimum": 4.5,
+      "ratio": 6.6753925345629215
+    },
+    {
+      "theme": "light",
+      "fg": "--color-info",
+      "bg": "--color-surface-subtle",
+      "minimum": 4.5,
+      "ratio": 6.328741008020061
+    },
+    {
+      "theme": "light",
+      "fg": "--color-info",
+      "bg": "--color-surface-elevated",
+      "minimum": 4.5,
+      "ratio": 6.6753925345629215
+    },
+    {
+      "theme": "light",
+      "fg": "--color-info",
+      "bg": "--color-selected",
+      "minimum": 4.5,
+      "ratio": 5.733975628692171
+    },
+    {
+      "theme": "light",
+      "fg": "--color-focus",
+      "bg": "--color-bg",
+      "minimum": 3,
+      "ratio": 4.77366968002478
+    },
+    {
+      "theme": "light",
+      "fg": "--color-focus",
+      "bg": "--color-surface",
+      "minimum": 3,
+      "ratio": 5.168555560022562
+    },
+    {
+      "theme": "light",
+      "fg": "--color-focus",
+      "bg": "--color-selected",
+      "minimum": 3,
+      "ratio": 4.439644779428879
+    },
+    {
+      "theme": "light",
+      "fg": "--color-selected-border",
+      "bg": "--color-bg",
+      "minimum": 3,
+      "ratio": 4.77366968002478
+    },
+    {
+      "theme": "light",
+      "fg": "--color-selected-border",
+      "bg": "--color-surface",
+      "minimum": 3,
+      "ratio": 5.168555560022562
+    },
+    {
+      "theme": "light",
+      "fg": "--color-selected-border",
+      "bg": "--color-selected",
+      "minimum": 3,
+      "ratio": 4.439644779428879
+    },
+    {
+      "theme": "light",
+      "fg": "--color-border",
+      "bg": "--color-bg",
+      "minimum": 3,
+      "ratio": 4.38498761613906
+    },
+    {
+      "theme": "light",
+      "fg": "--color-border",
+      "bg": "--color-surface",
+      "minimum": 3,
+      "ratio": 4.747721070618353
+    },
+    {
+      "theme": "light",
+      "fg": "--color-border",
+      "bg": "--color-selected",
+      "minimum": 3,
+      "ratio": 4.078159714174234
+    },
+    {
+      "theme": "light",
+      "fg": "--color-on-accent",
+      "bg": "--color-accent-solid",
+      "minimum": 4.5,
+      "ratio": 5.168555560022562
+    }
+  ],
+  "results": [
+    {
+      "width": 1440,
+      "layout": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "document": {
+          "width": 1440,
+          "height": 900
+        },
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 1384,
+          "height": 48,
+          "bottom": 80
+        },
+        "content": {
+          "x": 188,
+          "y": 80,
+          "width": 1120,
+          "height": 776.828125,
+          "bottom": 856.828125
+        },
+        "start": {
+          "x": 188,
+          "y": 198,
+          "width": 1120,
+          "height": 116,
+          "bottom": 314
+        },
+        "review": {
+          "x": 0,
+          "y": 872,
+          "width": 1440,
+          "height": 28,
+          "bottom": 900
+        },
+        "moduleColumns": 3,
+        "moduleCount": 3,
+        "clipped": [],
+        "fonts": {
+          "segoe": true,
+          "yahei": true
+        }
+      },
+      "errors": [],
+      "remote": [],
+      "settingsReachableAfterScroll": true,
+      "fullPage": false
+    },
+    {
+      "width": 800,
+      "layout": {
+        "viewport": {
+          "width": 800,
+          "height": 900
+        },
+        "document": {
+          "width": 800,
+          "height": 1089
+        },
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 744,
+          "height": 48,
+          "bottom": 80
+        },
+        "content": {
+          "x": 80,
+          "y": 80,
+          "width": 696,
+          "height": 980.828125,
+          "bottom": 1060.828125
+        },
+        "start": {
+          "x": 80,
+          "y": 198,
+          "width": 696,
+          "height": 116,
+          "bottom": 314
+        },
+        "review": {
+          "x": 0,
+          "y": 1060.828125,
+          "width": 800,
+          "height": 28,
+          "bottom": 1088.828125
+        },
+        "moduleColumns": 2,
+        "moduleCount": 3,
+        "clipped": [],
+        "fonts": {
+          "segoe": true,
+          "yahei": true
+        }
+      },
+      "errors": [],
+      "remote": [],
+      "settingsReachableAfterScroll": true,
+      "fullPage": true
+    },
+    {
+      "width": 400,
+      "layout": {
+        "viewport": {
+          "width": 400,
+          "height": 900
+        },
+        "document": {
+          "width": 400,
+          "height": 1316
+        },
+        "rail": {
+          "x": 0,
+          "y": 32,
+          "width": 56,
+          "height": 840,
+          "bottom": 872
+        },
+        "topbar": {
+          "x": 56,
+          "y": 32,
+          "width": 344,
+          "height": 48,
+          "bottom": 80
+        },
+        "content": {
+          "x": 72,
+          "y": 80,
+          "width": 312,
+          "height": 1190.828125,
+          "bottom": 1270.828125
+        },
+        "start": {
+          "x": 72,
+          "y": 190,
+          "width": 312,
+          "height": 130,
+          "bottom": 320
+        },
+        "review": {
+          "x": 0,
+          "y": 1270.828125,
+          "width": 400,
+          "height": 45,
+          "bottom": 1315.828125
+        },
+        "moduleColumns": 1,
+        "moduleCount": 3,
+        "clipped": [],
+        "fonts": {
+          "segoe": true,
+          "yahei": true
+        }
+      },
+      "errors": [],
+      "remote": [],
+      "settingsReachableAfterScroll": true,
+      "fullPage": true
+    }
+  ]
+}
