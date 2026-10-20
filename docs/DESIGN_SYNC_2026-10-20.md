@@ -1,5 +1,7 @@
 # Codex 项目同步与图标规范候选
 
+> P0 归档说明：本文保留历史设计与当时验证记录；当前有效视觉以 [DESIGN_PREFERENCES](DESIGN_PREFERENCES.md) 和 [DESIGN_FOUNDATIONS](DESIGN_FOUNDATIONS.md) 为准，当前任务与验收入口见 [P0 报告](P0_ACCEPTANCE.md)。旧配色、尺寸、箭头和未实现说明不能覆盖最新运行版本。
+
 日期：2026-10-20｜关联：[#10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)、[#12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)｜本次交付：读档核对与文档补充，不是功能实现
 
 ## 1. 事实与正式依据

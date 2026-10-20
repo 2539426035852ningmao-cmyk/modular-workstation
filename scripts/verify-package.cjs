@@ -25,6 +25,15 @@ const {_electron:electron}=require('@playwright/test');
   const security=await w.evaluate(()=>({require:typeof window.require,process:typeof window.process}));assert.deepEqual(security,{require:'undefined',process:'undefined'});
   const preferences=await application.evaluate(({BrowserWindow})=>{const p=BrowserWindow.getAllWindows()[0].webContents.getLastWebPreferences();return{nodeIntegration:p.nodeIntegration,contextIsolation:p.contextIsolation,sandbox:p.sandbox,webSecurity:p.webSecurity};});
   assert.deepEqual(preferences,{nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true});
+  const remoteRequests=[],rendererErrors=[];
+  w.on('request',r=>{if(/^https?:/.test(r.url()))remoteRequests.push(r.url());});
+  w.on('pageerror',e=>rendererErrors.push(e.message));
+  await w.context().setOffline(true);
+  for(const locale of ['zh-CN','en-US']){
+   await w.addInitScript(language=>Object.defineProperty(navigator,'language',{get:()=>language,configurable:true}),locale);
+   await w.reload();await w.getByRole('navigation').waitFor();
+   assert.equal(await w.locator('html').getAttribute('lang'),locale==='zh-CN'?'zh-CN':'en');
+   assert.equal(await w.locator('nav button').first().innerText(),locale==='zh-CN'?'首页':'Home');
   for(const theme of ['dark','light']){
    await w.emulateMedia({colorScheme:theme});assert.equal(await w.evaluate(()=>getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim()),theme==='dark'?'#1c1d20':'#f8f5ef');
    await w.locator('nav button').first().click();
@@ -32,9 +41,21 @@ const {_electron:electron}=require('@playwright/test');
    for(const c of cardStyle){assert.equal(c.background,theme==='light'?'rgb(255, 253, 250)':'rgb(41, 43, 48)');assert.equal(c.iconBackground,theme==='light'?'rgb(12, 57, 103)':'rgb(34, 84, 135)');assert.equal(c.iconColor,'rgb(255, 255, 255)');}
    for(let i=0;i<4;i++){await w.locator('nav button').nth(i).click();assert.equal(await w.locator('nav button').nth(i).getAttribute('aria-current'),'page');}
   }
+  }
+  assert.deepEqual(remoteRequests,[]);assert.deepEqual(rendererErrors,[]);
+  // Use actual native window events; the product keeps the Windows title bar.
+  const nativeControls=await application.evaluate(async({BrowserWindow})=>{
+   const win=BrowserWindow.getAllWindows()[0];const result={};
+   async function transition(event,action,check){return new Promise((resolve,reject)=>{const timeout=setTimeout(()=>reject(new Error(event+' timed out')),5000);win.once(event,()=>{clearTimeout(timeout);resolve(check());});action();});}
+   result.minimize=await transition('minimize',()=>win.minimize(),()=>win.isMinimized());
+   result.restore=await transition('restore',()=>win.restore(),()=>!win.isMinimized());
+   result.maximize=await transition('maximize',()=>win.maximize(),()=>win.isMaximized());
+   result.unmaximize=await transition('unmaximize',()=>win.unmaximize(),()=>!win.isMaximized());
+   return result;
+  });assert.deepEqual(nativeControls,{minimize:true,restore:true,maximize:true,unmaximize:true});
   const closed=application.waitForEvent('close');await application.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].close());await closed;
   identity.path=identity.path.replace(folder,'<candidate>');
-  const report={kind:'packaged-windows-candidate',identity,preferences,security,chrome,neutralHomeCards:true,verifiedPayloadSHA256:hashes,exeSHA256:crypto.createHash('sha256').update(fs.readFileSync(executable)).digest('hex'),archiveSHA256:crypto.createHash('sha256').update(fs.readFileSync(archive)).digest('hex'),pagesPerTheme:4,themes:2,windowCloseExits:true};
+  const report={kind:'packaged-windows-candidate',identity,preferences,security,chrome,neutralHomeCards:true,verifiedPayloadSHA256:hashes,exeSHA256:crypto.createHash('sha256').update(fs.readFileSync(executable)).digest('hex'),archiveSHA256:crypto.createHash('sha256').update(fs.readFileSync(archive)).digest('hex'),pagesPerTheme:4,themes:2,locales:2,offlineNavigation:true,remoteRequests:remoteRequests.length,rendererErrors:rendererErrors.length,nativeControls,windowCloseExits:true};
   fs.writeFileSync('docs/design/previews/runtime/package-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
  }finally{await application.close().catch(()=>{});}
 })().catch(e=>{console.error(e);process.exitCode=1});

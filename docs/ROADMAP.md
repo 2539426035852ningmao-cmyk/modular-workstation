@@ -11,6 +11,8 @@
 
 ## 关键阶段与门槛
 
+2026-10-20 当前执行补充：产品负责人授权 **P0 桌面 Shell 收束与验收准备**，仍归属 #10，不是新增产品阶段。先完成现有 PR 预检、规范归并、代码审查、真实窗口和 Windows 候选核验，再等待产品验收与正式合并审批；详见 [P0 报告](P0_ACCEPTANCE.md)。不据此进入插件/文件业务开发。收尾后建议依次恢复 #4 独立审查、#5 最小 CI、#12/S1 余项，不同时开启多项主任务。
+
 ### S0 项目治理与开发总控（当前）
 交付：仓库、关联看板、产品基线、路线图、状态快照、AI 协作规则、完成定义、决策日志、Issue/PR 模板和质量流程。
 已完成：初始治理基线 [Issue #1](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/1) 及项目状态恢复 [Issue #3](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3)。#3 的 Projects 自动移列事件已触发，Done 列值仍需网页复核。

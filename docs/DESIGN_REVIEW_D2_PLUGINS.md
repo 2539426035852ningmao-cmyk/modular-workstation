@@ -1,5 +1,7 @@
 # D2 · 插件中心深色首稿
 
+> P0 归档说明：本文保留历史设计与当时验证记录；当前有效视觉以 [DESIGN_PREFERENCES](DESIGN_PREFERENCES.md) 和 [DESIGN_FOUNDATIONS](DESIGN_FOUNDATIONS.md) 为准，当前任务与验收入口见 [P0 报告](P0_ACCEPTANCE.md)。旧配色、尺寸、箭头和未实现说明不能覆盖最新运行版本。
+
 日期：2026-10-20｜版本：V0.1｜状态：静态候选，待视觉确认
 
 关联：[Issue #12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)、[D1 提案](DESIGN_PROPOSAL_D1.md)、[首页稿](DESIGN_REVIEW_D2_HOME.md)、[素材工作区稿](DESIGN_REVIEW_D2_ASSETS.md)。延续 B 轻量首页、LobeHub 视觉氛围、Figma 工作台空间组织和已选钴蓝 #2563EB。

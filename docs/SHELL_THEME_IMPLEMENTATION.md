@@ -6,6 +6,8 @@
 
 ## 分支与依赖
 
+P0 收束补充：本轮重新执行四项测试和 96 案例，并交付 `p0-shell-candidate-20261020`。包核验扩展到离线中英文、双主题四页及原生最小化/最大化/恢复/退出；实际结果见包报告。生产代码未变，统一 ADR 编号为 ADR-011，历史交接完整保留。PR 预检与审批入口见 [P0 验收报告](P0_ACCEPTANCE.md)，不得将自审写成 Gemini 或 CI 通过。
+
 实施分支 `feat/s1-approved-theme-shell`，基于 `docs/s1-d2-light-comparison`（PR #19，归档提交 `268c1d1`）。使用独立 PR，以 #19 分支为 base，避免把整条设计 PR 链混入实施差异；先处理设计前置 PR，再按既有流程审查本 PR。不直接合并或推送 main。
 
 ## 设计依据与实际映射
@@ -62,7 +64,7 @@
 
 ## 交付与后续
 
-本机候选：工作目录上两级 `outputs/theme-candidate-20261020-copy-refinement/ModularWorkstation-win32-x64/ModularWorkstation.exe`。整个目录需保留；尚非正式安装包，没有发布到 GitHub Release，也未完成签名/升级测试。
+本机候选：工作目录上两级 `outputs/p0-shell-candidate-20261020/ModularWorkstation-win32-x64/ModularWorkstation.exe`。整个目录需保留；尚非正式安装包，没有发布到 GitHub Release，也未完成签名/升级测试。
 
 应用代码修改：`src/tokens.css`、`src/styles.css`、`src/App.tsx`、`src/Icons.tsx`、`src/i18n.ts`，以及主进程启动底色与默认菜单移除。依赖与锁文件没有变动，没有扩大渲染权限或接入插件。
 

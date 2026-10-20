@@ -1,5 +1,7 @@
 # 强调色与图标动效反馈 · 已选择 B 钴蓝
 
+> P0 归档说明：本文保留历史设计与当时验证记录；当前有效视觉以 [DESIGN_PREFERENCES](DESIGN_PREFERENCES.md) 和 [DESIGN_FOUNDATIONS](DESIGN_FOUNDATIONS.md) 为准，当前任务与验收入口见 [P0 报告](P0_ACCEPTANCE.md)。旧配色、尺寸、箭头和未实现说明不能覆盖最新运行版本。
+
 2026-10-20｜关联 [Issue #12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)、[D2 PR #15](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/15)
 
 产品所有者明确反馈：不喜欢青绿，希望改成中高饱和的蓝色或橙红色，随后明确回复 **“B 钴蓝”**。**B「轻量模块」指首页布局，配色 B 指钴蓝，两项选择均保留。** 下列小样作为比较记录；应用尚未改色，后续设计采用钴蓝，旧青绿退出基线。

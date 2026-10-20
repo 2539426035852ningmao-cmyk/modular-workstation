@@ -27,9 +27,19 @@
     "dist/assets/index-Aye_Az6U.css": "3e102556b15fa397ae983dd16b185ad46a18b684112de194c3f6f4d48f357d42",
     "dist/assets/index-BPZ1Djf0.js": "d9a547af0b759355ad26d6165844a1023ef3ac8150cfd468d8b9923194316081"
   },
-  "exeSHA256": "43ae80918a37713112c7ebc64f98c75fbe96c0e12983e150bb37712637cccc26",
-  "archiveSHA256": "753428141014b8c764e06cb3caf2ec71da82eb7e0d1b0a7892f83015a6ae1c3b",
+  "exeSHA256": "88a50ad927639ae3afcd83c2fce7e48ccec621f920b7328eb5f2544c96a7bb8e",
+  "archiveSHA256": "6a4252d6c79df082ee8c2d3adb62294f9be7b575615ed47db4d916b41ba3fd2c",
   "pagesPerTheme": 4,
   "themes": 2,
+  "locales": 2,
+  "offlineNavigation": true,
+  "remoteRequests": 0,
+  "rendererErrors": 0,
+  "nativeControls": {
+    "minimize": true,
+    "restore": true,
+    "maximize": true,
+    "unmaximize": true
+  },
   "windowCloseExits": true
 }

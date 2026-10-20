@@ -1,0 +1,86 @@
+{
+  "kind": "simulation only; no branches merged",
+  "main": "1236f6160485a78ec933ae3922c2dac2ea080bda",
+  "order": [
+    13,
+    14,
+    15,
+    16,
+    18,
+    19,
+    20,
+    17
+  ],
+  "steps": [
+    {
+      "pr": 13,
+      "sha": "af9c1bb2db73b8babd8f7848c679069b73617abc",
+      "clean": true,
+      "diagnostics": null,
+      "resultTree": "e64f8d17e6a4364f75a661ea77020ac8b6635b73"
+    },
+    {
+      "pr": 14,
+      "sha": "9d592d1d78262876a4c325c35bc21509265c3d0e",
+      "clean": true,
+      "diagnostics": null,
+      "resultTree": "bc4a3d08ecae01dacfcfe31d33dac9b42d2298ad"
+    },
+    {
+      "pr": 15,
+      "sha": "6fc429190c56805caf46fb29440022b8bd68a0dd",
+      "clean": true,
+      "diagnostics": null,
+      "resultTree": "8f80dee69392a0cfc3183f3b04b44c18aef78468"
+    },
+    {
+      "pr": 16,
+      "sha": "607165388f02c8bbc6bfbb68ebbb6539a0a928cf",
+      "clean": true,
+      "diagnostics": null,
+      "resultTree": "e9246e83fa34718c80b90db53d7e1fae57e2ffa6"
+    },
+    {
+      "pr": 18,
+      "sha": "720c70a6981d831d5d4429ea6c73abbeedddc474",
+      "clean": true,
+      "diagnostics": null,
+      "resultTree": "e4fbb32109aa594260522f341aab6fa67b42bf33"
+    },
+    {
+      "pr": 19,
+      "sha": "268c1d1710325f8f6a290977b2a2c2139739b462",
+      "clean": true,
+      "diagnostics": null,
+      "resultTree": "769edfe92968c21a0bc139e922e64487f307fb3c"
+    },
+    {
+      "pr": 20,
+      "sha": "7742a5e4fefe0e8a23bae4a23ceb095056254098",
+      "clean": true,
+      "diagnostics": null,
+      "resultTree": "b125302d6fa0715b2d35cbf1237bd032bbbdb7b0"
+    },
+    {
+      "pr": 17,
+      "sha": "16164b4f0cbb9f6dac00b2c766951688f97cd53e",
+      "clean": false,
+      "diagnostics": "20155abfc1701ae58a040a4da38c0ed685500abd\n100644 1cf83167c507d2a0efda2f73de8683582b196aa7 1\tdocs/DECISIONS.md\n100644 cd4d7ac83e3b15a5af5a3b887a4228b48aec116e 2\tdocs/DECISIONS.md\n100644 6eda8f15a12dbb3a3c524ec95f095633477c095c 3\tdocs/DECISIONS.md\n\nAuto-merging docs/DECISIONS.md\nCONFLICT (content): Merge conflict in docs/DECISIONS.md\n",
+      "proposedResolution": "Use current docs/DECISIONS.md; approval required before real merge",
+      "resultTree": "fa1c8399ac63afadb7424dcd755384f20f630bf0"
+    }
+  ],
+  "handoffs": [
+    {
+      "pr": 13,
+      "file": "docs/HANDOFF_S1_LOBEHUB_FIGMA.md",
+      "originalPreserved": true
+    },
+    {
+      "pr": 17,
+      "file": "docs/HANDOFF_WORKSTATION_DECISIONS_2026-10-20.md",
+      "originalPreserved": true
+    }
+  ],
+  "finalTree": "fa1c8399ac63afadb7424dcd755384f20f630bf0"
+}

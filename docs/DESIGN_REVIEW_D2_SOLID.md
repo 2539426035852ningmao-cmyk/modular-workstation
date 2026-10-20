@@ -1,5 +1,7 @@
 # D2 · 实色选中与面型图标修订
 
+> P0 归档说明：本文保留历史设计与当时验证记录；当前有效视觉以 [DESIGN_PREFERENCES](DESIGN_PREFERENCES.md) 和 [DESIGN_FOUNDATIONS](DESIGN_FOUNDATIONS.md) 为准，当前任务与验收入口见 [P0 报告](P0_ACCEPTANCE.md)。旧配色、尺寸、箭头和未实现说明不能覆盖最新运行版本。
+
 日期：2026-10-20｜依据：产品负责人对状态稿截图的明确反馈｜关联：[#12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)、[现有 PR #19](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/19)
 
 ## 已确认偏好与实际修改

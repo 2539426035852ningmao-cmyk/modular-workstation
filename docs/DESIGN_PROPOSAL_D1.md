@@ -1,5 +1,7 @@
 # S1 · D1 页面架构与设计规范提案
 
+> P0 归档说明：本文保留历史设计与当时验证记录；当前有效视觉以 [DESIGN_PREFERENCES](DESIGN_PREFERENCES.md) 和 [DESIGN_FOUNDATIONS](DESIGN_FOUNDATIONS.md) 为准，当前任务与验收入口见 [P0 报告](P0_ACCEPTANCE.md)。旧配色、尺寸、箭头和未实现说明不能覆盖最新运行版本。
+
 版本：V0.1｜2026-10-20｜状态：待视觉确认，未实施
 
 更新：产品所有者随后否定青绿，并从 [五色审阅](DESIGN_COLOR_REVIEW.md) 中明确选择 **B 钴蓝 #2563EB**。第 5 节已更新为钴蓝设计变量；B 首页布局继续保留。颜色选择不等于完整页面或运行时主题已验收。

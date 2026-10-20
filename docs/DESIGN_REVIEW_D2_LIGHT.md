@@ -1,5 +1,7 @@
 # D2 · 钴蓝浅色对照与深浅审阅入口
 
+> P0 归档说明：本文保留历史设计与当时验证记录；当前有效视觉以 [DESIGN_PREFERENCES](DESIGN_PREFERENCES.md) 和 [DESIGN_FOUNDATIONS](DESIGN_FOUNDATIONS.md) 为准，当前任务与验收入口见 [P0 报告](P0_ACCEPTANCE.md)。旧配色、尺寸、箭头和未实现说明不能覆盖最新运行版本。
+
 日期：2026-10-20｜版本：V0.1｜状态：深浅主稿齐备，完整状态与视觉验收未完成
 
 关联：[Issue #12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12)、[D1 配色规范](DESIGN_PROPOSAL_D1.md)、[首页深色](DESIGN_REVIEW_D2_HOME.md)、[素材工作区深色](DESIGN_REVIEW_D2_ASSETS.md)、[插件中心深色](DESIGN_REVIEW_D2_PLUGINS.md)。本轮复核 main 仍为 `1236f61`，PR #13–#18 仍待审；PR #17 的 13 项产品约束继续适用，跨插件自动协作未定案。
