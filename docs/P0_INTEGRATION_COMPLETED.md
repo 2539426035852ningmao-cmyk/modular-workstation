@@ -34,7 +34,9 @@
 - app.asar SHA256：3c695a303a0dc9f2c9634fb5e211be77fe2c7eefbfbbb0d6c04d361b51d5b5c9
 - [运行证据](design/previews/runtime/validation.json) / [包核验](design/previews/runtime/package-validation.json)
 
-## 唯一主任务与阻塞
+## 唯一主任务与当时阻塞
+
+> 后续更新：官方后继已识别 Pro 并取得真实独立审查 以下保留当时排障记录。最新见 [审查与裁决](reviews/S0_03_REVIEW_2026-10-20.md)及 [流程](AI_REVIEW_WORKFLOW.md)。
 
 当前唯一主任务恢复为 [#4 Codex 与 Gemini CLI 协作验证](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)。#5 CI 和 #12/S1 余项排队 S0/S1/S2 未宣布通过。
 

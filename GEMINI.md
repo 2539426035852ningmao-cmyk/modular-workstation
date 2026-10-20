@@ -12,3 +12,7 @@
 未经明确授权，不要与 Codex 在同一工作分支同时编辑文件。推荐先输出独立审查意见，由协调者评估并再分配修复任务。用户 Google AI Pro 网页订阅不自动等于可无限制使用 API；认证、额度及费用须分别核实。
 
 如果 AGENTS.md 与此文件冲突，以 AGENTS.md 的共同开发规则为准，并报告冲突。
+
+## 已执行的后继客户端说明
+
+2026-10-20 已核验 Google 官方将个人 Pro/Ultra 用户迁移至 Antigravity CLI。当前独立 Gemini 审查通过此官方后继入口执行；共同规范仍完全适用。先读 [双 AI 审查流程](docs/AI_REVIEW_WORKFLOW.md) 与 [真实报告和裁决](docs/reviews/S0_03_REVIEW_2026-10-20.md)。网页会员标识不替代实际客户端响应验证 不要求 API 密钥或密码。

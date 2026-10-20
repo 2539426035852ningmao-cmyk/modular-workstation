@@ -23,6 +23,8 @@
 - **[质量关卡与任务验收](docs/QUALITY_GATES.md)** — 什么情况下算真正完成。
 
 ## AI 开发者入口
+- [双 AI 审查流程](docs/AI_REVIEW_WORKFLOW.md)与[真实对照审查](docs/reviews/S0_03_REVIEW_2026-10-20.md)：Google 官方后继客户端已识别 Pro 并完成 Gemini 静态审查 #4 待所有者验收。
+- [外部资料调查方法](docs/RESEARCH_METHOD.md)：社交媒体 → 社区 → GitHub → 官方文档。
 - [AGENTS.md](AGENTS.md)：所有 AI 编程工具与开发贡献者首先读取的共同约束。
 - [GEMINI.md](GEMINI.md)：Gemini CLI 的独立审查入口。
 - 日常开发由 Codex 为主、Gemini 独立审查、ChatGPT 组织产品与任务协作；**产品所有者负责最终决策与验收**。

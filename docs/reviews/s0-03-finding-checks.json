@@ -1,0 +1,11 @@
+{
+  "language": "en-US",
+  "documentLang": "en",
+  "title": "模块化工作站 · 技术原型",
+  "heading": "Start creating here",
+  "searchRole": null,
+  "searchLabel": "Search coming later",
+  "nativeTitle": "模块化工作站 · 技术原型",
+  "asarDirectlyDeclared": false,
+  "asarResolved": "<repository>/node_modules/@electron/asar/lib/asar.js"
+}

@@ -3,7 +3,7 @@
 ## 当前决策索引（2026-10-20 P0 归并）
 
 - 当前视觉：ADR-011、[偏好与方法](DESIGN_PREFERENCES.md)、[运行规范](DESIGN_FOUNDATIONS.md)。青绿和钴蓝保留为演进记录，不是当前运行时色值。
-- 产品方向：[PR #13 原始视觉交接](HANDOFF_S1_LOBEHUB_FIGMA.md)、[PR #17 完整 13 项决策](HANDOFF_WORKSTATION_DECISIONS_2026-10-20.md)。两个文件从原分支逐字节纳入整合候选，原 PR 仍须分别审批。
+- 产品方向：[PR #13 原始视觉交接](HANDOFF_S1_LOBEHUB_FIGMA.md)、[PR #17 完整 13 项决策](HANDOFF_WORKSTATION_DECISIONS_2026-10-20.md)。两个文件已从原分支逐字节纳入 main，原 PR #13/#17 已按所有者授权合并。
 - Electron/Tauri、组件库、分屏数量、跨插件自动协作与完整工作流引擎仍未定案。产品行为确认不等于功能实现。
 - 编号修正：原文件顶部重复的 ADR-008 改为 ADR-011；原始首页记录仍为 ADR-008。外部若引用“ADR-008 四页映射”，应改为 ADR-011。
 

@@ -1,0 +1,48 @@
+{
+  "baseline": "8bfff562e4cc0edce68f27b7446f87be969de25b",
+  "client": "Antigravity CLI",
+  "clientVersion": "1.4.3",
+  "model": "Gemini 3.8 Flash (High)",
+  "auth": "personal Google OAuth; Google AI Pro identified in client",
+  "mode": "plan",
+  "automaticAiCreditOverages": false,
+  "status": "SUCCESS",
+  "conversationId": "0bb29f65-9c30-4a30-8fd8-2105fd5871da",
+  "durationSeconds": 144.8803954,
+  "usage": {
+    "input_tokens": 31851,
+    "output_tokens": 20438,
+    "thinking_tokens": 15846,
+    "cache_read_tokens": 0,
+    "total_tokens": 52289
+  },
+  "inputSHA256": "d77e4a1fd5c0b54b82cf2b634f28945c836302edef9a2123383bcefbbfede9e9",
+  "toolSteps": 0,
+  "sourceFiles": [
+    "AGENTS.md",
+    "GEMINI.md",
+    "PROJECT_STATE.md",
+    "docs/PRODUCT.md",
+    "docs/ROADMAP.md",
+    "docs/DECISIONS.md",
+    "docs/QUALITY_GATES.md",
+    "docs/HANDOFF_WORKSTATION_DECISIONS_2026-10-20.md",
+    "package.json",
+    "index.html",
+    "electron/main.cjs",
+    "src/App.tsx",
+    "src/main.tsx",
+    "src/i18n.ts",
+    "tests/window.test.cjs",
+    "tests/theme.test.cjs",
+    "tests/copy-hierarchy.test.cjs",
+    "tests/home-feedback.test.cjs",
+    "scripts/verify-package.cjs"
+  ],
+  "limitations": [
+    "snapshot-only static model review",
+    "GitHub state supplied by coordinator; not independently fetched by model",
+    "model did not run tests or inspect CSS/icons",
+    "first two read_file runs produced empty responses and are not passing reviews"
+  ]
+}
