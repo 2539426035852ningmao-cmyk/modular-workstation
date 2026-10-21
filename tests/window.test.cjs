@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict');
 const { test } = require('node:test');
 const path = require('node:path');
-const { _electron: electron } = require('@playwright/test');
+const electron = require('./helpers/electron.cjs');
 
 test('desktop window opens and navigation switches content by mouse and keyboard', async () => {
   const application = await electron.launch({ args: [path.join(__dirname, '..')] });
@@ -29,7 +29,7 @@ test('desktop window opens and navigation switches content by mouse and keyboard
     assert.equal(await plugins.evaluate((element) => element === document.activeElement), true);
     await window.keyboard.press('Enter');
     assert.equal(await plugins.getAttribute('aria-current'), 'page');
-    assert.match(await window.locator('.empty-panel').innerText(), /尚未实现|not implemented/);
+    assert.match(await window.locator('.empty-panel:visible').innerText(), /尚未实现|not implemented/);
     assert.deepEqual(remoteRequests, []);
 
     await application.evaluate(({ BrowserWindow }) => BrowserWindow.getAllWindows()[0].webContents.setZoomFactor(2));

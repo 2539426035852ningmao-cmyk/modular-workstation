@@ -1,4 +1,4 @@
-const {test}=require('node:test');const assert=require('node:assert/strict');const path=require('node:path');const {_electron:electron}=require('@playwright/test');
+const {test}=require('node:test');const assert=require('node:assert/strict');const path=require('node:path');const electron=require('./helpers/electron.cjs');
 test('left-first hierarchy, concise copy and rounded corner hints',async()=>{
  const app=await electron.launch({args:[path.join(__dirname,'..')]});try{const p=await app.firstWindow();await p.getByRole('navigation').waitFor();
  const hierarchy=await p.locator('.breadcrumb').evaluate(e=>{const a=e.firstElementChild,b=e.lastElementChild;return{left:Number(getComputedStyle(a).fontWeight),right:Number(getComputedStyle(b).fontWeight)};});assert.ok(hierarchy.left>hierarchy.right);assert.ok(hierarchy.right<=400);
