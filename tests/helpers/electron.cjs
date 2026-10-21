@@ -1,5 +1,6 @@
 const _electron = require('./background.cjs');
 const fs = require('node:fs/promises'), os = require('node:os'), path = require('node:path');
+module.exports.screenshot = _electron.screenshot;
 module.exports.launch = async options => {
  const profile = await fs.mkdtemp(path.join(os.tmpdir(),'workstation-ui-'));
  const app = await _electron.launch({...options,args:[...options.args,`--user-data-dir=${profile}`]});

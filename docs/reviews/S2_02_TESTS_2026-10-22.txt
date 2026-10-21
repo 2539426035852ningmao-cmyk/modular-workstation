@@ -1,0 +1,70 @@
+
+> modular-workstation@0.1.0-prototype test
+> npm run build && node --test --test-concurrency=1 tests/*.test.cjs
+
+
+> modular-workstation@0.1.0-prototype build
+> npm run typecheck && vite build
+
+
+> modular-workstation@0.1.0-prototype typecheck
+> tsc --noEmit -p tsconfig.json
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 20 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.65 kB │ gzip:  0.42 kB
+dist/assets/index-CubfpfhH.css   15.44 kB │ gzip:  3.68 kB
+dist/assets/index-C_T7Uvzo.js   238.92 kB │ gzip: 74.96 kB
+
+✓ built in 248ms
+✔ failed default recovery preserves the original file and stays recoverable (13.785ms)
+✔ appearance saves separately and failed writes preserve the previous preference (16.5082ms)
+✔ corrupt appearance records require explicit preservation and future versions remain read only (19.3794ms)
+(node:24420) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ native appearance choices persist across process restart without changing workspaces (20920.2715ms)
+✔ appearance write failure keeps the old theme and unrelated success cannot clear its exit warning (6829.7918ms)
+✔ corrupt appearance remains untouched until explicit recovery and unsupported versions stay protected (5552.0929ms)
+(node:8968) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ isolated background verification never shows or focuses a window or native prompt (776.3979ms)
+(node:5564) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ left-first hierarchy, concise copy and rounded corner hints (18957.4569ms)
+(node:28152) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Fluent settings row adapts without clipping and shared feedback respects reduced motion (1208.8571ms)
+(node:35852) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ minimal chrome and neutral home cards with blue icon tiles (8763.7586ms)
+(node:42164) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"cases":96,"minimumContrast":4.57687728527731,"remoteRequests":0,"rendererErrors":0,"feedbackStyleProbes":6}
+✔ approved themes, navigation, density, contrast and control states in Electron (212763.5966ms)
+(node:38576) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ desktop window opens and navigation switches content by mouse and keyboard (808.8499ms)
+✔ workspace views survive reopening and reset preserves other spaces (51.0857ms)
+✔ failed saves and corrupt files preserve the last bytes and require explicit recovery (17.7146ms)
+✔ queued saves retain all changes and future schemas cannot be reset (28.8872ms)
+✔ failure to create a state directory is a save failure (4.0762ms)
+✔ a missing version is corrupt and recoverable while real future versions stay protected (8.8215ms)
+✔ initial load and immediate changes share one queue (12.3647ms)
+✔ failed preservation keeps bytes and a reread recovers after an external file removal (14.3581ms)
+✔ malformed UUID records are rejected without changing their bytes (4.5199ms)
+(node:40700) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ create spaces then restart a new Electron process and restore independent views (22413.1833ms)
+✔ real disk write failure is visible and closing asks before discarding (4931.9468ms)
+✔ successful reread clears an obsolete recovery confirmation (4873.7649ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 315688.3204

@@ -29,7 +29,7 @@ test('create spaces then restart a new Electron process and restore independent 
    for(const theme of ['dark','light']){await page.emulateMedia({colorScheme:theme});for(const width of [1440,800]){
     await app.evaluate(({BrowserWindow},width)=>BrowserWindow.getAllWindows()[0].setContentSize(width,760),width);
     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);assert.equal(overflow,false);
-    await page.screenshot({path:path.join(__dirname,'../docs/design/previews/runtime',`workspace-live-${locale}-${theme}-${width}.png`)});
+    await electron.screenshot(app,page,path.join(__dirname,'../docs/design/previews/runtime',`workspace-live-${locale}-${theme}-${width}.png`));
    }}
   }
   assert.deepEqual(errors,[]);

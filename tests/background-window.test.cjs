@@ -8,5 +8,8 @@ test('isolated background verification never shows or focuses a window or native
   const p=await app.firstWindow();await p.getByRole('navigation').waitFor();await p.locator('nav button').nth(3).click();
   const state=await app.evaluate(async({BrowserWindow,dialog})=>{const w=BrowserWindow.getAllWindows()[0];return{visible:w.isVisible(),focused:w.isFocused(),focusable:w.isFocusable(),dialog:(await dialog.showMessageBox(w,{message:'hidden verification'})).response};});
   assert.deepEqual(state,{visible:false,focused:false,focusable:false,dialog:0});
+  const shot=path.join(profile,'hidden-check.png');await electron.screenshot(app,p,shot);
+  assert.equal((await fs.readFile(shot)).subarray(0,8).toString('hex'),'89504e470d0a1a0a');
+  assert.deepEqual(await app.evaluate(({BrowserWindow})=>{const w=BrowserWindow.getAllWindows()[0];return{visible:w.isVisible(),focused:w.isFocused()};}),{visible:false,focused:false});
  }finally{await app.close();await fs.rm(profile,{recursive:true,force:true,maxRetries:5,retryDelay:100});}
 });

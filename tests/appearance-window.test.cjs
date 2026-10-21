@@ -29,7 +29,7 @@ test('native appearance choices persist across process restart without changing 
    for(const [index,theme]of [[1,'light'],[2,'dark']]){await choose(p,index);for(const width of [1440,800]){
     await app.evaluate(({BrowserWindow},width)=>BrowserWindow.getAllWindows()[0].setContentSize(width,760),width);
     assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
-    await p.screenshot({path:path.join(root,'docs/design/previews/runtime',`appearance-${locale}-${theme}-${width}.png`)});
+    await electron.screenshot(app,p,path.join(root,'docs/design/previews/runtime',`appearance-${locale}-${theme}-${width}.png`));
    }}
   }
   assert.deepEqual(errors,[]);
