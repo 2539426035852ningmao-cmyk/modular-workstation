@@ -1,0 +1,17 @@
+[
+  {
+    "match": true,
+    "file": "index.html",
+    "sha256": "C31A856C9F8255D98C6542AACD472A71D36111744A443D9AE3A521747732D3F8"
+  },
+  {
+    "match": true,
+    "file": "assets\\index-Aye_Az6U.css",
+    "sha256": "3E102556B15FA397AE983DD16B185AD46A18B684112DE194C3F6F4D48F357D42"
+  },
+  {
+    "match": true,
+    "file": "assets\\index-BPZ1Djf0.js",
+    "sha256": "D9A547AF0B759355AD26D6165844A1023EF3AC8150CFD468D8B9923194316081"
+  }
+]

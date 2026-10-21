@@ -1,0 +1,532 @@
+[
+  {
+    "processes": [
+      {
+        "parent": 23280,
+        "createdAtUtc": "2026-10-21T04:56:42.4588460Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 35184640,
+        "pid": 19160,
+        "workingSetBytes": 93446144
+      },
+      {
+        "parent": 19160,
+        "createdAtUtc": "2026-10-21T04:56:42.6566760Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 129765376,
+        "pid": 13860,
+        "workingSetBytes": 140857344
+      },
+      {
+        "parent": 19160,
+        "createdAtUtc": "2026-10-21T04:56:42.6617770Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 12337152,
+        "pid": 41120,
+        "workingSetBytes": 44318720
+      },
+      {
+        "parent": 19160,
+        "createdAtUtc": "2026-10-21T04:56:42.7240380Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 33771520,
+        "pid": 6968,
+        "workingSetBytes": 83296256
+      }
+    ],
+    "framework": "electron",
+    "run": 0,
+    "windowDetectedMs": 552.4844,
+    "workingSetBytes": 361918464.0,
+    "privateBytes": 211058688.0
+  },
+  {
+    "processes": [
+      {
+        "parent": 23280,
+        "createdAtUtc": "2026-10-21T04:56:46.5825590Z",
+        "name": "tauri-candidate.exe",
+        "privateBytes": 5529600,
+        "pid": 31040,
+        "workingSetBytes": 26320896
+      },
+      {
+        "parent": 31040,
+        "createdAtUtc": "2026-10-21T04:56:46.7530880Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 41750528,
+        "pid": 5828,
+        "workingSetBytes": 123138048
+      },
+      {
+        "parent": 5828,
+        "createdAtUtc": "2026-10-21T04:56:46.8023110Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 2527232,
+        "pid": 9020,
+        "workingSetBytes": 9678848
+      },
+      {
+        "parent": 5828,
+        "createdAtUtc": "2026-10-21T04:56:47.1494520Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 142352384,
+        "pid": 15916,
+        "workingSetBytes": 137285632
+      },
+      {
+        "parent": 5828,
+        "createdAtUtc": "2026-10-21T04:56:47.1546400Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 12312576,
+        "pid": 21176,
+        "workingSetBytes": 39579648
+      },
+      {
+        "parent": 5828,
+        "createdAtUtc": "2026-10-21T04:56:47.1957090Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 7794688,
+        "pid": 22792,
+        "workingSetBytes": 20819968
+      },
+      {
+        "parent": 5828,
+        "createdAtUtc": "2026-10-21T04:56:47.4073570Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 29970432,
+        "pid": 24228,
+        "workingSetBytes": 67932160
+      }
+    ],
+    "framework": "tauri",
+    "run": 0,
+    "windowDetectedMs": 102.694,
+    "workingSetBytes": 424755200.0,
+    "privateBytes": 242237440.0
+  },
+  {
+    "processes": [
+      {
+        "parent": 23280,
+        "createdAtUtc": "2026-10-21T04:56:50.0523160Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 34869248,
+        "pid": 36376,
+        "workingSetBytes": 93315072
+      },
+      {
+        "parent": 36376,
+        "createdAtUtc": "2026-10-21T04:56:50.2813370Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 142725120,
+        "pid": 25096,
+        "workingSetBytes": 154894336
+      },
+      {
+        "parent": 36376,
+        "createdAtUtc": "2026-10-21T04:56:50.2883690Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 12283904,
+        "pid": 14824,
+        "workingSetBytes": 44208128
+      },
+      {
+        "parent": 36376,
+        "createdAtUtc": "2026-10-21T04:56:50.3529590Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 33767424,
+        "pid": 20544,
+        "workingSetBytes": 83337216
+      }
+    ],
+    "framework": "electron",
+    "run": 1,
+    "windowDetectedMs": 572.5532,
+    "workingSetBytes": 375754752.0,
+    "privateBytes": 223645696.0
+  },
+  {
+    "processes": [
+      {
+        "parent": 23280,
+        "createdAtUtc": "2026-10-21T04:56:53.9874370Z",
+        "name": "tauri-candidate.exe",
+        "privateBytes": 5623808,
+        "pid": 16844,
+        "workingSetBytes": 26415104
+      },
+      {
+        "parent": 16844,
+        "createdAtUtc": "2026-10-21T04:56:54.1674470Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 39706624,
+        "pid": 16340,
+        "workingSetBytes": 123572224
+      },
+      {
+        "parent": 16340,
+        "createdAtUtc": "2026-10-21T04:56:54.2166210Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 2519040,
+        "pid": 16376,
+        "workingSetBytes": 9666560
+      },
+      {
+        "parent": 16340,
+        "createdAtUtc": "2026-10-21T04:56:54.4104030Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 139759616,
+        "pid": 39012,
+        "workingSetBytes": 134840320
+      },
+      {
+        "parent": 16340,
+        "createdAtUtc": "2026-10-21T04:56:54.4163250Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 12226560,
+        "pid": 18420,
+        "workingSetBytes": 39063552
+      },
+      {
+        "parent": 16340,
+        "createdAtUtc": "2026-10-21T04:56:54.4673420Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 7823360,
+        "pid": 14260,
+        "workingSetBytes": 20930560
+      },
+      {
+        "parent": 16340,
+        "createdAtUtc": "2026-10-21T04:56:54.6020190Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 29868032,
+        "pid": 33992,
+        "workingSetBytes": 67432448
+      }
+    ],
+    "framework": "tauri",
+    "run": 1,
+    "windowDetectedMs": 103.072,
+    "workingSetBytes": 421920768.0,
+    "privateBytes": 237527040.0
+  },
+  {
+    "processes": [
+      {
+        "parent": 23280,
+        "createdAtUtc": "2026-10-21T04:56:57.4497280Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 37470208,
+        "pid": 15028,
+        "workingSetBytes": 95850496
+      },
+      {
+        "parent": 15028,
+        "createdAtUtc": "2026-10-21T04:56:57.6810130Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 141688832,
+        "pid": 18304,
+        "workingSetBytes": 154464256
+      },
+      {
+        "parent": 15028,
+        "createdAtUtc": "2026-10-21T04:56:57.6840980Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 12201984,
+        "pid": 39388,
+        "workingSetBytes": 44146688
+      },
+      {
+        "parent": 15028,
+        "createdAtUtc": "2026-10-21T04:56:57.7433710Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 31965184,
+        "pid": 21804,
+        "workingSetBytes": 80441344
+      }
+    ],
+    "framework": "electron",
+    "run": 2,
+    "windowDetectedMs": 557.1361,
+    "workingSetBytes": 374902784.0,
+    "privateBytes": 223326208.0
+  },
+  {
+    "processes": [
+      {
+        "parent": 23280,
+        "createdAtUtc": "2026-10-21T04:57:01.4005100Z",
+        "name": "tauri-candidate.exe",
+        "privateBytes": 5844992,
+        "pid": 16844,
+        "workingSetBytes": 26492928
+      },
+      {
+        "parent": 16844,
+        "createdAtUtc": "2026-10-21T04:57:01.5917130Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 40189952,
+        "pid": 40404,
+        "workingSetBytes": 124080128
+      },
+      {
+        "parent": 40404,
+        "createdAtUtc": "2026-10-21T04:57:01.6397240Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 2527232,
+        "pid": 18084,
+        "workingSetBytes": 9678848
+      },
+      {
+        "parent": 40404,
+        "createdAtUtc": "2026-10-21T04:57:01.8240840Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 139124736,
+        "pid": 22820,
+        "workingSetBytes": 134045696
+      },
+      {
+        "parent": 40404,
+        "createdAtUtc": "2026-10-21T04:57:01.8315230Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 12324864,
+        "pid": 33480,
+        "workingSetBytes": 39768064
+      },
+      {
+        "parent": 40404,
+        "createdAtUtc": "2026-10-21T04:57:01.8776300Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 7794688,
+        "pid": 33772,
+        "workingSetBytes": 20832256
+      },
+      {
+        "parent": 40404,
+        "createdAtUtc": "2026-10-21T04:57:02.0240190Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 27004928,
+        "pid": 33884,
+        "workingSetBytes": 64671744
+      }
+    ],
+    "framework": "tauri",
+    "run": 2,
+    "windowDetectedMs": 104.4143,
+    "workingSetBytes": 419569664.0,
+    "privateBytes": 234811392.0
+  },
+  {
+    "processes": [
+      {
+        "parent": 23280,
+        "createdAtUtc": "2026-10-21T04:57:04.8762690Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 34914304,
+        "pid": 1540,
+        "workingSetBytes": 93388800
+      },
+      {
+        "parent": 1540,
+        "createdAtUtc": "2026-10-21T04:57:05.1140160Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 141799424,
+        "pid": 41748,
+        "workingSetBytes": 154632192
+      },
+      {
+        "parent": 1540,
+        "createdAtUtc": "2026-10-21T04:57:05.1197790Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 12226560,
+        "pid": 5796,
+        "workingSetBytes": 44302336
+      },
+      {
+        "parent": 1540,
+        "createdAtUtc": "2026-10-21T04:57:05.1875590Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 34791424,
+        "pid": 14256,
+        "workingSetBytes": 83337216
+      }
+    ],
+    "framework": "electron",
+    "run": 3,
+    "windowDetectedMs": 594.3424,
+    "workingSetBytes": 375660544.0,
+    "privateBytes": 223731712.0
+  },
+  {
+    "processes": [
+      {
+        "parent": 23280,
+        "createdAtUtc": "2026-10-21T04:57:08.8195920Z",
+        "name": "tauri-candidate.exe",
+        "privateBytes": 5713920,
+        "pid": 25320,
+        "workingSetBytes": 26439680
+      },
+      {
+        "parent": 25320,
+        "createdAtUtc": "2026-10-21T04:57:09.0024040Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 40046592,
+        "pid": 36788,
+        "workingSetBytes": 122966016
+      },
+      {
+        "parent": 36788,
+        "createdAtUtc": "2026-10-21T04:57:09.0573280Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 2531328,
+        "pid": 33020,
+        "workingSetBytes": 9678848
+      },
+      {
+        "parent": 36788,
+        "createdAtUtc": "2026-10-21T04:57:09.2368670Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 142426112,
+        "pid": 41844,
+        "workingSetBytes": 137465856
+      },
+      {
+        "parent": 36788,
+        "createdAtUtc": "2026-10-21T04:57:09.2417500Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 12005376,
+        "pid": 4888,
+        "workingSetBytes": 36315136
+      },
+      {
+        "parent": 36788,
+        "createdAtUtc": "2026-10-21T04:57:09.2846570Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 7823360,
+        "pid": 40896,
+        "workingSetBytes": 20901888
+      },
+      {
+        "parent": 36788,
+        "createdAtUtc": "2026-10-21T04:57:09.4285520Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 28213248,
+        "pid": 10832,
+        "workingSetBytes": 65171456
+      }
+    ],
+    "framework": "tauri",
+    "run": 3,
+    "windowDetectedMs": 108.8322,
+    "workingSetBytes": 418938880.0,
+    "privateBytes": 238759936.0
+  },
+  {
+    "processes": [
+      {
+        "parent": 23280,
+        "createdAtUtc": "2026-10-21T04:57:12.2875840Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 35082240,
+        "pid": 38436,
+        "workingSetBytes": 93597696
+      },
+      {
+        "parent": 38436,
+        "createdAtUtc": "2026-10-21T04:57:12.5514300Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 142430208,
+        "pid": 41100,
+        "workingSetBytes": 154750976
+      },
+      {
+        "parent": 38436,
+        "createdAtUtc": "2026-10-21T04:57:12.5615640Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 12275712,
+        "pid": 38676,
+        "workingSetBytes": 44290048
+      },
+      {
+        "parent": 38436,
+        "createdAtUtc": "2026-10-21T04:57:12.6188160Z",
+        "name": "ModularWorkstation.exe",
+        "privateBytes": 33751040,
+        "pid": 23688,
+        "workingSetBytes": 83251200
+      }
+    ],
+    "framework": "electron",
+    "run": 4,
+    "windowDetectedMs": 645.2803,
+    "workingSetBytes": 375889920.0,
+    "privateBytes": 223539200.0
+  },
+  {
+    "processes": [
+      {
+        "parent": 23280,
+        "createdAtUtc": "2026-10-21T04:57:16.2961140Z",
+        "name": "tauri-candidate.exe",
+        "privateBytes": 5615616,
+        "pid": 1600,
+        "workingSetBytes": 26390528
+      },
+      {
+        "parent": 1600,
+        "createdAtUtc": "2026-10-21T04:57:16.4791390Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 39927808,
+        "pid": 14004,
+        "workingSetBytes": 122982400
+      },
+      {
+        "parent": 14004,
+        "createdAtUtc": "2026-10-21T04:57:16.5306860Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 2531328,
+        "pid": 24008,
+        "workingSetBytes": 9674752
+      },
+      {
+        "parent": 14004,
+        "createdAtUtc": "2026-10-21T04:57:16.7055090Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 142036992,
+        "pid": 40744,
+        "workingSetBytes": 137056256
+      },
+      {
+        "parent": 14004,
+        "createdAtUtc": "2026-10-21T04:57:16.7078670Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 12009472,
+        "pid": 36624,
+        "workingSetBytes": 36265984
+      },
+      {
+        "parent": 14004,
+        "createdAtUtc": "2026-10-21T04:57:16.7504840Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 7782400,
+        "pid": 364,
+        "workingSetBytes": 20856832
+      },
+      {
+        "parent": 14004,
+        "createdAtUtc": "2026-10-21T04:57:16.8812820Z",
+        "name": "msedgewebview2.exe",
+        "privateBytes": 27185152,
+        "pid": 25884,
+        "workingSetBytes": 65228800
+      }
+    ],
+    "framework": "tauri",
+    "run": 4,
+    "windowDetectedMs": 116.205,
+    "workingSetBytes": 418455552.0,
+    "privateBytes": 237088768.0
+  }
+]

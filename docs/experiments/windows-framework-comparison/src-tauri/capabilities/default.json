@@ -1,0 +1,8 @@
+{
+  "permissions": [],
+  "windows": [
+    "main"
+  ],
+  "description": "No native commands granted to the comparison renderer",
+  "identifier": "default"
+}

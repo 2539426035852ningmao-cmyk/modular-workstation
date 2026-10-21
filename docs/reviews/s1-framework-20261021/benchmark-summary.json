@@ -1,0 +1,31 @@
+[
+  {
+    "windowRangeMs": [
+      552.5,
+      645.3
+    ],
+    "runs": 5,
+    "privateMedianMiB": 213.2,
+    "framework": "electron",
+    "processNames": [
+      "ModularWorkstation.exe"
+    ],
+    "workingSetMedianMiB": 358.3,
+    "windowMedianMs": 572.6
+  },
+  {
+    "windowRangeMs": [
+      102.7,
+      116.2
+    ],
+    "runs": 5,
+    "privateMedianMiB": 226.5,
+    "framework": "tauri",
+    "processNames": [
+      "msedgewebview2.exe",
+      "tauri-candidate.exe"
+    ],
+    "workingSetMedianMiB": 400.1,
+    "windowMedianMs": 104.4
+  }
+]

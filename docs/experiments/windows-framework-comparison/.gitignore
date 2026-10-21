@@ -1,0 +1,9 @@
+/src-tauri/target/
+/src-tauri/gen/
+/tauri-candidate/
+/webview-profile/
+/benchmark-webview-profile/
+/*.json
+/*.png
+/*.log
+/comparison-failure.txt
