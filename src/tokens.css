@@ -50,6 +50,8 @@
   --type-body: 14px;
   --type-title: 27px;
   --control-height: 40px;
+  /* Adapted from Fluent-Qt v1.10.2 Animation::Duration::Fast (MIT). */
+  --motion-fast: 150ms;
   --rail-width: 84px;
   --sidebar-width: 224px;
 }

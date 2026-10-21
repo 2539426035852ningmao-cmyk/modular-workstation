@@ -1,6 +1,15 @@
 const {test}=require('node:test'),assert=require('node:assert/strict');
 const fs=require('node:fs/promises'),path=require('node:path'),os=require('node:os');
 const {AppearanceStore}=require('../electron/appearance-store.cjs');
+test('failed default recovery preserves the original file and stays recoverable',async()=>{
+ const dir=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-appearance-'));
+ try{
+  const file=path.join(dir,'appearance-v1.json');await fs.writeFile(file,'broken');
+  const store=new AppearanceStore(dir,async()=>{throw Error('disk full');});
+  await assert.rejects(store.load(),/CORRUPT/);await assert.rejects(store.recover(),/SAVE_FAILED/);
+  assert.equal(await fs.readFile(file,'utf8'),'broken');await assert.rejects(store.load(),/CORRUPT/);
+ }finally{await fs.rm(dir,{recursive:true,force:true});}
+});
 test('appearance saves separately and failed writes preserve the previous preference',async()=>{
  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-appearance-'));
  try{

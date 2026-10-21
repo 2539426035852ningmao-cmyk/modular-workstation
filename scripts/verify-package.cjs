@@ -6,7 +6,7 @@ const {expect}=require('@playwright/test');const electron=require('../tests/help
  const folder=path.resolve(process.argv[2]);
  const executable=path.join(folder,'ModularWorkstation.exe'),archive=path.join(folder,'resources/app.asar');
  const {extractFile}=await import('@electron/asar');const hashes={};
- for(const file of [...fs.readdirSync('electron').filter(n=>n.endsWith('.cjs')).map(n=>'electron/'+n),'package.json','dist/index.html',...fs.readdirSync('dist/assets').map(n=>'dist/assets/'+n)]){
+ for(const file of [...fs.readdirSync('electron').filter(n=>n.endsWith('.cjs')).map(n=>'electron/'+n),'THIRD_PARTY_NOTICES.md','package.json','dist/index.html',...fs.readdirSync('dist/assets').map(n=>'dist/assets/'+n)]){
   const packed=extractFile(archive,path.normalize(file));
   if(file==='package.json'){
    const a=JSON.parse(packed),b=JSON.parse(fs.readFileSync(file));

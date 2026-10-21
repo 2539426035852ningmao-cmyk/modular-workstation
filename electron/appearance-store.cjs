@@ -35,9 +35,9 @@ class AppearanceStore {
  }
  async recover() {
   if (this.blocked!=='CORRUPT') fail('INVALID');
-  await fs.rename(this.file,path.join(path.dirname(this.file),`appearance-v1.preserved-${randomUUID()}.json`));
+  await fs.copyFile(this.file,path.join(path.dirname(this.file),`appearance-v1.preserved-${randomUUID()}.json`),fs.constants.COPYFILE_EXCL);
   this.value={version:1,theme:'system'};this.blocked=null;
-  try {return await this.change({theme:'system'});} catch(error) {this.blocked='READ_FAILED';throw error;}
+  try {return await this.change({theme:'system'});} catch(error) {this.value=null;this.blocked='CORRUPT';throw error;}
  }
 }
 module.exports={AppearanceStore};

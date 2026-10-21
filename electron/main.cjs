@@ -18,7 +18,7 @@ const failedSaves = new Set();
 let closingWindow = false;
 const primary = app.requestSingleInstanceLock();
 if (!primary) app.quit();
-app.on('second-instance', () => { if (!background && mainWindow && !mainWindow.isDestroyed()) { if (mainWindow.isMinimized()) mainWindow.restore(); mainWindow.focus(); } });
+app.on('second-instance', (_event,argv) => { if (!background && !argv.includes('--workstation-background') && mainWindow && !mainWindow.isDestroyed()) { if (mainWindow.isMinimized()) mainWindow.restore(); mainWindow.focus(); } });
 for (const [channel,operation] of Object.entries({
  'workspaces:load': () => store.load(),
  'workspaces:change': command => store.mutate(command),
@@ -58,6 +58,7 @@ function createWindow() {
       contextIsolation: true,
       sandbox: true,
       webSecurity: true,
+      backgroundThrottling: !background,
     },
   });
 
