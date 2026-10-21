@@ -1,47 +1,31 @@
-# 项目状态快照（PROJECT_STATE）
+# 项目状态快照
 
-更新：2026-10-21｜P0 已验收 #4/#5 已关闭 当前 #24 对照完成待验收｜非实时数据
-
-本文件是会话恢复入口，任务状态以实时 GitHub Issue / PR / Projects 为准。历史逐轮快照已保存在 Git 提交记录；当前统一入口为 [P0 整合与验收报告](docs/P0_ACCEPTANCE.md)。
+更新 2026-10-21 非实时数据 任务事实需核对 GitHub
 
 ## 当前阶段与唯一主任务
 
-- S0 技术任务 #1/#3/#4/#5 均已关闭 CI 完整链路已运行；当前最终看板列未复核。S1 框架对照已取得真实证据 待所有者验收及阶段范围确认；S2 未通过。P0 是收束工作名，不是新增路线图阶段。
-- 唯一主任务为 [#24 Electron/Tauri 框架对照](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/24)，本机运行、打包、测量和独立审查已完成，等待所有者验收。归档 PR #28 与实测 PR #29 未合并；#4/#5/#10 已关闭。
-- [#12 设计定调](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12) 保持 Open 跟踪专业布局与组件库实测余项；已完成依据见 [设计收束清单](docs/S1_DESIGN_RECONCILIATION.md)，不并行重设计。
+- 所有者已验收 [#24 框架对照](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/24) 并授权沿用 Electron 实施下一步 #24 已关闭
+- [PR #28](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/28) 与 [PR #29](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/29) 已按序合并 main 为 9f656a21ce1bd63a7613bc0805864cc22160809c [合并后 Quality 成功](https://github.com/2539426035852ningmao-cmyk/modular-workstation/actions/runs/39559870468)
+- 当前唯一实施任务 [#30 本地工作空间与布局保存恢复](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/30) 分支 feat/s2-local-workspaces
+- [#12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12) 保留专业设计与组件库余项 不并行重设计 不宣称整个 S1 或 S2 已通过
 
-## 本轮实际核对
+## 当前能力
 
-- PR #13–#20 已按依赖顺序合并 验证基线 main 为 a6f609920a29d63c12ac5cfa8c5eb2991e19f357 详见 [实际整合记录](docs/P0_INTEGRATION_COMPLETED.md)
-- #10 已关闭 并出现项目机器人状态变更事件 尚未读取最终看板列值
-- #4 独立审查已验收；#5 经 PR 云端失败、修复、复验、合并及 main 推送复验通过。PR #23 合并 74001ba，main [Quality 运行](https://github.com/2539426035852ningmao-cmyk/modular-workstation/actions/runs/39456001263)成功，详见 [CI 质量基线](docs/CI_QUALITY.md)。
-- 旧 Gemini CLI 的 UNSUPPORTED_CLIENT 已确认是个人用户迁移限制 不是登录错误。官方后继 Antigravity CLI 1.4.3 已识别 Google AI Pro 并完成真实独立 Gemini 审查 见 [报告与裁决](docs/reviews/S0_03_REVIEW_2026-10-20.md)
+main 已有离线 Windows Shell 四页导航 双主题 中英文 面型图标和已验收轻量首页 详见 [P0 报告](docs/P0_ACCEPTANCE.md) 与 [框架对照](docs/S1_FRAMEWORK_COMPARISON.md)
 
-## 当前能力与证据
+#30 分支新增真实命名空间 本机保存 标准与专注布局 内置概览和资源标签 重启恢复 独立空间记忆 显式损坏记录恢复 详见 [工作空间契约与验证](docs/WORKSPACES.md) 未合并时不能认为 main 已有此能力
 
-- 已实现且实测：本地离线窗口、四页导航、中文/英文、系统双主题、基础键盘焦点、B 轻量首页、当前渲染隔离与原生窗口控制。
-- 最新视觉：浅色 #F8F5EF / #0C3967，深色 #1C1D20 / #225487；面型为主、实色选中、轻边框、常规三卡一致、短文案无标点、横向左重右轻、圆角直角提示无箭杆。
-- [偏好与方法](docs/DESIGN_PREFERENCES.md) 为长期设计记忆，界面修改前必须按 AGENTS 读取；[基础规范](docs/DESIGN_FOUNDATIONS.md) 与运行 Token 是实际来源。旧青绿/钴蓝静态稿为历史，不能覆盖当前方案。
-- [PR #13 原文](docs/HANDOFF_S1_LOBEHUB_FIGMA.md) 与 [PR #17 的 13 项决策原文](docs/HANDOFF_WORKSTATION_DECISIONS_2026-10-20.md) 已完整纳入 main；原 PR 已合并。13 项是未来产品约束，跨插件自动协作未定案，不代表功能实现。
-- P0 重新运行 npm test：类型检查、生产构建、四项测试、96 个实际窗口案例通过；6 个状态样式探针不代表业务流程。
-- 新 Windows x64 候选：仓库上两级 outputs/p0-main-verified-20261020/ModularWorkstation-win32-x64/ModularWorkstation.exe。包内生产内容一致，离线中英文双主题四页、最小化/最大化/恢复/关闭退出已实测；完整目录保留，旧包未覆盖。
-- [运行/打包与回滚记录](docs/SHELL_THEME_IMPLEMENTATION.md)、[P0 报告](docs/P0_ACCEPTANCE.md) 提供实际截图、命令和 JSON 证据。PR #23 补齐测试工具直接依赖和 CI 并修复鼠标悬停影响测试的问题；本次设计归档不改变生产代码。
+## 本轮边界
 
-## 未完成与限制
-
-- 无真实工作空间、布局持久化、标签分屏、文件业务、搜索、插件 SDK/安装、资源授权、任务中心、托盘、会话/草稿恢复、AI 或工作流。
-- 文件素材/插件/恢复等高保真稿属于静态设计；普通/加载/警告/失败样式不能冒充业务能力。
-- [框架对照](docs/S1_FRAMEWORK_COMPARISON.md)已实测同一前端 两候选各 16 个离线主题/语言/页面组合 五轮整树内存及窗口检测 Tauri NSIS 构建 独立 Gemini 审查。当前桥接权限探针不等于插件隔离完成；系统高对比/读屏、多屏 DPI、Windows 10、冷缓存/业务负荷、签名/安装升级和正式发布未验证。
-- 本轮已合并设计链并关闭 #10 未发布 Release 未人工设置看板列；快照没有自动实时同步。
+没有真实文件关联 导入 搜索 插件安装 SDK 任意分屏 任务引擎 AI 网关 托盘或异常启动安全模式
+保存与恢复不执行任何业务或付费任务 不向渲染层开放任意文件路径 Node 或进程权限
+Electron 是本阶段获准底座 长期插件安全架构仍需 S3 独立验证 [13 项产品约束](docs/HANDOFF_WORKSTATION_DECISIONS_2026-10-20.md) 继续适用
 
 ## 唯一下一步
 
-验收 #24 的[对照证据与建议](docs/S1_FRAMEWORK_COMPARISON.md)及阶段范围。Codex 建议沿用当前 Electron 候选推进真实工作空间闭环 Tauri 保留备选 Gemini 的不同意见已留档 不自行锁定正式框架。用户已授权持续推进 普通可逆实施无需反复确认。模型网关旁路评估已[收束归档](docs/MODEL_GATEWAY_POC_2026-10-21.md) 不作为主线前置条件。
+完成 #30 的实际候选验证 独立 Gemini 审查与云端 CI 通过 PR 交付后请所有者体验验收 未验收不关闭 #30 不宣布 S2 全部完成
 
-## 长期协作入口
+## 恢复入口
 
-[双 AI 审查流程](docs/AI_REVIEW_WORKFLOW.md) / [外部调查方法](docs/RESEARCH_METHOD.md) / [设计偏好](docs/DESIGN_PREFERENCES.md)。
-
-## 恢复阅读顺序
-
-[AGENTS](AGENTS.md) → 本快照与实时 GitHub → [PRODUCT](docs/PRODUCT.md) / [ROADMAP](docs/ROADMAP.md) / [DECISIONS](docs/DECISIONS.md) / [QUALITY_GATES](docs/QUALITY_GATES.md) → [P0 报告](docs/P0_ACCEPTANCE.md) → 当前任务源码与证据。PR 未合并时必须读取实施分支。
+[AGENTS](AGENTS.md) → 本快照与实时 GitHub → [产品](docs/PRODUCT.md) [路线图](docs/ROADMAP.md) [决策](docs/DECISIONS.md) [关卡](docs/QUALITY_GATES.md) → [设计偏好](docs/DESIGN_PREFERENCES.md) → 当前分支源码和验证记录
+模型网关 PoC 已[归档](docs/MODEL_GATEWAY_POC_2026-10-21.md) 不再作为主线前置条件 看板最终列仍未读取 不虚报自动实时同步

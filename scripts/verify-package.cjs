@@ -6,7 +6,7 @@ const {_electron:electron}=require('@playwright/test');
  const folder=path.resolve(process.argv[2]);
  const executable=path.join(folder,'ModularWorkstation.exe'),archive=path.join(folder,'resources/app.asar');
  const {extractFile}=await import('@electron/asar');const hashes={};
- for(const file of ['electron/main.cjs','package.json','dist/index.html',...fs.readdirSync('dist/assets').map(n=>'dist/assets/'+n)]){
+ for(const file of [...fs.readdirSync('electron').filter(n=>n.endsWith('.cjs')).map(n=>'electron/'+n),'package.json','dist/index.html',...fs.readdirSync('dist/assets').map(n=>'dist/assets/'+n)]){
   const packed=extractFile(archive,path.normalize(file));
   if(file==='package.json'){
    const a=JSON.parse(packed),b=JSON.parse(fs.readFileSync(file));
@@ -15,7 +15,8 @@ const {_electron:electron}=require('@playwright/test');
   }else assert.deepEqual(packed,fs.readFileSync(file),file);
   hashes[file]=crypto.createHash('sha256').update(packed).digest('hex');
  }
- const application=await electron.launch({executablePath:executable,args:[]});
+ const profile=fs.mkdtempSync(path.join(require('node:os').tmpdir(),'workstation-package-'));
+ const application=await electron.launch({executablePath:executable,args:[`--user-data-dir=${profile}`]});
  try{
   const w=await application.firstWindow();await w.getByRole('navigation').waitFor();
   const identity=await application.evaluate(({app})=>({name:app.getName(),version:app.getVersion(),path:app.getAppPath()}));
@@ -57,5 +58,5 @@ const {_electron:electron}=require('@playwright/test');
   identity.path=identity.path.replace(folder,'<candidate>');
   const report={kind:'packaged-windows-candidate',identity,preferences,security,chrome,neutralHomeCards:true,verifiedPayloadSHA256:hashes,exeSHA256:crypto.createHash('sha256').update(fs.readFileSync(executable)).digest('hex'),archiveSHA256:crypto.createHash('sha256').update(fs.readFileSync(archive)).digest('hex'),pagesPerTheme:4,themes:2,locales:2,offlineNavigation:true,remoteRequests:remoteRequests.length,rendererErrors:rendererErrors.length,nativeControls,windowCloseExits:true};
   fs.writeFileSync('docs/design/previews/runtime/package-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
- }finally{await application.close().catch(()=>{});}
+ }finally{await application.close().catch(()=>{});fs.rmSync(profile,{recursive:true,force:true,maxRetries:5,retryDelay:100});}
 })().catch(e=>{console.error(e);process.exitCode=1});

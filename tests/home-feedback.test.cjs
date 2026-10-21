@@ -1,4 +1,4 @@
-const assert=require('node:assert/strict');const {test}=require('node:test');const path=require('node:path');const {_electron:electron}=require('@playwright/test');
+const assert=require('node:assert/strict');const {test}=require('node:test');const path=require('node:path');const electron=require('./helpers/electron.cjs');
 test('minimal chrome and neutral home cards with blue icon tiles',async()=>{
  const app=await electron.launch({args:[path.join(__dirname,'..')]});try{const p=await app.firstWindow();await p.getByRole('navigation').waitFor();
  const chrome=await app.evaluate(({Menu,BrowserWindow})=>({menu:Menu.getApplicationMenu()===null,visible:BrowserWindow.getAllWindows()[0].isMenuBarVisible()}));assert.deepEqual(chrome,{menu:true,visible:false});

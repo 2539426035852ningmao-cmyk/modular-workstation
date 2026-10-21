@@ -19,11 +19,12 @@
 桌面 Shell 技术原型 #10 已按用户体验验收关闭 S0-03 已验收关闭 [S0-03（Issue #4）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)。[S0-04（Issue #5）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/5) 已完成真实 PR→失败修复→通过→合并→main 复验并关闭；当前最终看板列未复核 不据此宣布 S1 通过。
 门槛：看板与 Issue/PR 可真实追踪；在不依赖历史聊天的前提下恢复主任务、阻塞与下一步；至少完成一次任务→PR→合并→状态变更的实操验证。Gemini 审查和 CI 必须真实测试，不能凭文档宣称完成。
 
-### S1 产品信息架构与高保真视觉标准（当前）
+### S1 产品信息架构与高保真视觉标准
 交付：导航结构、页面状态流、品牌探索、深浅主题 Token、组件规范、核心关键页视觉与交互说明；并对桌面框架、安全沙盒做技术探索。
-门槛：设计获得用户审美确认，候选框架经可复现原型测试。当前复用依据见 [设计收束清单](S1_DESIGN_RECONCILIATION.md) 唯一实施任务为 [#24](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/24) 模型网关评估已归档 不提前开发 S6。
+门槛：设计获得用户审美确认，候选框架经可复现原型测试。当前复用依据见 [设计收束清单](S1_DESIGN_RECONCILIATION.md) 框架对照 [#24](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/24) 已验收关闭 当前唯一实施任务 [#30](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/30) 模型网关评估已归档 不提前开发 S6。
 
-### S2 工作站 Shell 可用版本
+### S2 工作站 Shell 可用版本（当前实施）
+2026-10-21 所有者授权沿用 Electron 实施本地工作空间与布局恢复 S1 设计余项继续由 #12 跟踪 本轮授权不等于全部阶段通过
 交付：Windows 应用骨架、全局导航、标签、工作区、面板、主题、i18n、设置、搜索命令入口和任务状态框架。
 门槛：离线启动，基础工作区真实可用，布局持久化、双主题、自动化测试通过。
 
@@ -44,4 +45,4 @@
 门槛：SDK 版本化、安全与数据隔离及真实复用验证。
 
 ## 技术风险
-Electron + React + TypeScript 是首选**候选**，Tauri 为对照候选。未完成动态插件沙盒、启动/内存、Windows 打包测试前不得定案。
+Electron + React + TypeScript 已获本阶段实施授权 Tauri 对照证据保留 长期动态插件安全底座仍须 S3 验证 不以本轮桥接测试替代插件隔离。

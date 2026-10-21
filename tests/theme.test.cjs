@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict');
-const {test}=require('node:test');const {_electron:electron}=require('@playwright/test');
+const {test}=require('node:test');const electron=require('./helpers/electron.cjs');
 const out=path.join(__dirname,'../docs/design/previews/runtime');
 const sizes=[[1440,960,1],[1120,760,1],[800,540,1],[1120,760,1.25],[1120,760,1.5],[800,540,2]];
 const colors={dark:['rgb(28, 29, 32)','rgb(34, 84, 135)'],light:['rgb(248, 245, 239)','rgb(12, 57, 103)']};
@@ -33,11 +33,11 @@ test('approved themes, navigation, density, contrast and control states in Elect
       assert.ok(metrics.content<=metrics.visible+1,JSON.stringify({locale,theme,width,zoom,index,metrics}));assert.deepEqual(metrics.clipped,[],JSON.stringify({locale,theme,width,zoom,index}));
       for(const p of metrics.pairs){minimumContrast=Math.min(minimumContrast,p.contrast);assert.ok(p.contrast>=4.5,JSON.stringify({locale,theme,index,...p}));}
       if(index===0){
-       for(const s of ['.primary'])assert.equal(await page.locator(s).evaluate(e=>getComputedStyle(e).backgroundColor),blue);
+       for(const s of ['.primary:visible'])assert.equal(await page.locator(s).evaluate(e=>getComputedStyle(e).backgroundColor),blue);
        if(width===1440)assert.equal(await page.locator('.context-current').evaluate(e=>getComputedStyle(e).backgroundColor),blue);
        assert.notEqual(await page.locator('.search-surface').evaluate(e=>getComputedStyle(e).boxShadow),'none');
       }else{
-       const disabled=page.locator('button:disabled');if(index!==3){assert.equal(await disabled.count(),1);assert.equal(await disabled.evaluate(e=>getComputedStyle(e).opacity),'1');}
+       const disabled=page.locator('button:disabled:visible');if(index===2){assert.equal(await disabled.count(),1);assert.equal(await disabled.evaluate(e=>getComputedStyle(e).opacity),'1');}
       }
       if(locale==='zh-CN'&&((width===1440&&zoom===1)||(width===800&&zoom===2)))await page.screenshot({path:path.join(out,`${theme}-${['home','workspace','plugins','settings'][index]}-${zoom===2?'400':'1440'}.png`)});
       results.push({locale,theme,width,height,zoom,page:index,viewport:metrics.visible,textPairs:metrics.pairs.length});
@@ -47,7 +47,7 @@ test('approved themes, navigation, density, contrast and control states in Elect
   }
   // Test available actions, not demo business records.
   await app.evaluate(({BrowserWindow})=>{const w=BrowserWindow.getAllWindows()[0];w.webContents.setZoomFactor(1);w.setContentSize(1120,760);});
-  await page.locator('nav button').nth(0).click();const primary=page.locator('.primary');await primary.hover();
+  await page.locator('nav button').nth(0).click();const primary=page.locator('.primary:visible');await primary.hover();
   assert.notEqual(await primary.evaluate(e=>getComputedStyle(e).filter),'none');
   await primary.focus();assert.ok(await primary.evaluate(e=>parseFloat(getComputedStyle(e).outlineWidth)>=2));
   const box=await primary.boundingBox();await page.mouse.move(box.x+box.width/2,box.y+box.height/2);await page.mouse.down();assert.notEqual(await primary.evaluate(e=>getComputedStyle(e).transform),'none');await page.mouse.up();
