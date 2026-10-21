@@ -6,7 +6,7 @@
 
 - 所有者已验收 [#24 框架对照](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/24) 并授权沿用 Electron 实施下一步 #24 已关闭
 - [PR #28](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/28) 与 [PR #29](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/29) 已按序合并 main 为 9f656a21ce1bd63a7613bc0805864cc22160809c [合并后 Quality 成功](https://github.com/2539426035852ningmao-cmyk/modular-workstation/actions/runs/39559870468)
-- 当前唯一实施任务 [#30 本地工作空间与布局保存恢复](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/30) 分支 feat/s2-local-workspaces
+- 当前唯一实施任务 [#30 本地工作空间与布局保存恢复](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/30) 分支 feat/s2-local-workspaces [PR #31](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/31) 草稿待审查
 - [#12](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/12) 保留专业设计与组件库余项 不并行重设计 不宣称整个 S1 或 S2 已通过
 
 ## 当前能力

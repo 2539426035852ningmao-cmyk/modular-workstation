@@ -43,5 +43,6 @@
     "maximize": true,
     "unmaximize": true
   },
-  "windowCloseExits": true
+  "windowCloseExits": true,
+  "packagedWorkspaceRestart": true
 }

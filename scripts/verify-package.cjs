@@ -55,8 +55,11 @@ const {_electron:electron}=require('@playwright/test');
    return result;
   });assert.deepEqual(nativeControls,{minimize:true,restore:true,maximize:true,unmaximize:true});
   const closed=application.waitForEvent('close');await application.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].close());await closed;
+  const workspaceCheck=require('node:child_process').spawnSync(process.execPath,['--test','--test-name-pattern=create spaces then restart','tests/workspace-window.test.cjs'],{env:{...process.env,WORKSTATION_TEST_EXECUTABLE:executable},encoding:'utf8',timeout:60000});
+  process.stdout.write(workspaceCheck.stdout||'');process.stderr.write(workspaceCheck.stderr||'');
+  assert.equal(workspaceCheck.status,0,'Packaged workspace restart check failed');
   identity.path=identity.path.replace(folder,'<candidate>');
-  const report={kind:'packaged-windows-candidate',identity,preferences,security,chrome,neutralHomeCards:true,verifiedPayloadSHA256:hashes,exeSHA256:crypto.createHash('sha256').update(fs.readFileSync(executable)).digest('hex'),archiveSHA256:crypto.createHash('sha256').update(fs.readFileSync(archive)).digest('hex'),pagesPerTheme:4,themes:2,locales:2,offlineNavigation:true,remoteRequests:remoteRequests.length,rendererErrors:rendererErrors.length,nativeControls,windowCloseExits:true};
+  const report={kind:'packaged-windows-candidate',identity,preferences,security,chrome,neutralHomeCards:true,verifiedPayloadSHA256:hashes,exeSHA256:crypto.createHash('sha256').update(fs.readFileSync(executable)).digest('hex'),archiveSHA256:crypto.createHash('sha256').update(fs.readFileSync(archive)).digest('hex'),pagesPerTheme:4,themes:2,locales:2,offlineNavigation:true,remoteRequests:remoteRequests.length,rendererErrors:rendererErrors.length,nativeControls,windowCloseExits:true,packagedWorkspaceRestart:true};
   fs.writeFileSync('docs/design/previews/runtime/package-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
  }finally{await application.close().catch(()=>{});fs.rmSync(profile,{recursive:true,force:true,maxRetries:5,retryDelay:100});}
 })().catch(e=>{console.error(e);process.exitCode=1});
