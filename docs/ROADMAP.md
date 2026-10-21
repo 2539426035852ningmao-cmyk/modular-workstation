@@ -11,17 +11,17 @@
 
 ## 关键阶段与门槛
 
-2026-10-20 执行更新：P0 桌面 Shell 已获用户体验验收 PR #13–#20 已合并并复验最终 main #10 已关闭。2026-10-21 #4 独立审查已获所有者授权验收 PR #22 已合并 唯一主任务切换 #5 CI 实际运行。详见 [实际整合记录](P0_INTEGRATION_COMPLETED.md)。后续 #12/S1 余项排队 不据此宣布阶段通过。
+2026-10-20 执行更新：P0 桌面 Shell 已获用户体验验收 PR #13–#20 已合并并复验最终 main #10 已关闭。2026-10-21 #4 独立审查已获所有者授权验收 PR #22 已合并 随后 #5 经 PR #23 完成真实 CI 运行与合并后复验并关闭 唯一实施任务切换 #24 框架对照。详见 [实际整合记录](P0_INTEGRATION_COMPLETED.md)。后续 #12/S1 余项排队 不据此宣布阶段通过。
 
-### S0 项目治理与开发总控（当前）
+### S0 项目治理与开发总控
 交付：仓库、关联看板、产品基线、路线图、状态快照、AI 协作规则、完成定义、决策日志、Issue/PR 模板和质量流程。
 已完成：初始治理基线 [Issue #1](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/1) 及项目状态恢复 [Issue #3](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/3)。#3 的 Projects 自动移列事件已触发，Done 列值仍需网页复核。
-桌面 Shell 技术原型 #10 已按用户体验验收关闭 S0-03 已验收关闭 [S0-03（Issue #4）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)。[S0-04（Issue #5）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/5) 为当前唯一主任务；本原型不构成 S0 或 S1 关卡通过。
+桌面 Shell 技术原型 #10 已按用户体验验收关闭 S0-03 已验收关闭 [S0-03（Issue #4）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/4)。[S0-04（Issue #5）](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/5) 已完成真实 PR→失败修复→通过→合并→main 复验并关闭；当前最终看板列未复核 不据此宣布 S1 通过。
 门槛：看板与 Issue/PR 可真实追踪；在不依赖历史聊天的前提下恢复主任务、阻塞与下一步；至少完成一次任务→PR→合并→状态变更的实操验证。Gemini 审查和 CI 必须真实测试，不能凭文档宣称完成。
 
-### S1 产品信息架构与高保真视觉标准
+### S1 产品信息架构与高保真视觉标准（当前）
 交付：导航结构、页面状态流、品牌探索、深浅主题 Token、组件规范、核心关键页视觉与交互说明；并对桌面框架、安全沙盒做技术探索。
-门槛：设计获得用户审美确认，候选框架经可复现原型测试。
+门槛：设计获得用户审美确认，候选框架经可复现原型测试。当前复用依据见 [设计收束清单](S1_DESIGN_RECONCILIATION.md) 唯一实施任务为 [#24](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/24) 模型网关评估已归档 不提前开发 S6。
 
 ### S2 工作站 Shell 可用版本
 交付：Windows 应用骨架、全局导航、标签、工作区、面板、主题、i18n、设置、搜索命令入口和任务状态框架。
