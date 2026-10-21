@@ -1,0 +1,41 @@
+(node:16284) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:28316) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✖ create spaces then restart a new Electron process and restore independent views (41860.0108ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 42670.0734
+
+✖ failing tests:
+
+test at tests\workspace-window.test.cjs:4:1
+✖ create spaces then restart a new Electron process and restore independent views (41860.0108ms)
+  page.screenshot: Timeout 30000ms exceeded.
+  Call log:
+  [2m  - taking page screenshot[22m
+  [2m  - waiting for fonts to load...[22m
+  [2m  - fonts loaded[22m
+  
+      at TestContext.<anonymous> (C:\Users\86131\Documents\Codex\2026-10-19\codex-modular-workstation-github-github-https\work\modular-workstation\tests\workspace-window.test.cjs:32:16) {
+    name: 'TimeoutError'
+  }
+AssertionError [ERR_ASSERTION]: Packaged workspace restart check failed
+
+1 !== 0
+
+    at C:\Users\86131\Documents\Codex\2026-10-19\codex-modular-workstation-github-github-https\work\modular-workstation\scripts\verify-package.cjs:62:10
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processImmediate (node:internal/timers:472:9) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

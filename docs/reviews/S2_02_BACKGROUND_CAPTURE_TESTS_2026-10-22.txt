@@ -1,0 +1,22 @@
+(node:14668) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ native appearance choices persist across process restart without changing workspaces (20203.9114ms)
+✔ appearance write failure keeps the old theme and unrelated success cannot clear its exit warning (6860.6315ms)
+✔ corrupt appearance remains untouched until explicit recovery and unsupported versions stay protected (5553.9757ms)
+(node:39588) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"cases":96,"minimumContrast":4.57687728527731,"remoteRequests":0,"rendererErrors":0,"feedbackStyleProbes":6}
+✔ approved themes, navigation, density, contrast and control states in Electron (207062.4031ms)
+(node:34116) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ create spaces then restart a new Electron process and restore independent views (17211.4341ms)
+✔ real disk write failure is visible and closing asks before discarding (2909.8841ms)
+✔ successful reread clears an obsolete recovery confirmation (4836.8884ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 267432.3689

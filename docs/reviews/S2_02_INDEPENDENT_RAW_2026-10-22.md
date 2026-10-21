@@ -247,3 +247,51 @@ Below are the concrete defects identified from the code.
 
 **最终审核裁决**：**通过（No Blocker）**。Issue 32 snapshot `d82f6d4` 符合全部既定安全性与设计约束。
 
+
+## 后台截图专项复核 0ee4f85
+
+# Code Review: Test-Only Changes (`0ee4f85`)
+
+**Verdict:** **NO BLOCKER** (with noted design limits and prerequisites)
+
+---
+
+### Detailed Findings
+
+#### 1. Hidden Window Stays Hidden
+- **Evaluation:** Pass.
+  - In `tests/helpers/background.cjs`: `webContents.capturePage(undefined, { stayHidden: true, stayAwake: true })` specifically uses Electron's native `stayHidden: true` option. This prevents offscreen/hidden rendering from causing the window to be shown or focused.
+  - Assertions in `tests/background-window.test.cjs` explicitly verify window states remain `{ visible: false, focused: false, focusable: false }` both during and after capture operations and dialog invocations.
+  - Windows platform note: `stayHidden: true` combined with `stayAwake: true` wakes the compositor/DWM pipeline without triggering `ShowWindow(SW_SHOWNA)` or stealing focus.
+
+#### 2. Latest-Frame Fencing
+- **Evaluation:** Pass (for current Chromium rendering pipeline).
+  - Double `requestAnimationFrame`:
+    ```javascript
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve()))));
+    ```
+    This ensures that DOM/style modifications (such as mutating `#capture-probe`) are committed to a style recalculation, layout, and queued for the subsequent compositor commit before invoking `capturePage`.
+  - Font readiness: `await page.evaluate(() => document.fonts.ready.then(() => undefined));` prevents capturing layout-shifted fallback text before web fonts finish loading.
+  - Pixel validation: The test validates BGRA/RGBA byte ordering directly using `nativeImage.createFromPath(file).getBitmap()` across color transitions (`#123456` [0x56, 0x34, 0x12, 0xff] and `#abcdef` [0xef, 0xcd, 0xab, 0xff]), confirming that stale frames from prior ticks are not retained.
+
+#### 3. Error Reporting & Robustness
+- **Evaluation:** Pass.
+  - `if (image.isEmpty()) throw Error('Empty background screenshot');` guards against capturePage returning zero-dimension or unallocated native image buffers before writing to disk.
+  - Clean error isolation in `app.close()`:
+    ```javascript
+    await app.evaluate(({ dialog }) => { dialog.showMessageBox = async () => ({ response: 1 }); }).catch(() => {});
+    ```
+    Guards test cleanup so that unhandled exit confirmations do not deadlock CI runners or display native dialogs.
+  - Clean temp profile cleanup with retries in `finally`: `maxRetries: 5, retryDelay: 100` accommodates Windows filesystem file-lock latencies on temp directory removal.
+
+---
+
+### Inherent Limits & Assumptions
+
+1. **Window Indexing Assumption:**
+   `BrowserWindow.getAllWindows()[0]` assumes the targeted window is the primary and only window created by workstation launch. If secondary background workers or auxiliary windows are introduced in future revisions, index `[0]` may select an unexpected window instance.
+2. **Double RAF vs. Compositor Throttle:**
+   While `requestAnimationFrame` double-fencing is reliable for Chromium render threads, under extreme CPU/GPU starvation on Windows CI VMs, compositor commits can occasionally lag behind the render thread frame callback. Electron's `stayAwake: true` mitigates this by keeping compositor paint ticking.
+3. **Electron Version Compatibility:**
+   Options `{ stayHidden: true, stayAwake: true }` in `webContents.capturePage` are supported in modern Electron (including Electron 44).
+
