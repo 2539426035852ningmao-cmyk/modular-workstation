@@ -58,8 +58,10 @@ class WorkspaceStore {
     if (command.type === 'view') w.view = structuredClone(command.view);
     next.lastWorkspaceId = w.id;
    } else fail('INVALID');
-   await fs.mkdir(path.dirname(this.file), {recursive:true});
-   try { await this.writer(this.file, JSON.stringify(next,null,2)+'\n', {encoding:'utf8',mode:0o600,fsync:true}); } catch { fail('SAVE_FAILED'); }
+   try {
+    await fs.mkdir(path.dirname(this.file), {recursive:true});
+    await this.writer(this.file, JSON.stringify(next,null,2)+'\n', {encoding:'utf8',mode:0o600,fsync:true});
+   } catch { fail('SAVE_FAILED'); }
    this.state = next; return structuredClone(next);
   });
  }

@@ -44,3 +44,11 @@ test('queued saves retain all changes and future schemas cannot be reset',async(
   assert.equal(await fs.readFile(file,'utf8'),future);
  } finally {await fs.rm(dir,{recursive:true,force:true});}
 });
+test('failure to create a state directory is a save failure',async()=>{
+ const root=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-permission-')),dir=path.join(root,'profile');
+ try {
+  const store=new WorkspaceStore(dir);await store.load();await fs.writeFile(dir,'blocked directory');
+  await assert.rejects(store.mutate({type:'create',name:'未保存'}),/SAVE_FAILED/);
+  assert.equal(await fs.readFile(dir,'utf8'),'blocked directory');
+ } finally {await fs.rm(root,{recursive:true,force:true});}
+});

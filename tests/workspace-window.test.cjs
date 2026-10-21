@@ -34,9 +34,27 @@ test('create spaces then restart a new Electron process and restore independent 
   }
   assert.deepEqual(errors,[]);
   await app.close();app=null;
-  await fs.writeFile(path.join(profile,'workspaces-v1.json'),'damaged');await launch();await page.locator('nav button').nth(1).click();await expect(page.getByRole('alert')).toBeVisible();
+  await fs.writeFile(path.join(profile,'workspaces-v1.json'),'damaged');await launch();await expect(page.locator('nav button').nth(1)).toHaveAttribute('aria-current','page');await expect(page.getByRole('alert')).toBeVisible();
   assert.equal(await fs.readFile(path.join(profile,'workspaces-v1.json'),'utf8'),'damaged');
   await page.locator('.workspace-error button').nth(1).click();await page.locator('.recovery-confirm button').first().click();await expect(page.locator('.workspaces')).toHaveAttribute('aria-busy','false');
   await create('恢复空间');assert.ok((await fs.readdir(profile)).some(f=>f.startsWith('workspaces-v1.preserved-')));
  }finally{if(app)await app.close();await fs.rm(profile,{recursive:true,force:true,maxRetries:5,retryDelay:100});}
+});
+test('real disk write failure is visible and closing asks before discarding',async()=>{
+ const profile=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-failure-'));
+ const app=await electron.launch({args:[path.join(__dirname,'..'),`--user-data-dir=${profile}`]});
+ try {
+  const page=await app.firstWindow();await expect(page.locator('.workspaces')).toHaveAttribute('aria-busy','false');await page.locator('nav button').nth(1).click();
+  await fs.mkdir(path.join(profile,'workspaces-v1.json'));
+  await page.locator('#workspace-name').fill('未保存空间');await page.locator('.workspace-create button').click();
+  await expect(page.getByRole('alert')).toBeVisible();await expect(page.locator('.workspace-feedback')).toHaveText(/未保存|not saved/);
+  await expect(page.locator('#workspace-name')).toHaveValue('未保存空间');
+  await app.evaluate(({dialog})=>{globalThis.closePrompts=0;dialog.showMessageBox=async()=>{globalThis.closePrompts++;return {response:0};};});
+  await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].close());
+  await expect.poll(()=>app.evaluate(()=>globalThis.closePrompts)).toBe(1);
+  assert.equal(await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows().length),1);
+  await fs.rmdir(path.join(profile,'workspaces-v1.json'));
+  await page.locator('.workspace-create button').click();await expect(page.locator('.workspace-feedback')).toHaveText(/已保存|Saved/);
+  const closed=app.waitForEvent('close');await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].close());await closed;
+ }finally{await app.close().catch(()=>{});await fs.rm(profile,{recursive:true,force:true,maxRetries:5,retryDelay:100});}
 });

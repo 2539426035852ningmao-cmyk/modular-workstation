@@ -30,8 +30,8 @@ export default function Workspace({onRestore,onCount}:{onRestore:()=>void;onCoun
   void (async()=>{try{
    const reply=await window.workstation?.load();if(!live)return;
    if(reply?.ok){setState(reply.state);if(reply.state.lastWorkspaceId)onRestore();}
-   else setError(reply && !reply.ok ? reply.error : 'UNAVAILABLE');
-  }catch{if(live)setError('READ_FAILED');}finally{if(live)setBusy(false);}})();
+   else {setError(reply && !reply.ok ? reply.error : 'UNAVAILABLE');onRestore();}
+  }catch{if(live){setError('READ_FAILED');onRestore();}}finally{if(live)setBusy(false);}})();
   return ()=>{live=false;};
  },[]);
  const change = (command:Command) => request(()=>window.workstation!.change(command),true);
