@@ -13,7 +13,7 @@
 - Tauri 2.12.3；Rust 1.99.1、Windows MSVC，工具链与实验在仓库外 outputs，未改全局 PATH。
 - 使用官方 create-tauri-app npm 4.7.5 的最小入口，移除 greet 业务命令和 opener 插件，capabilities.permissions 为空，关闭全局 Tauri API。生成器自身帮助文本显示 4.8.0，与 npm 包号不同，按实际记录保留，不据此虚构 npm 版本。
 - 将当前 `dist` 原样复制给 Tauri，3 个前端文件 SHA256 全部一致；没有另写首页或更换组件库。当前页面及布局限制同样保留。
-- create-tauri-app / Tauri / CLI 为 MIT OR Apache-2.0，保留 [MIT 文本](../experiments/windows-framework-comparison/CREATE_TAURI_APP_LICENSE_MIT)；Electron 与 Playwright 沿用已有依赖。未声称全部传递依赖已完成许可或安全认证。
+- create-tauri-app / Tauri / CLI 为 MIT OR Apache-2.0，保留 [MIT 文本](experiments/windows-framework-comparison/CREATE_TAURI_APP_LICENSE_MIT)；Electron 与 Playwright 沿用已有依赖。未声称全部传递依赖已完成许可或安全认证。
 
 ## 实际功能检查
 
@@ -56,7 +56,7 @@ Tauri 配置 CSP 为 null，但复用前端 index.html 中实际存在的 CSP；
 
 ## 验证证据与复现
 
-[功能矩阵](reviews/s1-framework-20261021/comparison-results.json) / [五轮原始数据](reviews/s1-framework-20261021/native-benchmark.json) / [中位数摘要](reviews/s1-framework-20261021/benchmark-summary.json) / [前端逐文件一致性](reviews/s1-framework-20261021/frontend-identity.json) / [隔离实验配方和脚本](../experiments/windows-framework-comparison/README.md)。
+[功能矩阵](reviews/s1-framework-20261021/comparison-results.json) / [五轮原始数据](reviews/s1-framework-20261021/native-benchmark.json) / [中位数摘要](reviews/s1-framework-20261021/benchmark-summary.json) / [前端逐文件一致性](reviews/s1-framework-20261021/frontend-identity.json) / [隔离实验配方和脚本](experiments/windows-framework-comparison/README.md)。
 
 完整编译、打包日志和两张运行截图保留在仓库外 outputs/s1-framework-comparison。Node 24 与当前 Playwright 组合有 DEP0190 警告，未将其写成零警告。
 
