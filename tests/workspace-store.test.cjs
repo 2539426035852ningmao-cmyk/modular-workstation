@@ -52,3 +52,43 @@ test('failure to create a state directory is a save failure',async()=>{
   assert.equal(await fs.readFile(dir,'utf8'),'blocked directory');
  } finally {await fs.rm(root,{recursive:true,force:true});}
 });
+test('a missing version is corrupt and recoverable while real future versions stay protected',async()=>{
+ const dir=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-schema-'));
+ try {
+  const file=path.join(dir,'workspaces-v1.json');await fs.writeFile(file,'{}');
+  const store=new WorkspaceStore(dir);await assert.rejects(store.load(),/CORRUPT/);
+  await store.recover();const names=await fs.readdir(dir);
+  const preserved=names.find(n=>n.startsWith('workspaces-v1.preserved-'));
+  assert.ok(preserved);assert.equal(await fs.readFile(path.join(dir,preserved),'utf8'),'{}');
+  await fs.writeFile(file,'{"version":2}');const future=new WorkspaceStore(dir);
+  await assert.rejects(future.load(),/UNSUPPORTED/);await assert.rejects(future.recover(),/INVALID/);
+ } finally {await fs.rm(dir,{recursive:true,force:true});}
+});
+test('initial load and immediate changes share one queue',async()=>{
+ const dir=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-load-'));
+ try {
+  const store=new WorkspaceStore(dir);
+  const [,created]=await Promise.all([store.load(),store.mutate({type:'create',name:'排队空间'})]);
+  assert.equal(created.workspaces.length,1);
+  assert.equal((await new WorkspaceStore(dir).load()).workspaces[0].name,'排队空间');
+ } finally {await fs.rm(dir,{recursive:true,force:true});}
+});
+test('failed preservation keeps bytes and a reread recovers after an external file removal',async()=>{
+ const dir=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-retry-'));
+ try {
+  const file=path.join(dir,'workspaces-v1.json');await fs.writeFile(file,'broken');
+  const store=new WorkspaceStore(dir);await assert.rejects(store.load(),/CORRUPT/);
+  await fs.unlink(file);await assert.rejects(store.recover(),/ENOENT/);
+  assert.equal((await store.load()).workspaces.length,0);
+  await store.mutate({type:'create',name:'重新读取后恢复'});
+ } finally {await fs.rm(dir,{recursive:true,force:true});}
+});
+test('malformed UUID records are rejected without changing their bytes',async()=>{
+ const dir=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-id-'));
+ try {
+  const id='-'.repeat(36),file=path.join(dir,'workspaces-v1.json');
+  const bytes=JSON.stringify({version:1,lastWorkspaceId:id,workspaces:[{id,name:'坏记录',view:{tabs:['overview'],activeTab:'overview',layout:'standard'}}]});
+  await fs.writeFile(file,bytes);await assert.rejects(new WorkspaceStore(dir).load(),/CORRUPT/);
+  assert.equal(await fs.readFile(file,'utf8'),bytes);
+ }finally{await fs.rm(dir,{recursive:true,force:true});}
+});

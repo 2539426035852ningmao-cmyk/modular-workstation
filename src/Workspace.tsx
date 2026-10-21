@@ -20,7 +20,7 @@ export default function Workspace({onRestore,onCount}:{onRestore:()=>void;onCoun
  useEffect(()=>{onCount(state?.workspaces.length ?? 0);},[state,onCount]);
  async function request(action:()=>Promise<Reply>,changed=false) {
   setBusy(true);setError('');setSaved(false);
-  try {const reply=await action();if(reply.ok){setState(reply.state);setSaved(changed);return true;}setError(reply.error);}
+  try {const reply=await action();if(reply.ok){setState(reply.state);setConfirmRecovery(false);setSaved(changed);return true;}setError(reply.error);}
   catch {setError('READ_FAILED');}
   finally {setBusy(false);}
   return false;

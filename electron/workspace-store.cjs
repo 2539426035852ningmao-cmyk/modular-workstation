@@ -5,7 +5,7 @@ const writeAtomic = require('write-file-atomic');
 const fail = code => { throw new Error(code); };
 const plain = value => value && Object.getPrototypeOf(value) === Object.prototype;
 const exact = (value, keys) => plain(value) && Object.keys(value).sort().join() === [...keys].sort().join();
-const validId = id => typeof id === 'string' && /^[0-9a-f-]{36}$/.test(id);
+const validId = id => typeof id === 'string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/.test(id);
 const validName = name => typeof name === 'string' && name.trim() === name && name.length > 0 && name.length <= 60 && !/[\x00-\x1f\x7f]/.test(name);
 const defaultView = () => ({ tabs: ['overview'], activeTab: 'overview', layout: 'standard' });
 function validView(view) {
@@ -23,14 +23,14 @@ class WorkspaceStore {
  constructor(directory, writer = writeAtomic) {
   this.file = path.join(directory, 'workspaces-v1.json'); this.writer = writer; this.tail = Promise.resolve(); this.state = null; this.blocked = null;
  }
- async load() {
-  await this.tail;
+ load() {
+  return this.enqueue(async () => {
   if (this.state && !this.blocked) return structuredClone(this.state);
   try {
    const stat = await fs.stat(this.file); if (stat.size > 1024*1024) fail('CORRUPT');
    const bytes = await fs.readFile(this.file, 'utf8');
    let state; try { state = JSON.parse(bytes); } catch { fail('CORRUPT'); }
-   if (plain(state) && state.version !== 1) fail('UNSUPPORTED');
+   if (plain(state) && Number.isSafeInteger(state.version) && state.version >= 0 && state.version !== 1) fail('UNSUPPORTED');
    if (!validState(state)) fail('CORRUPT');
    this.state = state; this.blocked = null;
   } catch (error) {
@@ -38,6 +38,7 @@ class WorkspaceStore {
    else { this.blocked = ['CORRUPT','UNSUPPORTED'].includes(error.message) ? error.message : 'READ_FAILED'; fail(this.blocked); }
   }
   return structuredClone(this.state);
+  });
  }
  enqueue(operation) {
   const result = this.tail.then(operation); this.tail = result.catch(() => {}); return result;

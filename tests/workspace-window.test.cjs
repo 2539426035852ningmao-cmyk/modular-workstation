@@ -49,12 +49,29 @@ test('real disk write failure is visible and closing asks before discarding',asy
   await page.locator('#workspace-name').fill('未保存空间');await page.locator('.workspace-create button').click();
   await expect(page.getByRole('alert')).toBeVisible();await expect(page.locator('.workspace-feedback')).toHaveText(/未保存|not saved/);
   await expect(page.locator('#workspace-name')).toHaveValue('未保存空间');
-  await app.evaluate(({dialog})=>{globalThis.closePrompts=0;dialog.showMessageBox=async()=>{globalThis.closePrompts++;return {response:0};};});
-  await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].close());
+  await app.evaluate(({dialog})=>{globalThis.closePrompts=0;dialog.showMessageBox=async()=>{globalThis.closePrompts++;await new Promise(resolve=>setTimeout(resolve,150));return {response:0};};});
+  await app.evaluate(({BrowserWindow})=>{const w=BrowserWindow.getAllWindows()[0];w.close();w.close();});
   await expect.poll(()=>app.evaluate(()=>globalThis.closePrompts)).toBe(1);
+  const closing=await page.evaluate(()=>window.workstation.change({type:'create',name:'关闭期间不应新增'}));
+  assert.equal(closing.ok,false);assert.equal(closing.error,'CLOSING');
+  await new Promise(resolve=>setTimeout(resolve,200));
+  assert.equal(await app.evaluate(()=>globalThis.closePrompts),1);
   assert.equal(await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows().length),1);
   await fs.rmdir(path.join(profile,'workspaces-v1.json'));
   await page.locator('.workspace-create button').click();await expect(page.locator('.workspace-feedback')).toHaveText(/已保存|Saved/);
   const closed=app.waitForEvent('close');await app.evaluate(({BrowserWindow})=>BrowserWindow.getAllWindows()[0].close());await closed;
- }finally{await app.close().catch(()=>{});await fs.rm(profile,{recursive:true,force:true,maxRetries:5,retryDelay:100});}
+ }finally{await app.evaluate(({dialog})=>{dialog.showMessageBox=async()=>({response:1});}).catch(()=>{});await app.close().catch(()=>{});await fs.rm(profile,{recursive:true,force:true,maxRetries:5,retryDelay:100});}
+});
+test('successful reread clears an obsolete recovery confirmation',async()=>{
+ const profile=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-confirm-'));
+ const file=path.join(profile,'workspaces-v1.json');await fs.writeFile(file,'broken');
+ const app=await electron.launch({args:[path.join(__dirname,'..'),`--user-data-dir=${profile}`]});
+ try {
+  const page=await app.firstWindow();await expect(page.getByRole('alert')).toBeVisible();
+  await page.locator('.workspace-error button').nth(1).click();await expect(page.locator('.recovery-confirm')).toBeVisible();
+  await fs.writeFile(file,JSON.stringify({version:1,lastWorkspaceId:null,workspaces:[]}));
+  await page.locator('.workspace-error button').first().click();
+  await expect(page.locator('.workspaces')).toHaveAttribute('aria-busy','false');
+  assert.equal(await page.locator('.recovery-confirm').count(),0);
+ }finally{await app.close();await fs.rm(profile,{recursive:true,force:true,maxRetries:5,retryDelay:100});}
 });
