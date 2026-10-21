@@ -4,6 +4,8 @@ module.exports={
  cloudWindows,
  async screenshot(app,page,file){
   await page.evaluate(()=>document.fonts.ready.then(()=>undefined));
+  // Wait for the current DOM to paint; capturePage alone can return the previous view.
+  await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(()=>resolve()))));
   // Native capture explicitly keeps hidden windows hidden and wakes only rendering.
   const png=await app.evaluate(async({BrowserWindow})=>{
    const image=await BrowserWindow.getAllWindows()[0].webContents.capturePage(undefined,{stayHidden:true,stayAwake:true});
