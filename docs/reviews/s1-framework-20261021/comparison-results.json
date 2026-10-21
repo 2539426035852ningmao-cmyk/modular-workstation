@@ -1,0 +1,149 @@
+[
+  {
+    "framework": "electron",
+    "index": 0,
+    "startupMs": 629.0056999999999,
+    "processes": [
+      {
+        "pid": 29664,
+        "parent": 9760,
+        "createdAtUtc": "2026-10-21T04:56:17.9125090Z",
+        "name": "cmd.exe",
+        "workingSetBytes": 4415488,
+        "privateBytes": 4141056
+      },
+      {
+        "pid": 2976,
+        "parent": 29664,
+        "createdAtUtc": "2026-10-21T04:56:17.9501280Z",
+        "name": "ModularWorkstation.exe",
+        "workingSetBytes": 96178176,
+        "privateBytes": 35254272
+      },
+      {
+        "pid": 31120,
+        "parent": 2976,
+        "createdAtUtc": "2026-10-21T04:56:18.1304670Z",
+        "name": "ModularWorkstation.exe",
+        "workingSetBytes": 151207936,
+        "privateBytes": 139509760
+      },
+      {
+        "pid": 33884,
+        "parent": 2976,
+        "createdAtUtc": "2026-10-21T04:56:18.1385810Z",
+        "name": "ModularWorkstation.exe",
+        "workingSetBytes": 44642304,
+        "privateBytes": 12169216
+      },
+      {
+        "pid": 11172,
+        "parent": 2976,
+        "createdAtUtc": "2026-10-21T04:56:18.1979810Z",
+        "name": "ModularWorkstation.exe",
+        "workingSetBytes": 84353024,
+        "privateBytes": 32563200
+      }
+    ],
+    "workingSetBytes": 380796928,
+    "privateBytes": 223637504,
+    "checks": {
+      "locales": 2,
+      "themes": 2,
+      "pages": 4,
+      "offlineReload": true,
+      "rendererGlobals": {
+        "require": "undefined",
+        "process": "undefined"
+      },
+      "nativeProbe": {
+        "available": false,
+        "reason": "No preload or IPC bridge registered"
+      },
+      "rendererErrors": [],
+      "remoteRequests": []
+    }
+  },
+  {
+    "framework": "tauri",
+    "index": 0,
+    "startupMs": 1019.7035999999998,
+    "processes": [
+      {
+        "pid": 39320,
+        "parent": 9760,
+        "createdAtUtc": "2026-10-21T04:56:25.0881470Z",
+        "name": "tauri-candidate.exe",
+        "workingSetBytes": 26361856,
+        "privateBytes": 5582848
+      },
+      {
+        "pid": 36480,
+        "parent": 39320,
+        "createdAtUtc": "2026-10-21T04:56:25.2409130Z",
+        "name": "msedgewebview2.exe",
+        "workingSetBytes": 124612608,
+        "privateBytes": 38924288
+      },
+      {
+        "pid": 40388,
+        "parent": 36480,
+        "createdAtUtc": "2026-10-21T04:56:25.2865480Z",
+        "name": "msedgewebview2.exe",
+        "workingSetBytes": 9691136,
+        "privateBytes": 2531328
+      },
+      {
+        "pid": 18952,
+        "parent": 36480,
+        "createdAtUtc": "2026-10-21T04:56:25.6174730Z",
+        "name": "msedgewebview2.exe",
+        "workingSetBytes": 137650176,
+        "privateBytes": 141864960
+      },
+      {
+        "pid": 24064,
+        "parent": 36480,
+        "createdAtUtc": "2026-10-21T04:56:25.6227520Z",
+        "name": "msedgewebview2.exe",
+        "workingSetBytes": 36360192,
+        "privateBytes": 12034048
+      },
+      {
+        "pid": 35112,
+        "parent": 36480,
+        "createdAtUtc": "2026-10-21T04:56:25.6641220Z",
+        "name": "msedgewebview2.exe",
+        "workingSetBytes": 20877312,
+        "privateBytes": 7798784
+      },
+      {
+        "pid": 30788,
+        "parent": 36480,
+        "createdAtUtc": "2026-10-21T04:56:25.7853690Z",
+        "name": "msedgewebview2.exe",
+        "workingSetBytes": 67805184,
+        "privateBytes": 30691328
+      }
+    ],
+    "workingSetBytes": 423358464,
+    "privateBytes": 239427584,
+    "checks": {
+      "locales": 2,
+      "themes": 2,
+      "pages": 4,
+      "offlineReload": true,
+      "rendererGlobals": {
+        "require": "undefined",
+        "process": "undefined"
+      },
+      "nativeProbe": {
+        "available": true,
+        "denied": true,
+        "error": "Command plugin:fs|read_text_file not allowed by ACL"
+      },
+      "rendererErrors": [],
+      "remoteRequests": []
+    }
+  }
+]
