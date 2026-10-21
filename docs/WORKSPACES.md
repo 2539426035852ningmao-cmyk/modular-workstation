@@ -18,6 +18,7 @@
 - 固定文件为 Electron `app.getPath('userData')/workspaces-v1.json` 常规 Windows 用户目录位于 `%APPDATA%/modular-workstation` 便携包可使用产品名称目录 以实际 app 路径为准 不在应用安装目录写入
 - 原生启动参数 `--user-data-dir=<独立目录>` 可隔离测试 Renderer 不能选择目录
 - 版本 1 最多 100 个空间 名称 1 至 60 个 UTF16 单元 禁止控制字符 标识由主进程生成
+- UUID 必须为主进程生成的标准小写格式 缺失版本字段按损坏处理 已知整数但不支持的版本仍禁止重建
 - 每空间保存内置标签白名单 `overview/resources` 当前标签及 `standard/focus` 预设 上次空间标识单独保存
 - 没有文件路径 凭据 业务内容 网络请求或需要自动重放的任务
 - 主进程串行更改 校验完整结构 采用原子文件替换及文件 fsync 确认完成才显示已保存 不使用延迟防抖保存
@@ -32,6 +33,8 @@
 preload 只提供 load change recover 不提供通用 invoke 读写文件 Shell 或 Token 接口
 主进程校验 IPC 窗口 身份 主 frame 及精确本地 URL 命令类型 字段 名称 ID 标签和布局白名单
 单实例避免同一配置目录多个主进程同时写入 窗口关闭等待已排队保存结束
+读取与更改共用同一队列 关闭确认期间拒绝新 IPC 操作 连续关闭只出现一次确认 返回后可继续保存
+状态文件在 Windows 继承用户目录 ACL `mode 0o600` 不等于 Windows ACL 隔离 没有承诺文件加密或凭据保险箱
 本次不实现崩溃识别 安全启动 第三方插件会话恢复或未保存业务草稿
 
 ## 复用与来源

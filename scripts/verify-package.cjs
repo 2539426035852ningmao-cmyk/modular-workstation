@@ -1,6 +1,6 @@
 // Check an existing Windows Candidate without overwriting or installing it.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
-const {_electron:electron}=require('@playwright/test');
+const {_electron:electron,expect}=require('@playwright/test');
 (async()=>{
  assert.ok(process.argv[2], 'Pass the exact Candidate folder to verify.');
  const folder=path.resolve(process.argv[2]);
@@ -38,6 +38,8 @@ const {_electron:electron}=require('@playwright/test');
   for(const theme of ['dark','light']){
    await w.emulateMedia({colorScheme:theme});assert.equal(await w.evaluate(()=>getComputedStyle(document.documentElement).getPropertyValue('--color-bg').trim()),theme==='dark'?'#1c1d20':'#f8f5ef');
    await w.locator('nav button').first().click();
+   await w.locator('.brand-mark').hover();
+   await expect.poll(()=>w.locator('.module-card:hover').count()).toBe(0);
    const cardStyle=await w.locator('.module-card').evaluateAll(es=>es.map(e=>({background:getComputedStyle(e).backgroundColor,iconBackground:getComputedStyle(e.querySelector('.module-icon')).backgroundColor,iconColor:getComputedStyle(e.querySelector('.module-icon')).color})));
    for(const c of cardStyle){assert.equal(c.background,theme==='light'?'rgb(255, 253, 250)':'rgb(41, 43, 48)');assert.equal(c.iconBackground,theme==='light'?'rgb(12, 57, 103)':'rgb(34, 84, 135)');assert.equal(c.iconColor,'rgb(255, 255, 255)');}
    for(let i=0;i<4;i++){await w.locator('nav button').nth(i).click();assert.equal(await w.locator('nav button').nth(i).getAttribute('aria-current'),'page');}
