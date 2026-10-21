@@ -1,4 +1,4 @@
-const { _electron } = require('@playwright/test');
+const _electron = require('./background.cjs');
 const fs = require('node:fs/promises'), os = require('node:os'), path = require('node:path');
 module.exports.launch = async options => {
  const profile = await fs.mkdtemp(path.join(os.tmpdir(),'workstation-ui-'));

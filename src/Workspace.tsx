@@ -1,13 +1,7 @@
 import {useEffect, useState} from 'react';
 import {Icon} from './Icons';
 import {getMessages} from './i18n';
-type Tab = 'overview' | 'resources';
-type View = {tabs:Tab[]; activeTab:Tab; layout:'standard'|'focus'};
-type Space = {id:string; name:string; view:View};
-type State = {version:1;lastWorkspaceId:string|null;workspaces:Space[]};
-type Command = {type:'create';name:string}|{type:'open'|'reset';id:string}|{type:'view';id:string;view:View};
-type Reply = {ok:true;state:State}|{ok:false;error:string};
-declare global {interface Window {workstation?:{load:()=>Promise<Reply>;change:(command:Command)=>Promise<Reply>;recover:()=>Promise<Reply>}}}
+import type {Tab,View,State,Command,Reply} from './bridge';
 export default function Workspace({onRestore,onCount}:{onRestore:()=>void;onCount:(count:number)=>void}) {
  const m = getMessages(navigator.language).workspace;
  const [state,setState] = useState<State|null>(null);

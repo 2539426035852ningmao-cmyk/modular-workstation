@@ -1,6 +1,6 @@
 const {test}=require('node:test'),assert=require('node:assert/strict');
 const fs=require('node:fs/promises'),os=require('node:os'),path=require('node:path');
-const {_electron:electron,expect}=require('@playwright/test');
+const {expect}=require('@playwright/test');const electron=require('./helpers/background.cjs');
 test('create spaces then restart a new Electron process and restore independent views',async()=>{
  const profile=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-restart-'));
  let app;let page;const errors=[];

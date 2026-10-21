@@ -134,3 +134,8 @@ input:focus-visible, select:focus-visible { outline: 2px solid var(--color-focus
 .error-mark { display: grid; place-items: center; width: 32px; height: 32px; flex: none; border-radius: var(--radius-md); background: var(--color-warning); color: var(--color-on-warning); font-weight: 650; }
 .workspace-error .control, .recovery-confirm .control { margin: 4px 8px 0 0; }
 @media (max-width: 700px) { .workspace-body { flex-direction: column; } .workspace-views { flex-basis: auto; flex-direction: row; flex-wrap: wrap; border-right: 0; border-bottom: 1px solid var(--color-divider); } .workspace-panel { padding: 20px; } }
+
+.appearance-panel h2 { margin-top: 0; }
+.appearance-modes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.appearance-modes .control[aria-pressed="true"] { background: var(--color-accent); color: var(--color-on-accent); border-color: transparent; }
+.appearance-feedback { color: var(--color-subtle); font-size: var(--type-small); min-height: 24px; margin-top: 20px; }
