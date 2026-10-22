@@ -1,0 +1,12 @@
+(node:24836) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Chinese commands keep native composition confirmation and committed Chinese text intact (5073.5797ms)
+✔ Chinese workspace naming does not create a space when confirming composition (3101.0843ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9075.6597

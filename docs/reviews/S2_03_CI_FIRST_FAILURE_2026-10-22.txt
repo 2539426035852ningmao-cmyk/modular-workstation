@@ -1,0 +1,24 @@
++✖ failing tests:
+2026-10-22T01:41:42.5413959Z 
+2026-10-22T01:41:42.5414312Z test at tests\command-window.test.cjs:3:1
+2026-10-22T01:41:42.5416481Z ✖ command palette navigates existing pages with keyboard focus and composition safety (5722.251ms)
+2026-10-22T01:41:42.5417124Z   Error: expect(locator).toHaveCount(expected) failed
+2026-10-22T01:41:42.5417428Z   
+2026-10-22T01:41:42.5417645Z   Locator:  getByRole('option')
+2026-10-22T01:41:42.5417884Z   Expected: 1
+2026-10-22T01:41:42.5418065Z   Received: 0
+2026-10-22T01:41:42.5418425Z   Timeout:  5000ms
+2026-10-22T01:41:42.5418607Z   
+2026-10-22T01:41:42.5418776Z   Call log:
+2026-10-22T01:41:42.5419033Z     - Expect "to.have.count" with timeout 5000ms
+2026-10-22T01:41:42.5419412Z     - waiting for getByRole('option')
+2026-10-22T01:41:42.5419783Z       9 × locator resolved to 0 elements
+2026-10-22T01:41:42.5420072Z         - unexpected value "0"
+2026-10-22T01:41:42.5420295Z   
+2026-10-22T01:41:42.5420855Z       at Proxy.<anonymous> (D:\a\modular-workstation\modular-workstation\node_modules\playwright\lib\matchers\expect.js:221:24)
+2026-10-22T01:41:42.5421733Z       at TestContext.<anonymous> (D:\a\modular-workstation\modular-workstation\tests\command-window.test.cjs:9:72)
+2026-10-22T01:41:42.5422350Z       at async Test.run (node:internal/test_runner/test:1332:7)
+2026-10-22T01:41:42.5422864Z       at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+2026-10-22T01:41:42.5425973Z     matcherResult: { actual: 0, expected: 1, message: `expect(locator).toHaveCount(expected) failed\n\nLocator:  getByRole('option')\nExpected: 1\nReceived: 0\nTimeout:  5000ms\n\nCall log:\n  - Expect "to.have.count" with timeout 5000ms\n  - waiting for getByRole('option')\n    9 × locator resolved to 0 elements\n      - unexpected value "0"\n`, name: 'toHaveCount', pass: false, log: [ '  - Expect "to.have.count" with timeout 5000ms', "  - waiting for getByRole('option')", '    9 × locator resolved to 0 elements', '      - unexpected value "0"' ], timeout: 5000 }
+2026-10-22T01:41:42.5427906Z   }
+2026-10-22T01:41:42.6006966Z

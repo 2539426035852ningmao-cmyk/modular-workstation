@@ -4,14 +4,14 @@
 
 ## 最新实施快照 优先于下方历史记录
 
-- main 实时核对为 `9e4467f5e040cf5ba9822aa8a613899b4597fd83` #30 已关闭 PR #31 已合并 旧依赖 PR #25/#26/#27 仍开放
-- 唯一实施任务 [#32 外观设置与主题偏好保存](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/32) 分支 `feat/s2-appearance-preferences` #12 仍为设计余项跟踪
-- 三种主题选择与持久化 隔离后台验证已实现 用户本轮授权的 [Fluent-Qt 设置行与短反馈适配](docs/FLUENT_QT_REUSE.md) 纳入同一任务 无 Qt 依赖或框架切换
-- 数据与回滚见 [外观契约](docs/APPEARANCE.md) 进度依据本 PR 测试 审查和包证据 不把实现当所有者已验收 不宣布 S2 全部完成
-- 唯一下一步 收束 #32 的自动验证与可运行候选 然后由所有者体验验收 测试自主后台执行不逐次请求许可
-- 下方为 #30 历史记录 其中没有新的实施任务的表述已由 #32 取代
-- 当前 [PR #33](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/33) 本机 23 项通过 后台截图专项与包恢复已通过 独立静态复核无阻塞 源码和测试修订 `0ee4f85` 的 [云端 Quality](https://github.com/2539426035852ningmao-cmyk/modular-workstation/actions/runs/39638689203) 成功 后续证据提交的最新检查须实时核对
-- 候选完整目录为仓库上两级 `outputs/s2-appearance-candidate-20261022/ModularWorkstation-win32-x64` 保留旧空间候选 未自动弹窗 未合并 未关闭 #32 等所有者便利时体验
+- 所有者明确回复 已体验通过 授权合并并继续 [#32](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/32) 已验收关闭 [PR #33](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/33) 已合并 main `f0eac3f933a2f641b8d371520878c8a2c9b12baa`
+- 合并后 [Quality](https://github.com/2539426035852ningmao-cmyk/modular-workstation/actions/runs/39705512821) 成功 外观数据与回滚见 [契约](docs/APPEARANCE.md) 旧候选完整保留
+- 唯一实施任务 [#34 统一命令入口](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/34) 分支 `feat/s2-command-palette` #12 仍跟踪设计余项 依赖 PR #25/#26/#27 未合并
+- 复用 Fluent-Qt 固定版本 CommandPalette 的多词匹配和关闭后分发动作 HTML dialog 提供模态焦点 沿用当前导航与 Token 没有新依赖或主进程权限 [命令契约](docs/COMMANDS.md) [复用清单](docs/FLUENT_QT_REUSE.md)
+- 唯一下一步 完成 #34 后台回归 实际包验证 独立审查与云端检查后交所有者体验 不自行合并或宣布整个 S2 完成
+- #34 源码 009bd33 本机完整 24 项通过 有效独立复核无阻塞 实际 Windows 包内命令 空间和主题恢复已通过 候选位于仓库上两级 `outputs/s2-commands-candidate-20261022/ModularWorkstation-win32-x64` 具体证据见 [审查记录](docs/reviews/S2_03_COMMANDS_2026-10-22.md) 最新 PR/CI 需实时核对
+- 2026-10-22 中文优先补充仍归 #34 / [PR #35](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/35) 源码 fc91697 修复命令选字默认确认被取消及工作空间选字误提交 两个先失败后通过的中文回归 完整 26 项通过 最终源码独立复核 NO BLOCKER 具体证据及限制见 [中文记录](docs/reviews/S2_03_CHINESE_2026-10-22.md) 新候选 outputs/s2-commands-zh-candidate-20261022/ModularWorkstation-win32-x64 实际包结果与最新 CI 需核对实时记录 尚待体验验收 不自行合并或关闭任务
+- 下方 #30 为历史记录 其中没有另外批准新任务的表述已由最新快照取代 测试运行无需逐次请求许可
 
 ## 当前阶段与最近验收
 
@@ -45,3 +45,4 @@
 ## 恢复入口
 
 [AGENTS](AGENTS.md) → 本快照与实时 GitHub → [产品](docs/PRODUCT.md) [路线图](docs/ROADMAP.md) [决策](docs/DECISIONS.md) [关卡](docs/QUALITY_GATES.md) → 当前任务源码和证据
+

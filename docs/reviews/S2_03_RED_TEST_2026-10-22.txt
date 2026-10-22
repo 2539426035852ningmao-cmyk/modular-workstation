@@ -1,0 +1,33 @@
+(node:31100) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✖ command palette navigates existing pages with keyboard focus and composition safety (6160.8577ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7945.5657
+
+✖ failing tests:
+
+test at tests\command-window.test.cjs:3:1
+✖ command palette navigates existing pages with keyboard focus and composition safety (6160.8577ms)
+  Error: expect(locator).toBeVisible() failed
+  
+  Locator: locator('.command-palette')
+  Expected: visible
+  Timeout: 5000ms
+  Error: element(s) not found
+  
+  Call log:
+    - Expect "to.be.visible" with timeout 5000ms
+    - waiting for locator('.command-palette')
+  
+      at Proxy.<anonymous> (C:\Users\86131\Documents\Codex\2026-10-19\codex-modular-workstation-github-github-https\work\modular-workstation\node_modules\playwright\lib\matchers\expect.js:221:24)
+      at TestContext.<anonymous> (C:\Users\86131\Documents\Codex\2026-10-19\codex-modular-workstation-github-github-https\work\modular-workstation\tests\command-window.test.cjs:8:46)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    matcherResult: { message: `expect(locator).toBeVisible() failed\n\nLocator: locator('.command-palette')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect "to.be.visible" with timeout 5000ms\n  - waiting for locator('.command-palette')\n`, pass: false, actual: undefined, name: 'toBeVisible', expected: 'visible', log: [ '  - Expect "to.be.visible" with timeout 5000ms', "  - waiting for locator('.command-palette')" ], timeout: 5000 }
+  }

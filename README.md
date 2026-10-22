@@ -1,6 +1,6 @@
 # modular-workstation（模块化个人工作站）
 
-> **状态：S0 技术任务已关闭；本地工作空间闭环已体验验收 S2 余项待核对，尚非正式产品版本。**
+> **状态：本地工作空间与外观设置已体验验收；S2 命令入口实施中，尚非正式产品版本。**
 > 免费开源、Windows 优先、本地优先、可扩展的个人工作站。项目名 `modular-workstation` 为开发代号，最终品牌尚待设计。
 
 ## 愿景
@@ -33,6 +33,6 @@
 桌面窗口与基础导航已获用户体验验收并整合，见 [Issue #10](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/10)。首页初始视觉基线已选择“B：轻量模块”。这是 Electron 候选技术原型；#4 独立审查与 #5 [CI 质量基线](docs/CI_QUALITY.md)已完成。设计依据见[收束清单](docs/S1_DESIGN_RECONCILIATION.md)，框架对照 #24 已验收并关闭 [#30 本地工作空间与布局恢复](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/30) 已获所有者体验验收并授权合并 PR #31 和关闭任务 下一步核对 S2 余项。[本轮能力与边界](docs/WORKSPACES.md) 不代表整个 S2 已验收。阶段完成不以文档数量为依据，而以实测、审查和验收为依据。
 
 ## 开源许可
-当前唯一实施任务 [#32 外观设置与主题偏好保存](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/32) 包含 [Fluent-Qt 设置与交互适配](docs/FLUENT_QT_REUSE.md) 实际能力与回滚见 [外观契约](docs/APPEARANCE.md) 尚待体验验收
+外观设置 #32 已验收 PR #33 已合并 当前唯一实施任务 [#34 命令入口](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/34) 包含 [Fluent-Qt 行为适配](docs/FLUENT_QT_REUSE.md) 能力与回滚见 [命令契约](docs/COMMANDS.md) 尚待本轮体验验收
 
 [Apache License 2.0](LICENSE)。正式发布前仍需审查第三方依赖与插件生态的许可兼容性。

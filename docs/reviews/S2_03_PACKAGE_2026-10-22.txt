@@ -1,0 +1,36 @@
+(node:42728) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:25476) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ create spaces then restart a new Electron process and restore independent views (23328.2708ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 24136.0957
+(node:20320) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ native appearance choices persist across process restart without changing workspaces (16896.5855ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 17711.4322
+(node:39424) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ command palette navigates existing pages with keyboard focus and composition safety (27791.2118ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 28563.6254
+{"kind":"packaged-windows-candidate","identity":{"name":"模块化工作站","version":"0.1.0-prototype","path":"<candidate>\\resources\\app.asar"},"preferences":{"nodeIntegration":false,"contextIsolation":true,"sandbox":true,"webSecurity":true},"security":{"require":"undefined","process":"undefined"},"chrome":{"menuRemoved":true,"menuBarVisible":false},"neutralHomeCards":true,"verifiedPayloadSHA256":{"electron/appearance-store.cjs":"85f98a1f801fb11478201158db85576be3167e971785edcf894699d97016a12c","electron/main.cjs":"57d449e71f7ec884dd117d63c9d198db887fb9f4778c0b1601ff04871a57c128","electron/preload.cjs":"32a4fb76b2239f4955e68acb060612a852caf71dc3bb6ff096fd2f23f829f4ad","electron/workspace-store.cjs":"d38da51c45e8bed330f44b3b9ca06cc083ac384425987ef5dde065d4d0c72d26","THIRD_PARTY_NOTICES.md":"7486ff69641e9def245f5589dd8b3c8599ca89c82b55df2445d08f402aa80ef0","package.json":"5b6283770a47546e6d35e1ffd28e3367cdf3e2681298e3c8b690eb9b1c92e364","dist/index.html":"7b651fc71553b82365d4f776b6b12c823e0f5661d36340843d022f29ad52145d","dist/assets/index-BH0qDcef.css":"92d4242c80bb6a8fdafafa41c3dbf5494d749039296c34ca8e6ec5138097e063","dist/assets/index-bj6aD6J1.js":"111168dbd807440e1058aeb2ebd5a02451607ef03d53b8c24d07902aee560930"},"exeSHA256":"bf36ca1317b97683e27fdab0e1412dc82f354a7af83c6a0a9fdcd0dc77e2b6d9","archiveSHA256":"7fad70a5d95a46868c9ee6f193070f8e634421f28f10e9452d8c374ea82af983","pagesPerTheme":4,"themes":2,"locales":2,"offlineNavigation":true,"remoteRequests":0,"rendererErrors":0,"nativeControls":{"executed":false,"reason":"Native visible controls are checked only on isolated GitHub Actions runners"},"windowCloseExits":true,"packagedWorkspaceRestart":true,"packagedAppearanceRestart":true,"backgroundOnly":true,"packagedCommands":true}

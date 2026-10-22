@@ -14,6 +14,13 @@ The port uses CSS grid/container queries instead of Qt layouts, changes the
 breakpoint to 640px for three translated buttons, and preserves workstation
 colors and typography.
 
+`src/CommandPalette.tsx` adapts the whitespace-separated, case-insensitive
+all-words matching and the keyboard/close-before-dispatch behavior from
+`src/components/menus_toolbars/CommandPalette.h` and `.cpp` at the same commit.
+The React version borrows the application's existing page-command list,
+uses the HTML dialog's modal focus behavior, and supports navigation only.
+No QAction, Qt Popup, native command execution, or Qt assets are bundled.
+
 `src/tokens.css` and shared control styles adapt the 150ms fast-feedback
 duration from `src/design/Animation.h`. The workstation applies it to shadow
 and filter only; selection colors change immediately. Reduced motion disables

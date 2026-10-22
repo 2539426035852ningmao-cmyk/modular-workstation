@@ -63,8 +63,16 @@ const {expect}=require('@playwright/test');const electron=require('../tests/help
   const appearanceCheck=require('node:child_process').spawnSync(process.execPath,['--test','--test-name-pattern=native appearance choices','tests/appearance-window.test.cjs'],{env:{...process.env,WORKSTATION_TEST_EXECUTABLE:executable},encoding:'utf8',timeout:120000});
   process.stdout.write(appearanceCheck.stdout||'');process.stderr.write(appearanceCheck.stderr||'');
   assert.equal(appearanceCheck.status,0,'Packaged appearance restart check failed');
+  const commandCheck=require('node:child_process').spawnSync(process.execPath,['--test','tests/command-window.test.cjs'],{env:{...process.env,WORKSTATION_TEST_EXECUTABLE:executable},encoding:'utf8',timeout:120000});
+  process.stdout.write(commandCheck.stdout||'');process.stderr.write(commandCheck.stderr||'');
+  assert.equal(commandCheck.status,0,'Packaged command palette check failed');
+  const chineseCheck=require('node:child_process').spawnSync(process.execPath,['--test','tests/chinese-command.test.cjs'],{env:{...process.env,WORKSTATION_TEST_EXECUTABLE:executable},encoding:'utf8',timeout:60000});
+  process.stdout.write(chineseCheck.stdout||'');process.stderr.write(chineseCheck.stderr||'');
+  assert.equal(chineseCheck.status,0,'Packaged Chinese command composition check failed');
   identity.path=identity.path.replace(folder,'<candidate>');
   const report={kind:'packaged-windows-candidate',identity,preferences,security,chrome,neutralHomeCards:true,verifiedPayloadSHA256:hashes,exeSHA256:crypto.createHash('sha256').update(fs.readFileSync(executable)).digest('hex'),archiveSHA256:crypto.createHash('sha256').update(fs.readFileSync(archive)).digest('hex'),pagesPerTheme:4,themes:2,locales:2,offlineNavigation:true,remoteRequests:remoteRequests.length,rendererErrors:rendererErrors.length,nativeControls,windowCloseExits:true,packagedWorkspaceRestart:true,packagedAppearanceRestart:true,backgroundOnly:!electron.cloudWindows};
+  report.packagedCommands=true;
+  report.packagedChineseCommands=true;
   fs.writeFileSync('docs/design/previews/runtime/package-validation.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
  }finally{await application.close().catch(()=>{});fs.rmSync(profile,{recursive:true,force:true,maxRetries:5,retryDelay:100});}
 })().catch(e=>{console.error(e);process.exitCode=1});
