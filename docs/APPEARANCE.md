@@ -1,6 +1,6 @@
 # S2-02 外观偏好契约
 
-关联 [Issue #32](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/32) 独立分支 `feat/s2-appearance-preferences` 待所有者最终体验验收 不代表整个 S2 完成
+关联 [Issue #32](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/32) 所有者于 2026-10-22 明确体验验收 [PR #33](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/33) 已按授权合并 不代表整个 S2 完成
 
 ## 实际能力
 

@@ -24,7 +24,7 @@
 门槛：设计获得用户审美确认，候选框架经可复现原型测试。当前复用依据见 [设计收束清单](S1_DESIGN_RECONCILIATION.md) 框架对照 [#24](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/24) 已验收关闭 本地空间闭环 [#30](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/30) 已获所有者体验验收 下一步核对 S2 余项 模型网关评估已归档 不提前开发 S6。
 
 ### S2 工作站 Shell 可用版本（当前实施）
-2026-10-22 唯一实施任务 [#32 外观设置与主题偏好保存](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/32) 含用户授权的 Fluent-Qt 设置行与公共反馈适配 保留现有 Electron 不是原生 Qt 组件引入 详见 [复用记录](FLUENT_QT_REUSE.md) 尚待本轮体验验收
+2026-10-22 #32 已获所有者体验验收 PR #33 已合并 合并后 Quality 成功 唯一实施任务切换 [#34 统一命令入口](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/34) 继续适配 Fluent-Qt 的已有动作借用和键盘行为 不开发文件搜索 不引入 Qt 运行时 详见 [命令契约](COMMANDS.md) 与 [复用记录](FLUENT_QT_REUSE.md) S2 尚未整体通过
 
 2026-10-21 所有者授权沿用 Electron 实施本地工作空间与布局恢复 S1 设计余项继续由 #12 跟踪 本轮授权不等于全部阶段通过
 随后 #30 完成真实空间保存恢复闭环并获所有者体验验收 授权合并 PR #31 和关闭任务 S2 设置 搜索命令入口及其他交付范围仍需逐项核对 不跳过关卡
