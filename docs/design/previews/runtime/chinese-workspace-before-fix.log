@@ -1,0 +1,35 @@
+(node:10228) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✖ Chinese workspace naming does not create a space when confirming composition (7942.1133ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9621.8217
+
+✖ failing tests:
+
+test at tests\chinese-command.test.cjs:27:1
+✖ Chinese workspace naming does not create a space when confirming composition (7942.1133ms)
+  Error: expect(locator).toHaveCount(expected) failed
+  
+  Locator:  locator('.workspace-switcher button')
+  Expected: 0
+  Received: 1
+  Timeout:  5000ms
+  
+  Call log:
+    - Expect "to.have.count" with timeout 5000ms
+    - waiting for locator('.workspace-switcher button')
+      9 × locator resolved to 1 element
+        - unexpected value "1"
+  
+      at Proxy.<anonymous> (C:\Users\86131\Documents\Codex\2026-10-19\codex-modular-workstation-github-github-https\work\modular-workstation\node_modules\playwright\lib\matchers\expect.js:221:24)
+      at TestContext.<anonymous> (C:\Users\86131\Documents\Codex\2026-10-19\codex-modular-workstation-github-github-https\work\modular-workstation\tests\chinese-command.test.cjs:34:57)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    matcherResult: { actual: 1, expected: 0, message: `expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('.workspace-switcher button')\nExpected: 0\nReceived: 1\nTimeout:  5000ms\n\nCall log:\n  - Expect "to.have.count" with timeout 5000ms\n  - waiting for locator('.workspace-switcher button')\n    9 × locator resolved to 1 element\n      - unexpected value "1"\n`, name: 'toHaveCount', pass: false, log: [ '  - Expect "to.have.count" with timeout 5000ms', "  - waiting for locator('.workspace-switcher button')", '    9 × locator resolved to 1 element', '      - unexpected value "1"' ], timeout: 5000 }
+  }

@@ -10,6 +10,7 @@
 - 复用 Fluent-Qt 固定版本 CommandPalette 的多词匹配和关闭后分发动作 HTML dialog 提供模态焦点 沿用当前导航与 Token 没有新依赖或主进程权限 [命令契约](docs/COMMANDS.md) [复用清单](docs/FLUENT_QT_REUSE.md)
 - 唯一下一步 完成 #34 后台回归 实际包验证 独立审查与云端检查后交所有者体验 不自行合并或宣布整个 S2 完成
 - #34 源码 009bd33 本机完整 24 项通过 有效独立复核无阻塞 实际 Windows 包内命令 空间和主题恢复已通过 候选位于仓库上两级 `outputs/s2-commands-candidate-20261022/ModularWorkstation-win32-x64` 具体证据见 [审查记录](docs/reviews/S2_03_COMMANDS_2026-10-22.md) 最新 PR/CI 需实时核对
+- 2026-10-22 中文优先补充仍归 #34 / [PR #35](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/35) 源码 fc91697 修复命令选字默认确认被取消及工作空间选字误提交 两个先失败后通过的中文回归 完整 26 项通过 最终源码独立复核 NO BLOCKER 具体证据及限制见 [中文记录](docs/reviews/S2_03_CHINESE_2026-10-22.md) 新候选 outputs/s2-commands-zh-candidate-20261022/ModularWorkstation-win32-x64 实际包结果与最新 CI 需核对实时记录 尚待体验验收 不自行合并或关闭任务
 - 下方 #30 为历史记录 其中没有另外批准新任务的表述已由最新快照取代 测试运行无需逐次请求许可
 
 ## 当前阶段与最近验收
@@ -44,3 +45,4 @@
 ## 恢复入口
 
 [AGENTS](AGENTS.md) → 本快照与实时 GitHub → [产品](docs/PRODUCT.md) [路线图](docs/ROADMAP.md) [决策](docs/DECISIONS.md) [关卡](docs/QUALITY_GATES.md) → 当前任务源码和证据
+

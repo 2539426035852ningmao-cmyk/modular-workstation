@@ -1,0 +1,30 @@
+(node:40308) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✖ Chinese commands keep native composition confirmation and committed Chinese text intact (7618.1226ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8710.6579
+
+✖ failing tests:
+
+test at tests\chinese-command.test.cjs:3:1
+✖ Chinese commands keep native composition confirmation and committed Chinese text intact (7618.1226ms)
+  AssertionError [ERR_ASSERTION]: Application must leave IME Enter confirmation uncancelled
+  
+  false !== true
+  
+      at TestContext.<anonymous> (C:\Users\86131\Documents\Codex\2026-10-19\codex-modular-workstation-github-github-https\work\modular-workstation\tests\chinese-command.test.cjs:10:10)
+      at async Test.run (node:internal/test_runner/test:1332:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

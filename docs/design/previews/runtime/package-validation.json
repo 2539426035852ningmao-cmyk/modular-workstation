@@ -27,12 +27,12 @@
     "electron/workspace-store.cjs": "d38da51c45e8bed330f44b3b9ca06cc083ac384425987ef5dde065d4d0c72d26",
     "THIRD_PARTY_NOTICES.md": "7486ff69641e9def245f5589dd8b3c8599ca89c82b55df2445d08f402aa80ef0",
     "package.json": "5b6283770a47546e6d35e1ffd28e3367cdf3e2681298e3c8b690eb9b1c92e364",
-    "dist/index.html": "7b651fc71553b82365d4f776b6b12c823e0f5661d36340843d022f29ad52145d",
+    "dist/index.html": "5084b7d7784046cadeb89f7da3b130893b6c02534f7e9bcca4dfd4e2a49729b7",
     "dist/assets/index-BH0qDcef.css": "92d4242c80bb6a8fdafafa41c3dbf5494d749039296c34ca8e6ec5138097e063",
-    "dist/assets/index-bj6aD6J1.js": "111168dbd807440e1058aeb2ebd5a02451607ef03d53b8c24d07902aee560930"
+    "dist/assets/index-DiJrPHWp.js": "8e64313160e86dc3649d84c6c0085726fd464c13cc9ac8a8f2f6754cbb435f5f"
   },
-  "exeSHA256": "bf36ca1317b97683e27fdab0e1412dc82f354a7af83c6a0a9fdcd0dc77e2b6d9",
-  "archiveSHA256": "7fad70a5d95a46868c9ee6f193070f8e634421f28f10e9452d8c374ea82af983",
+  "exeSHA256": "3f6de99086bc9be59d56d20766daf4fcaf70c22e3a50423bd3cfda669a0febc5",
+  "archiveSHA256": "71116ff7b5c882266839ec122ca701b4019e94df3b29a4861914ce0819642075",
   "pagesPerTheme": 4,
   "themes": 2,
   "locales": 2,
@@ -47,5 +47,6 @@
   "packagedWorkspaceRestart": true,
   "packagedAppearanceRestart": true,
   "backgroundOnly": true,
-  "packagedCommands": true
+  "packagedCommands": true,
+  "packagedChineseCommands": true
 }
