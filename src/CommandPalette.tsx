@@ -21,7 +21,8 @@ export default function CommandPalette({open,commands,m,onClose,onExecute}:{open
   onClose();onExecute(id);
  }
  return <dialog ref={dialog} className="command-palette" aria-labelledby="commands-title" onClose={()=>{composing.current=false;onClose();}} onCancel={e=>{if(composing.current)e.preventDefault();}} onKeyDown={e=>{
-  if(composing.current||e.nativeEvent.isComposing||e.keyCode===229){if(e.key==='Enter'||e.key==='Escape')e.preventDefault();return;}
+  // Leave IME Enter confirmation to the input method; only suppress dialog dismissal.
+  if(composing.current||e.nativeEvent.isComposing||e.keyCode===229){if(e.key==='Escape')e.preventDefault();return;}
   if(e.altKey||e.ctrlKey||e.metaKey)return;
   if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();if(results.length)setIndex(i=>(i+(e.key==='ArrowDown'?1:results.length-1))%results.length);}
   else if(e.key==='Enter'&&e.target===input.current){e.preventDefault();if(current)execute(current.id);}
