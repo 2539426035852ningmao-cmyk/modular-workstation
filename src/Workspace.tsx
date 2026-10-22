@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import {Icon} from './Icons';
 import {getMessages} from './i18n';
 import type {Tab,View,State,Command,Reply} from './bridge';
@@ -10,6 +10,7 @@ export default function Workspace({onRestore,onCount}:{onRestore:()=>void;onCoun
  const [name,setName] = useState('');
  const [confirmRecovery,setConfirmRecovery] = useState(false);
  const [saved,setSaved] = useState(false);
+ const composing=useRef(false),imeSubmit=useRef(false);
  const space = state?.workspaces.find(w=>w.id===state.lastWorkspaceId);
  useEffect(()=>{onCount(state?.workspaces.length ?? 0);},[state,onCount]);
  async function request(action:()=>Promise<Reply>,changed=false) {
@@ -37,8 +38,9 @@ export default function Workspace({onRestore,onCount}:{onRestore:()=>void;onCoun
   <div className="workspace-feedback" role="status" aria-live="polite">{busy?m.loading:error?m.notSaved:saved?m.saved:m.local}</div>
   {error&&<div className="workspace-error" role="alert"><span className="error-mark" aria-hidden="true">!</span><div><strong>{error==='CORRUPT'?m.corrupt:error==='UNSUPPORTED'?m.unsupported:m.failed}</strong><p>{m.kept}</p><button className="control" disabled={busy} onClick={()=>void request(()=>window.workstation!.load())}>{m.retry}</button>{error==='CORRUPT'&&<button className="control" disabled={busy} onClick={()=>setConfirmRecovery(true)}>{m.recover}</button>}</div></div>}
   {confirmRecovery&&<div className="recovery-confirm"><p>{m.preserve}</p><button className="control primary" disabled={busy} onClick={()=>void request(()=>window.workstation!.recover()).then(ok=>{if(ok)setConfirmRecovery(false);})}>{m.confirm}</button><button className="control" onClick={()=>setConfirmRecovery(false)}>{m.cancel}</button></div>}
-  <form className="workspace-create" onSubmit={e=>{e.preventDefault();if(name.trim()&&!busy&&!blocked)void change({type:'create',name:name.trim()}).then(ok=>{if(ok)setName('');});}}>
-   <label htmlFor="workspace-name">{m.name}</label><div><input id="workspace-name" value={name} onChange={e=>setName(e.target.value)} maxLength={60} placeholder={m.namePlaceholder} disabled={busy||blocked}/><button className="control primary" disabled={busy||blocked||!name.trim()}>{m.create}</button></div>
+  <form className="workspace-create" onSubmit={e=>{e.preventDefault();if(!composing.current&&!imeSubmit.current&&name.trim()&&!busy&&!blocked)void change({type:'create',name:name.trim()}).then(ok=>{if(ok)setName('');});}}>
+   {/* SubmitEvent has no composition metadata; retain the initiating key through its default action. */}
+   <label htmlFor="workspace-name">{m.name}</label><div><input id="workspace-name" value={name} onChange={e=>setName(e.target.value)} onCompositionStart={()=>{composing.current=true;}} onCompositionEnd={()=>{composing.current=false;}} onKeyDown={e=>{imeSubmit.current=composing.current||e.nativeEvent.isComposing||e.keyCode===229;}} onKeyUp={()=>{imeSubmit.current=false;}} onBlur={()=>{imeSubmit.current=false;}} maxLength={60} placeholder={m.namePlaceholder} disabled={busy||blocked}/><button className="control primary" disabled={busy||blocked||!name.trim()}>{m.create}</button></div>
   </form>
   {state&&!space&&<div className="empty-panel state-panel"><div className="state-emblem"><Icon name="workspace"/></div><h2>{m.empty}</h2><p>{m.first}</p></div>}
   {!!state?.workspaces.length&&<div className="workspace-switcher" aria-label={m.spaces}>{state.workspaces.map(w=><button className="control" type="button" key={w.id} aria-pressed={w.id===space?.id} disabled={busy} onClick={()=>void change({type:'open',id:w.id})}>{w.name}</button>)}</div>}
