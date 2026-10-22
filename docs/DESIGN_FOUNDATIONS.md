@@ -4,6 +4,8 @@
 
 ## 唯一运行时来源
 
+2026-10-22 #32 分支新增真实外观设置 system light dark 由 Electron nativeTheme 驱动既有 prefers-color-scheme 映射 首窗前恢复本机偏好 颜色值不变 设置行与 150ms 阴影反馈适配自 Fluent-Qt v1.10.2 并尊重减少动态效果 详见 [外观契约](APPEARANCE.md) 与 [复用记录](FLUENT_QT_REUSE.md) 待体验验收
+
 [`src/tokens.css`](../src/tokens.css) 负责主题、色彩、阴影、尺寸；[`src/styles.css`](../src/styles.css) 负责四页公共状态与响应式布局；[`src/Icons.tsx`](../src/Icons.tsx) 为自绘 SVG 图标组件。没有引入图标库、Morphicons 或组件库。
 
 | 用途 | 深色 | 浅色 |

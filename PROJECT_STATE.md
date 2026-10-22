@@ -1,6 +1,17 @@
 # 项目状态快照
 
-更新 2026-10-21 非实时数据 任务事实需核对 GitHub
+更新 2026-10-22 非实时数据 任务事实需核对 GitHub
+
+## 最新实施快照 优先于下方历史记录
+
+- main 实时核对为 `9e4467f5e040cf5ba9822aa8a613899b4597fd83` #30 已关闭 PR #31 已合并 旧依赖 PR #25/#26/#27 仍开放
+- 唯一实施任务 [#32 外观设置与主题偏好保存](https://github.com/2539426035852ningmao-cmyk/modular-workstation/issues/32) 分支 `feat/s2-appearance-preferences` #12 仍为设计余项跟踪
+- 三种主题选择与持久化 隔离后台验证已实现 用户本轮授权的 [Fluent-Qt 设置行与短反馈适配](docs/FLUENT_QT_REUSE.md) 纳入同一任务 无 Qt 依赖或框架切换
+- 数据与回滚见 [外观契约](docs/APPEARANCE.md) 进度依据本 PR 测试 审查和包证据 不把实现当所有者已验收 不宣布 S2 全部完成
+- 唯一下一步 收束 #32 的自动验证与可运行候选 然后由所有者体验验收 测试自主后台执行不逐次请求许可
+- 下方为 #30 历史记录 其中没有新的实施任务的表述已由 #32 取代
+- 当前 [PR #33](https://github.com/2539426035852ningmao-cmyk/modular-workstation/pull/33) 本机 23 项通过 后台截图专项与包恢复已通过 独立静态复核无阻塞 源码和测试修订 `0ee4f85` 的 [云端 Quality](https://github.com/2539426035852ningmao-cmyk/modular-workstation/actions/runs/39638689203) 成功 后续证据提交的最新检查须实时核对
+- 候选完整目录为仓库上两级 `outputs/s2-appearance-candidate-20261022/ModularWorkstation-win32-x64` 保留旧空间候选 未自动弹窗 未合并 未关闭 #32 等所有者便利时体验
 
 ## 当前阶段与最近验收
 

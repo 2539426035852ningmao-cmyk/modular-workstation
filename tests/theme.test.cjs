@@ -39,7 +39,7 @@ test('approved themes, navigation, density, contrast and control states in Elect
       }else{
        const disabled=page.locator('button:disabled:visible');if(index===2){assert.equal(await disabled.count(),1);assert.equal(await disabled.evaluate(e=>getComputedStyle(e).opacity),'1');}
       }
-      if(locale==='zh-CN'&&((width===1440&&zoom===1)||(width===800&&zoom===2)))await page.screenshot({path:path.join(out,`${theme}-${['home','workspace','plugins','settings'][index]}-${zoom===2?'400':'1440'}.png`)});
+      if(locale==='zh-CN'&&((width===1440&&zoom===1)||(width===800&&zoom===2)))await electron.screenshot(app,page,path.join(out,`${theme}-${['home','workspace','plugins','settings'][index]}-${zoom===2?'400':'1440'}.png`));
       results.push({locale,theme,width,height,zoom,page:index,viewport:metrics.visible,textPairs:metrics.pairs.length});
      }
     }

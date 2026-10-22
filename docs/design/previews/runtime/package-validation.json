@@ -21,16 +21,18 @@
   },
   "neutralHomeCards": true,
   "verifiedPayloadSHA256": {
-    "electron/main.cjs": "e2d960c4baa951f23e6d2ad75f8d1243e4b50f0e149af96f621e7d79bc238199",
-    "electron/preload.cjs": "178f6e7e227c1c5f049577094bb767a7a2b6a4b60148e296916d0574ee6fbf43",
-    "electron/workspace-store.cjs": "479bf4cb7d610fdba994d02ae5bdeab63d502fac3c3b767f1d8c26ebcdd43242",
+    "electron/appearance-store.cjs": "6baa8c9b2c089190e328fe1c8af6129b972e4546897368e8365f8535aaa15184",
+    "electron/main.cjs": "57d449e71f7ec884dd117d63c9d198db887fb9f4778c0b1601ff04871a57c128",
+    "electron/preload.cjs": "32a4fb76b2239f4955e68acb060612a852caf71dc3bb6ff096fd2f23f829f4ad",
+    "electron/workspace-store.cjs": "d38da51c45e8bed330f44b3b9ca06cc083ac384425987ef5dde065d4d0c72d26",
+    "THIRD_PARTY_NOTICES.md": "5f1c758b9e2c620dffd97acdee899e76df1cccbb95e615b40ddce6bbe067dd8f",
     "package.json": "5b6283770a47546e6d35e1ffd28e3367cdf3e2681298e3c8b690eb9b1c92e364",
-    "dist/index.html": "f2d49d10191f0df1510221aeac19734ad149ac927e29da0668013287d546c733",
-    "dist/assets/index-BUV3jWe1.js": "4a70a5ec8f19640f7da9b547a99f857846a02e948ef28fc6458a68ad88868337",
-    "dist/assets/index-CnXXNw9t.css": "6119cc6ba52192a95031903e49bb6010dfd6ff7ac272867f79a1e626755accd7"
+    "dist/index.html": "fb7720b0d9aecdfed69173d64cdc9858e5936a14188a22bc2c58fd996b9badad",
+    "dist/assets/index-CubfpfhH.css": "552678ed0fb1ee8d2318b57eebaff25e75c0a1c4d0a1261b24efd39c2085782e",
+    "dist/assets/index-C_T7Uvzo.js": "ec5c955f418e15cf8ba9c7e438d2df74602b1bbc4a9effe50ab8ac946e880e4b"
   },
-  "exeSHA256": "c6fae2282e54ac5376b504ae864245239ac029aae54bbc1d49eb77c89a19717b",
-  "archiveSHA256": "76a0361608e338a8622b413a0a1f4b149f6775901c86270d20bc898670a8ea6d",
+  "exeSHA256": "6a2b59951586cb237ca1bfa3eae5eb67d0f3d9c62601397da231d0b415db1121",
+  "archiveSHA256": "34c656b9cb55dc8f45de27c95a269b908dabac76a61024c1848391ab3a05ae2a",
   "pagesPerTheme": 4,
   "themes": 2,
   "locales": 2,
@@ -38,11 +40,11 @@
   "remoteRequests": 0,
   "rendererErrors": 0,
   "nativeControls": {
-    "minimize": true,
-    "restore": true,
-    "maximize": true,
-    "unmaximize": true
+    "executed": false,
+    "reason": "Native visible controls are checked only on isolated GitHub Actions runners"
   },
   "windowCloseExits": true,
-  "packagedWorkspaceRestart": true
+  "packagedWorkspaceRestart": true,
+  "packagedAppearanceRestart": true,
+  "backgroundOnly": true
 }

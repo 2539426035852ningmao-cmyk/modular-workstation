@@ -1,6 +1,6 @@
 const {test}=require('node:test'),assert=require('node:assert/strict');
 const fs=require('node:fs/promises'),os=require('node:os'),path=require('node:path');
-const {_electron:electron,expect}=require('@playwright/test');
+const {expect}=require('@playwright/test');const electron=require('./helpers/background.cjs');
 test('create spaces then restart a new Electron process and restore independent views',async()=>{
  const profile=await fs.mkdtemp(path.join(os.tmpdir(),'workstation-restart-'));
  let app;let page;const errors=[];
@@ -29,7 +29,7 @@ test('create spaces then restart a new Electron process and restore independent 
    for(const theme of ['dark','light']){await page.emulateMedia({colorScheme:theme});for(const width of [1440,800]){
     await app.evaluate(({BrowserWindow},width)=>BrowserWindow.getAllWindows()[0].setContentSize(width,760),width);
     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);assert.equal(overflow,false);
-    await page.screenshot({path:path.join(__dirname,'../docs/design/previews/runtime',`workspace-live-${locale}-${theme}-${width}.png`)});
+    await electron.screenshot(app,page,path.join(__dirname,'../docs/design/previews/runtime',`workspace-live-${locale}-${theme}-${width}.png`));
    }}
   }
   assert.deepEqual(errors,[]);
